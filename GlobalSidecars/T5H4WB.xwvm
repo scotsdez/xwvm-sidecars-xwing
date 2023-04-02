@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="T5H4WB">
+		<messages>
+			<message delay="1" color="Rebel">
+				You are clear to engage the Shrike.
+			</message>
+			<message delay="2" color="Rebel">
+				This is Gold Leader. We’ve got your back.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BANSHEE" condition="Arrived" />
+				</triggers>
+				Great... looks like the local Imperial patrol just arrived.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="SHRIKE" condition="ZeroShields" />
+				</triggers>
+				The Shrike’s shields have failed, press the attack!
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="SHRIKE" condition="Disabled" />
+				</triggers>
+				Systems on the Shrike are down, it's vulnerable to attack!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="GAMMA" condition="Arrived" />
+				</triggers>
+				The Shrike is deploying defensive bombers, watch out!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="BANSHEE" condition="Destroyed" />
+				</triggers>
+				Fantastic work, those were two big kills!
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="BANSHEE" condition="Destroyed" />
+				</triggers>
+				The Empire will have a hard time patrolling this system now!
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				Congratulations, the Shrike has been eliminated.
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				The Empire won’t soon forget this encounter!
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				You can hyperspace back home when ready.
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message delay="0" color="Rebel" goal="primaryFail">
+				You failed to destroy the Shrike.
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				With it, the Empire will continue dominating this sector.
+			</message>
+			<message delay="2" color="Rebel" goal="primaryFail">
+				Report back immediately for debriefing.
+			</message>
+		</messages>
+	</mission>
+</sidecar>

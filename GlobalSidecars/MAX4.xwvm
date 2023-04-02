@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="MAX4">
+		<messages>
+			<message delay="1" color="Rebel">
+				Stay close to your flight leader.
+			</message>
+			<message delay="2" color="Rebel">
+				There are three groups of TIE Fighters close by.
+			</message>
+			<message delay="3" color="Rebel">
+				Pick a target, and engage.
+			</message>
+			<message delay="4" color="Rebel">
+				Keep your lasers and shields charged, and turn hard to evade!
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="PlayerCraft" type="FlightGroup" variable="RED" condition="Attacked" />
+				</triggers>
+				Don’t fly in a straight line for more than a couple of seconds.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="PlayerCraft" type="FlightGroup" variable="RED" condition="Attacked" />
+				</triggers>
+				Keep jinking and weaving to make yourself harder to hit.
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="PlayerCraft" type="FlightGroup" variable="RED" condition="FiftyHull" />
+				</triggers>
+				You’ve taken damage - increase power to your shields.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="PlayerCraft" type="FlightGroup" variable="RED" condition="FiftyHull" />
+				</triggers>
+				Try cycling the settings between forward, rear and balanced.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="ALPHA" condition="Destroyed" />
+				</triggers>
+				TIE Fighter group Alpha has been destroyed.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="BETA" condition="Destroyed" />
+				</triggers>
+				Scratch TIE Fighter group Beta!
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="GAMMA" condition="Destroyed" />
+				</triggers>
+				TIE Fighter group Gamma has been eliminated.
+			</message>
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				Well done, all of the TIE Fighters have been destroyed.
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				The skills you gained here will be essential in a real dogfight.
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				Hyperspace home for debriefing.
+			</message>
+		</messages>
+	</mission>
+</sidecar>

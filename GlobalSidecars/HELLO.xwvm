@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="HELLO">
+		<briefing>
+            <tags>
+                <tag target="2">
+                    Ryloth
+                </tag>
+            </tags>
+        </briefing>
+		<messages>
+			<message delay="0" color="Rebel">
+				Red group, you’ve arrived behind the Imperial forces.
+			</message>
+			<message delay="1" color="Rebel">
+				Catch up with the TIE Bombers and destroy them as quickly as possible.
+			</message>
+			<message delay="2" color="Rebel">
+				Don’t let them destroy that corvette under any circumstances!
+			</message>
+			<message delay="3" color="Rebel">
+				You may wish to split your flight group and attack different targets.
+			</message>
+			<message delay="4" color="Rebel">
+				Use torpedoes to attack from a longer range!
+			</message>
+			
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="FiftyPercent" type="CraftType" variable="TIEBomber" condition="Destroyed" />
+				</triggers>
+				Half of the TIE Bombers have been eliminated, keep going!
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="CraftType" variable="TIEBomber" condition="Destroyed" />
+				</triggers>
+				The last group of TIE Bombers has been destroyed.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="KARINNE" condition="CompletedMission" />
+				</triggers>
+				The Karinne has successfully entered hyperspace - the Twi’lek delegation is safe.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="AVENGER" condition="Attacked" />
+				</triggers>
+				Be careful around that Star Destroyer!
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="KARINNE" condition="Attacked" />
+				</triggers>
+				We’re under fire from the TIE Bombers, please assist us!
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="KARINNE" condition="FiftyHull" />
+				</triggers>
+				We’ve taken hull damage, please assist!
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				Well done Red Group, return to base.
+			</message>
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primaryFail">
+				The Karinne, and the Twi’lek delegation, have been lost.
+			</message>
+			<message delay="2" color="Rebel" goal="primaryFail">
+				Red group, return to base for immediate debriefing.
+			</message>
+		</messages>
+	</mission>
+</sidecar>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="YWASTEM">
+		<messages>
+			<message delay="1" color="Rebel">
+				The targets are up ahead.
+			</message>
+			<message delay="2" color="Rebel">
+				Follow my lead and you’ll be fine.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="DEDDITE" condition="Arrived" />
+				</triggers>
+				Another freighter just arrived, we’ll need to eliminate it too!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="KRAYT" condition="Arrived" />
+				</triggers>
+				An Imperial shuttle has just entered the area.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="KRAYT" condition="Arrived" />
+				</triggers>
+				Make sure to destroy it.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ENFORCER" condition="Arrived" />
+				</triggers>
+				An Imperial cruiser has just dropped out of hyperspace.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ALPHA" condition="Arrived" />
+				</triggers>
+				It’s launching TIE Fighters - let’s not hang around!
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="1" condition="Destroyed" />
+				</triggers>
+				All of the containers have been destroyed.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="2" condition="Destroyed" />
+				</triggers>
+				The target freighters have been eliminated.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="KRAYT" condition="Inspected" />
+				</triggers>
+				The shuttle is carrying Imperial inspectors, destroy it!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="KRAYT" condition="Destroyed" />
+				</triggers>
+				The shuttle has been eradicated.
+			</message>
+			
+
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				The cargo shipment has been destroyed.
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				Good work, we’ve given the Imperials a bloody nose!
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				This mission is complete, return for debriefing.
+			</message>
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primaryFail">
+				You didn’t destroy the convoy.
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				Report for immediate debriefing.
+			</message>
+		</messages>
+		<flightGroup target="CHI" globalGroup="1" />
+		<flightGroup target="CHI 3" globalGroup="1" />
+		<flightGroup target="PSI" globalGroup="1" />
+		<flightGroup target="PI" globalGroup="1" />
+		<flightGroup target="BANTHAR" globalGroup="2" />
+		<flightGroup target="DEDDITE" globalGroup="2" />
+	</mission>
+</sidecar>

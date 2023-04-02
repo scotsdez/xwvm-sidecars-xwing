@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="MAX7">
+		<messages>
+			<message delay="1" color="Rebel">
+				Look alive Red group, we’ve got TIE Fighters closing in fast!
+			</message>
+			<message delay="2" color="Rebel">
+				Go ahead and disable the shuttles.
+			</message>
+			<message delay="3" color="Rebel">
+				We’ll assist once we’ve dealt with TIE Fighter group Alpha.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BETA" condition="Arrived" />
+				</triggers>
+				The Star Destroyer has launched TIE Interceptors.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BETA" condition="Arrived" />
+				</triggers>
+				Ignore them for now and focus on the shuttles.
+			</message>
+			
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="1" condition="Disabled" />
+				</triggers>
+				All of the shuttles carrying P.O.W.s have been disabled.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="1" condition="Boarded" />
+				</triggers>
+				Excellent, all of the P.O.W.s have been extracted.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="1" condition="Boarded" />
+				</triggers>
+				Make sure the rescue shuttles reach the hyper point safely.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="TIGER" condition="Destroyed" />
+				</triggers>
+				Wow, way to go!
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="TIGER" condition="Destroyed" />
+				</triggers>
+				I’ve never seen anyone take down a Star Destroyer like that!
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				The rescue shuttles have safely made it into hyperspace.
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				Good job, Red Group. Return to base.
+			</message>
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primaryFail">
+				We failed to rescue the P.O.W.s.
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				Abort mission and return to base.
+			</message>
+		</messages>
+		<flightGroup target="ST 224" globalGroup="1" />
+		<flightGroup target="ST 227" globalGroup="1" />
+		<flightGroup target="ST 249" globalGroup="1" />
+		<flightGroup target="ST 247" globalGroup="1" />
+		<flightGroup target="ST 213" globalGroup="1" />
+	</mission>
+</sidecar>

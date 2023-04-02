@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="MAX15">
+		<messages>
+			<message delay="1" color="Rebel">
+				All fighters, maintain standard patrol pattern.
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="TERMINATOR_2" condition="Arrived" />
+				</triggers>
+				Alert, an Imperial ship has entered the area!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BETA" condition="Arrived" />
+				</triggers>
+				They’re launching TIE Bombers!
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BETA" condition="Arrived" />
+				</triggers>
+				A-Wings, move to intercept.
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="TERMINATOR" condition="Arrived" />
+				</triggers>
+				That Imperial ship is back!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ALPHA" condition="Arrived" />
+				</triggers>
+				Intercept TIE Bomber group Alpha.
+			</message>
+			
+			
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="2" condition="Attacked" />
+				</triggers>
+				The shuttles are under attack!
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="3" condition="Attacked" />
+				</triggers>
+				Cover the returning X-Wings!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="1" condition="Destroyed" />
+				</triggers>
+				Let’s hope that was all of the Imperial fighters!
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				Good job, the starfighters have all returned safely to the Cathleen.
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				You can hyperspace home to end the mission.
+			</message>
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primaryFail">
+				You failed to protect the returning craft.
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				Abort mission immediately and report for debriefing.
+			</message>
+		</messages>
+		<flightGroup target="ALPHA" globalGroup="1" />
+		<flightGroup target="BETA" globalGroup="1" />
+		<flightGroup target="BLUE 1" globalGroup="2" />
+		<flightGroup target="BLUE 2" globalGroup="2" />
+		<flightGroup target="GOLD 1" globalGroup="3" />
+		<flightGroup target="GOLD 2" globalGroup="3" />
+		<flightGroup target="GOLD 3" globalGroup="3" />
+		<flightGroup target="GOLD 4" globalGroup="3" />
+	</mission>
+</sidecar>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="T5H5WB">
+		<messages>
+			<message color="Rebel">
+				Accelerate to attack speed. This is it, boys!
+			</message>
+			<message delay="1" color="Rebel">
+				Squad leaders, we've picked up a new group of signals.
+			</message>
+			<message delay="2" color="Rebel">
+				Enemy fighters coming your way.  
+			</message>
+			<message delay="3" color="Rebel">
+				My scope shows 4 hangar ports and about 20 guns.
+			</message>
+			<message delay="4" color="Rebel">
+				Some on the surface, some on the towers.
+			</message>
+			<message delay="5" color="Rebel">
+				This is Gold leader. We're starting for the target shaft now.
+			</message>
+			<message delay="6" color="Rebel">
+				Copy, Gold leader.
+			</message>
+			<message delay="12" color="Rebel">
+				The exhaust port is marked and locked in.
+			</message>
+			<message delay="20" color="Rebel">
+				Switch power to front deflector screens.
+			</message>
+			<message delay="24" color="Rebel">
+				Switch power to front deflector screens.
+			</message>
+			<message delay="26" color="Rebel">
+				Stabilise your rear deflectors. Watch for enemy fighters.
+			</message>
+			<message delay="28" color="Rebel">
+				They’re coming in! Three marks at two ten.
+			</message>
+			<message delay="40" color="Rebel">
+				Lost Tiree, lost Dutch. They came from behind... [static]
+			</message>
+			<message delay="420" color="Rebel">
+				Hurry, the Death Star is nearly in firing range of Yavin IV!
+			</message>
+			
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="TwentyFivePercent" type="GlobalGroup" variable="1" condition="Destroyed" />
+				</triggers>
+				Good shooting, that’s one of the hangar ports destroyed.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="FiftyPercent" type="GlobalGroup" variable="1" condition="Destroyed" />
+				</triggers>
+				Half of the hangar ports have been destroyed.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="SeventyFivePercent" type="GlobalGroup" variable="1" condition="Destroyed" />
+				</triggers>
+				Just one hangar port left!
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="1" condition="Destroyed" />
+				</triggers>
+				Great work, all of the hangar ports have been destroyed.
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				Well done, we’ve cleared the way for the next attack run.
+			</message>
+			
+		</messages>
+		<flightGroup target="HANGAR PORT" globalGroup="1" />
+		<flightGroup target="HANGAR PORT_2" globalGroup="1" />
+		<flightGroup target="HANGAR PORT_3" globalGroup="1" />
+		<flightGroup target="HANGAR PORT_4" globalGroup="1" />
+	</mission>
+</sidecar>

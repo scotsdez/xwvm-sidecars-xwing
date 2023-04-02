@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="SATLIT1">
+		<messages>   
+			<message delay="1" color="Rebel">
+				Welcome to Coruscant, rookie. Don’t get distracted by the view.
+			</message>
+			<message delay="2" color="Rebel">
+				You don’t have much time before Imperial reinforcements arrive.
+			</message>
+			<message delay="3" color="Rebel">
+				Destroy the satellites, mines, and transports Epsilon 1 and 2.
+			</message>
+			<message delay="4" color="Rebel">
+				Mines only require a single laser hit to destroy.
+			</message>
+			<message delay="5" color="Rebel">
+				Consider adjusting your lasers for linked fire mode.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="FiftyPercent" type="CraftCategory" variable="Mine" condition="Destroyed" />
+				</triggers>
+				Keep going, that’s half of the mines cleared.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="CraftCategory" variable="Mine" condition="Destroyed" />
+				</triggers>
+				Well done, you’ve blasted all of the mines.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="CraftType" variable="Satellite" condition="Destroyed" />
+				</triggers>
+				All of the satellites are destroyed!
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="EPSILON" condition="Destroyed" />
+				</triggers>
+				Both transports have been eliminated.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="SENTINEL" condition="Arrived" />
+				</triggers>
+				Imperial reinforcements have arrived - be quick!
+			</message>
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				The comms satellites and defences have been neutralized.
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				Hyperspace back to base for debriefing immediately...
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				...before the Empire sends more substantial forces.
+			</message>
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primaryFail">
+				Some of the Imperial craft escaped - abort mission.
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				Report back immediately for debriefing.
+			</message>
+		</messages>
+	</mission>
+</sidecar>

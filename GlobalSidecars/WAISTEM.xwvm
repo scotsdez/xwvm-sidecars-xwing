@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="WAISTEM">
+		<messages>
+			<message delay="0" color="Rebel">
+				This region is used by the Empire as a training area.
+			</message>
+			<message delay="1" color="Rebel">
+				Destroy all Imperial craft.
+			</message>
+			<message delay="2" color="Rebel">
+				Allocate more power to your weapons, or shields, as needed.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="GlobalGroup" variable="1" condition="Destroyed" />
+				</triggers>
+				Excellent, that’s one Imperial craft destroyed, keep going!
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="FiftyPercent" type="GlobalGroup" variable="1" condition="Destroyed" />
+				</triggers>
+				Half of the Imperial craft have been eliminated, keep it up!
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ALPHA" condition="Arrived" />
+				</triggers>
+				Two TIE Fighters have just emerged from container Phi 1.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ALPHA" condition="Arrived" />
+				</triggers>
+				Watch out, they’re targeting you!
+			</message>
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				Well done!
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				You’ve destroyed all Imperial craft and equipment in this area.
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				Hyperspace home before reinforcements arrive.
+			</message>
+		</messages>
+		<flightGroup target="ALPHA 1" globalGroup="1" />
+		<flightGroup target="BETA 1" globalGroup="1" />
+		<flightGroup target="GAMMA" globalGroup="1" />
+		<flightGroup target="DELTA" globalGroup="1" />
+		<flightGroup target="ALPHA" globalGroup="1" />
+		<flightGroup target="OMEGA" globalGroup="1" />
+		<flightGroup target="PHI" globalGroup="1" />
+		<flightGroup target="ROUH" globalGroup="1" />
+		<flightGroup target="THETA" globalGroup="1" />
+		<flightGroup target="ETA" globalGroup="1" />
+		<flightGroup target="IOTA" globalGroup="1" />
+		<flightGroup target="ZETA" globalGroup="1" />
+	</mission>
+</sidecar>
