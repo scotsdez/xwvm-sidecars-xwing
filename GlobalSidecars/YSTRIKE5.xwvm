@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="YSTRIKE5">
+		<messages>
+			<message delay="1" color="Rebel">
+				All wings, this is Red leader.
+			</message>
+			<message delay="2" color="Rebel">
+				Form up and stay alert for the convoy, it'll arrive any minute.
+			</message>
+			<message delay="3" color="#df0">
+				What do you think it’s carrying?
+			</message>
+			<message delay="4" color="#1890ff">
+				I heard rumours that the Empire is building something...
+			</message>
+			<message delay="5" color="#1890ff">
+				...some kind of new, bigger Star Destroyer.
+			</message>
+			<message delay="6" color="#1890ff">
+				Maybe it’s materials for that.
+			</message>
+			<message delay="7" color="#df0">
+				You should know better than to believe random rumours!
+			</message>
+			<message delay="8" color="#df0">
+				Besides, they’ve been saying that for years now...
+			</message>
+			<message delay="9" color="#df0">
+				...and I’ve not seen any sign of it yet.
+			</message>
+			<message delay="10" color="Rebel">
+				Whatever it is...
+			</message>
+			<message delay="11" color="Rebel">
+				...you can bet it isn’t going to be good news for the Alliance.
+			</message>
+			<message delay="1" color="#1890ff">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="HYKO" condition="Arrived" />
+				</triggers>
+				There's the convoy, right on time!
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="HYKO" condition="Arrived" />
+				</triggers>
+				I see it. All wings, fire at will.
+			</message>
+			<message delay="2" color="#1890ff">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="TAO" condition="Arrived" />
+				</triggers>
+				Watch out for those escorts!
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="FiftyPercent" type="GlobalGroup" variable="1" condition="Destroyed" />
+				</triggers>
+				Half of the convoy has been destroyed, keep it up!
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="1" condition="Inspected" />
+				</triggers>
+				Great initiative, you managed to inspect the whole convoy!
+			</message>
+			<?xwvm clearGoalMessages?>
+			<message color="#dfd" goal="primarySuccess">
+				The convoy has been destroyed, excellent work.
+			</message>
+			<message delay="1" color="#dfd" goal="primarySuccess">
+				That should put a dent in whatever the Empire is working on.
+			</message>
+			<message delay="2" color="#dfd" goal="primarySuccess">
+				Return to the Defiance for debriefing.
+			</message>
+			<?xwvm clearGoalMessages?>
+			<message color="#dfd" goal="primaryFail">
+				The Imperial convoy wasn’t destroyed.
+			</message>
+			<message delay="1" color="#dfd" goal="primaryFail">
+				Who knows what they’ll do with these supplies in their hands.
+			</message>
+			<message delay="2" color="#dfd" goal="primaryFail">
+				All fighters, abort mission and return to base.
+			</message>
+		</messages>
+		<flightGroup target="HYKO" globalGroup="1" />
+		<flightGroup target="KAPPA" globalGroup="1" />
+		<flightGroup target="EPSILON" globalGroup="1" />
+		<flightGroup target="THE TONE" globalGroup="1" />
+		<flightGroup target="UHURU" globalGroup="1" />
+	</mission>
+</sidecar>

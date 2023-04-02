@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="WAAGGR1">
+		<messages>
+			<message delay="1" color="Rebel">
+				Look out, you’ve already got company!
+			</message>
+			<message delay="2" color="Rebel">
+				The skill of the enemy pilots will increase with each new wave.
+			</message>
+			<message delay="3" color="Rebel">
+				Take out each craft as quickly as possible.
+			</message>
+			<message delay="4" color="Rebel">
+				Otherwise, you may find yourself being overwhelmed.
+			</message>
+			<message delay="5" color="Rebel">
+				Remember to manage your power levels carefully.
+			</message>
+		
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="GlobalGroup" variable="2" condition="Arrived" />
+				</triggers>
+				These new enemies are skilled to a flight officer level.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="GlobalGroup" variable="3" condition="Arrived" />
+				</triggers>
+				Veteran pilots are controlling this new wave of craft.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="GlobalGroup" variable="4" condition="Arrived" />
+				</triggers>
+				These ace pilots will give you more of a challenge.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="GlobalGroup" variable="5" condition="Arrived" />
+				</triggers>
+				Now for a real test!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="GlobalGroup" variable="5" condition="Arrived" />
+				</triggers>
+				Some of our top pilots are controlling these simulated craft.
+			</message>
+
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="PlayerCraft" type="FlightGroup" variable="RED 1" condition="ZeroShields" />
+				</triggers>
+				You’ve taken damage - adjust your shields.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="PlayerCraft" type="FlightGroup" variable="RED 1" condition="ZeroShields" />
+				</triggers>
+				And don’t fly in straight lines for more than a few seconds.
+			</message>
+
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				Outstanding, you’ve demonstrated excellent dogfighting skills.
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				You can hyperspace home to end the mission.
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primaryFail">
+				One of the targets escaped into hyperspace.
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				You'll need to retry the mission.
+			</message>
+			<message delay="2" color="Rebel" goal="primaryFail">
+				Be prepared to intercept fleeing craft if they've taken damage.
+			</message>
+			
+		</messages>
+		<flightGroup target="NOVICE" globalGroup="1" />
+		<flightGroup target="NOVICE_2" globalGroup="1" />
+		<flightGroup target="NOVICE_3" globalGroup="1" />
+		<flightGroup target="OFFICER" globalGroup="2" />
+		<flightGroup target="OFFICER_2" globalGroup="2" />
+		<flightGroup target="OFFICER_3" globalGroup="2" />
+		<flightGroup target="VETERAN" globalGroup="3" />
+		<flightGroup target="VETERAN_2" globalGroup="3" />
+		<flightGroup target="VETERAN_3" globalGroup="3" />
+		<flightGroup target="ACE" globalGroup="4" />
+		<flightGroup target="ACE_2" globalGroup="4" />
+		<flightGroup target="ACE_3" globalGroup="4" />
+		<flightGroup target="TOP ACE" globalGroup="5" />
+		<flightGroup target="TOP ACE_2" globalGroup="5" />
+		<flightGroup target="TOP ACE_3" globalGroup="5" />
+	</mission>
+</sidecar>

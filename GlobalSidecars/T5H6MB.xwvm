@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="T5H6MB">
+		<messages>
+			<message color="Rebel">
+				This is it. Eliminate those TIEs, or get past them somehow.
+			</message>
+			<message delay="1" color="Rebel">
+				Then turn left, and make your way along the trench.
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				Yes! Way to go, that was a great shot, one in a million!
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				Get out of there as quickly as you can!
+			</message>	
+		</messages>
+	</mission>
+</sidecar>

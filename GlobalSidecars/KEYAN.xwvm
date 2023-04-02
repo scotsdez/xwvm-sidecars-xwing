@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="KEYAN">
+		<messages>
+			<message delay="1" color="Rebel">
+				The corvette is dead ahead, and so are its escorts.
+			</message>
+			<message delay="2" color="Rebel">
+				Make sure you take out TIE fighter groups Delta and Gamma.
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="TALON" condition="Disabled" />
+				</triggers>
+				The corvette has been disabled.
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="GlobalGroup" variable="2" condition="Attacked" />
+				</triggers>
+				This is Gold group, we’re taking fire!
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="1" condition="Destroyed" />
+				</triggers>
+				TIE Fighter escorts have been destroyed.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="LIBERATOR" condition="FiftyHull" />
+				</triggers>
+				Liberator to all flight groups, we’ve taken heavy damage!
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="LIBERATOR" condition="Destroyed" />
+				</triggers>
+				This is the Liberator, we’re going down, we’re -
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="STORM UNIT" condition="Arrived" />
+				</triggers>
+				Storm Unit to Red group, we’re heading for the Talon now.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="STORM UNIT" condition="Docked" />
+				</triggers>
+				This is Storm Unit, we got what we came for.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="STORM UNIT" condition="Attacked" />
+				</triggers>
+				This is Storm Unit, we’re under attack, please assist!
+			</message>
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				Excellent work, we captured the Imperial intelligence holos!
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				Hyperspace back to base for debriefing.
+			</message>
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primaryFail">
+				We failed to get the holos.
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				Who knows what vital information they might have held.
+			</message>
+			<message delay="2" color="Rebel" goal="primaryFail">
+				Abort mission and report back for debriefing, immediately.
+			</message>
+		</messages>
+		<flightGroup target="DELTA" globalGroup="1" />
+		<flightGroup target="GAMMA" globalGroup="1" />
+		<flightGroup target="GOLD 1" globalGroup="2" />
+		<flightGroup target="GOLD 2" globalGroup="2" />
+	</mission>
+</sidecar>

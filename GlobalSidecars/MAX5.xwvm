@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="MAX5">
+		<messages>
+			<message delay="1" color="Rebel">
+				Look sharp, we’ve got TIEs incoming!
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="ALPHA" condition="Destroyed" />
+				</triggers>
+				We took out TIE Fighter group Alpha!
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="BETA" condition="Destroyed" />
+				</triggers>
+				See you later, TIE Fighter Beta!
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="GAMMA" condition="Destroyed" />
+				</triggers>
+				That’s TIE group Gamma gone!
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AllNonPlayerCraft" type="FlightGroup" variable="RED" condition="Destroyed" />
+				</triggers>
+				Both of your wingmen are gone, it’s up to you now!
+			</message>
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				Well done, that was some exceptional flying.
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				Return to base for debriefing.
+			</message>
+		</messages>
+	</mission>
+</sidecar>

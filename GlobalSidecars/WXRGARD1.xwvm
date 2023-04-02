@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="WXRGARD1">
+		<messages audioPath="VOICE/WXRGARD1" audioFormat="OGG">  
+			<message color="Rebel">
+				Command to all ships: evacuate the area immediately!
+			</message>
+			<message delay="1" color="Rebel">
+				Red group, provide cover for the evacuation.
+			</message>
+			<message delay="2" color="Rebel">
+				Copy that, Admiral. Red 2, stay alert.
+			</message>
+			<message delay="3" color="Rebel">
+				This is Gold 3: assuming escort of the High Command’s shuttles.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="INVINCIBLE" condition="Arrived" />
+				</triggers>
+				Reading a new contact coming out of hyperspace!
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MAHAN" condition="Destroyed" />
+				</triggers>
+				This is the Mahan, we’re -- [static]
+			</message>
+			<message delay="1" color="Imperial">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MAHAN" condition="Destroyed" />
+				</triggers>
+				Attention, Rebel ships.
+			</message>
+			<message delay="2" color="Imperial">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MAHAN" condition="Destroyed" />
+				</triggers>
+				This is the Invincible, Admiral Claxton in command.
+			</message>
+			<message delay="3" color="Imperial">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MAHAN" condition="Destroyed" />
+				</triggers>
+				I trust the situation is clear to you.
+			</message>
+			<message delay="4" color="Imperial">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MAHAN" condition="Destroyed" />
+				</triggers>
+				Stand down and prepare to be boarded.
+			</message>
+			<message delay="5" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MAHAN" condition="Destroyed" />
+				</triggers>
+				That’ll be the day! Red 2, let’s engage those fighters.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="GAMMA" condition="Arrived" />
+				</triggers>
+				Red group, the Invincible has launched bombers!
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="GAMMA" condition="Arrived" />
+				</triggers>
+				Copy that, Admiral, I see them. Red 2, you know what to do.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ARROYO" condition="Attacked" />
+				</triggers>
+				This is Arroyo, we’re under attack!
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ARROYO" condition="ZeroShields" />
+				</triggers>
+				One of the shuttles has lost its shields!
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ARROYO" condition="FiftyHull" />
+				</triggers>
+				You need to protect those shuttles!
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="GOLD 3" condition="Destroyed" />
+				</triggers>
+				This is Gold 3, I’m going down!
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="SONNEL" condition="Destroyed" />
+				</triggers>
+				The Sonnel has been lost with all hands.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RHOON" condition="CompletedMission" />
+				</triggers>
+				This is Rhoon, we’re making our jump now. Thanks for the assist, Red group.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="SONNEL" condition="CompletedMission" />
+				</triggers>
+				Sonnel to X-Wing Red, we’re away.
+			</message>
+			<?xwvm clearGoalMessages?>
+			<message color="#dfd" goal="primarySuccess">
+				Well done Red 2, the High Command has made it into hyperspace safely.
+			</message>
+			<message delay="1" color="#dfd" goal="primarySuccess">
+				Should we bail, or mop up a few more fighters?
+			</message>
+			<?xwvm clearGoalMessages?>
+			<message color="#dfd" goal="primaryFail">
+				We lost the High Command. Without them, the Rebellion is surely doomed.
+			</message>
+		</messages>
+	</mission>
+</sidecar>

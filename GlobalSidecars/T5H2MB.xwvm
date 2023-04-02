@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="T5H2MB">
+		<messages>
+			<message delay="0" color="Rebel">
+				Are those TIE fighters... running away?
+			</message>
+			<message delay="1" color="Rebel">
+				Never thought I’d see the day!
+			</message>
+			<message delay="2" color="Rebel">
+				Looks like the convoy is arriving now.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="FiftyPercent" type="GlobalGroup" variable="1" condition="Destroyed" />
+				</triggers>
+				That’s half of the target freighters destroyed.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="1" condition="Destroyed" />
+				</triggers>
+				Somewhere, an Imperial accountant just cried out in terror...
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="1" condition="Destroyed" />
+				</triggers>
+				...counting the cost of what we just destroyed.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="FiftyPercent" type="GlobalGroup" variable="2" condition="Destroyed" />
+				</triggers>
+				Half of the escorting corvettes are down.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="2" condition="Destroyed" />
+				</triggers>
+				The escorts have been dealt with.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BUFFALO" condition="Attacked" />
+				</triggers>
+				Are you sure we want to attack those?
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="NINJA" condition="Arrived" />
+				</triggers>
+				Ninja reporting, starting our boarding run.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="NINJA" condition="Docked" />
+				</triggers>
+				We’ve got the supplies and we’re heading out.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="TAU" condition="Arrived" />
+				</triggers>
+				Those Y-Wings don’t look very friendly!
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				Scratch one Imperial convoy!
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				Good work, head home.
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message delay="0" color="Rebel" goal="primaryFail">
+				The convoy was not destroyed. Petrakis will be a stronghold now!
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				Report back to base for debriefing.
+			</message>
+		</messages>
+		<flightGroup target="OCEAN" globalGroup="1" />
+		<flightGroup target="TEVE" globalGroup="1" />
+		<flightGroup target="MANX" globalGroup="2" />
+		<flightGroup target="HORNET" globalGroup="2" />
+	</mission>
+</sidecar>

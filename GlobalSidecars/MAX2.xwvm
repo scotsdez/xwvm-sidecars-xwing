@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="MAX2">
+		<messages>
+			<message delay="0" color="Rebel">
+				Go to full throttle, and engage those TIE Bombers!
+			</message>
+
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MALICE" condition="CompletedMission" />
+				</triggers>
+				The Malice is leaving the area!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MALICE" condition="CompletedMission" />
+				</triggers>
+				The Empire is clearly overconfident about their chances here.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MALICE" condition="CompletedMission" />
+				</triggers>
+				Why don’t you show them how wrong they are?
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="MU" condition="Destroyed" />
+				</triggers>
+				Great work, the TIE Bombers have been destroyed.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="1" condition="Destroyed" />
+				</triggers>
+				All TIE Fighters have been eliminated!
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MARIA" condition="Attacked" />
+				</triggers>
+				The shuttle Maria has taken hits - protect it!
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MARIA" condition="ZeroShields" />
+				</triggers>
+				The shuttle’s shields have failed!
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MARIA" condition="FiftyHull" />
+				</triggers>
+				The shuttle can’t take much more damage!
+			</message>
+			
+			
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				Well done, the shuttle made the jump to safety.
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				When you’re ready, hyperspace home.
+			</message>
+
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primaryFail">
+				You failed to protect the Admiral’s shuttle.
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				Report back for immediate debriefing.
+			</message>
+		</messages>
+	</mission>
+</sidecar>

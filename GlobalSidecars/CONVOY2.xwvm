@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="CONVOY2">
+		<messages>
+			<message delay="1" color="Rebel">
+				Protect Red 1 from those TIE fighters!
+			</message>
+			
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="TwentyFivePercent" type="GlobalGroup" variable="1" condition="Destroyed" />
+				</triggers>
+				The first of the freighters has been destroyed.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="FiftyPercent" type="GlobalGroup" variable="1" condition="Destroyed" />
+				</triggers>
+				Two of the freighters have now been eliminated.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="1" condition="Destroyed" />
+				</triggers>
+				All of the freighters have been successfully destroyed.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="GlobalGroup" variable="1" condition="CompletedMission" />
+				</triggers>
+				The mission is a failure, the freighters managed to escape!
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RED 1" condition="ZeroShields" />
+				</triggers>
+				Red 1 needs some cover!
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RED 1" condition="Destroyed" />
+				</triggers>
+				Red 1 has been destroyed, the mission is a failure!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RED 1" condition="Destroyed" />
+				</triggers>
+				You must protect your wingmen!
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RED 1" condition="Destroyed" />
+				</triggers>
+				They are vital to mission success, and your survival!
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message delay="0" color="Rebel" goal="primarySuccess">
+				Well done, the mission is complete.
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				Hyperspace back for debriefing.
+			</message>
+			<?xwvm clearGoalMessages?>
+			<message delay="3" color="Rebel" goal="primaryFail">
+				Report back for immediate debriefing.
+			</message>
+
+		</messages>
+		<flightGroup target="CENTURY 1" globalGroup="1" />
+		<flightGroup target="CENTURY 2" globalGroup="1" />
+		<flightGroup target="CENTURY 3" globalGroup="1" />
+		<flightGroup target="ALPHA" globalGroup="2" />
+		<flightGroup target="BETA" globalGroup="2" />
+		<flightGroup target="GAMMA" globalGroup="2" />
+		<flightGroup target="DELTA" globalGroup="2" />
+	</mission>
+</sidecar>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="WARECON1">
+		<messages>
+			<message delay="1" color="Rebel">
+				Okay, proceed with the cargo inspection.
+			</message>
+			<message delay="2" color="Rebel">
+				Be wary of a potential ambush.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="GlobalGroup" variable="1" condition="Arrived" />
+				</triggers>
+				TIEs just launched from one of the containers - it’s a trap!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MERCILESS" condition="Arrived" />
+				</triggers>
+				An Imperial ship has arrived!
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MERCILESS" condition="Arrived" />
+				</triggers>
+				Expect it to begin launching fighters.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MERCILESS" condition="Arrived" />
+				</triggers>
+				Recommend you focus on completing your mission.
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="FiftyPercent" type="CraftType" variable="Container" condition="Inspected" />
+				</triggers>
+				Half of the containers have been inspected, keep it up!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="CraftType" variable="Container" condition="Inspected" />
+				</triggers>
+				All containers in the area have been inspected, well done.
+			</message>
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				Great work, you’ve really beaten the odds!
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				Suggest you hyperspace home as soon as possible.
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message delay="0" color="Rebel" goal="primaryFail">
+				You failed to ID the cargo.
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				Report back for immediate debriefing.
+			</message>
+			
+		</messages>
+		<flightGroup target="ALPHA" globalGroup="1" />
+		<flightGroup target="BETA" globalGroup="1" />
+	</mission>
+</sidecar>

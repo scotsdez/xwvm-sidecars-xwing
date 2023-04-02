@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="T5H3MB">
+		<messages>
+			<message delay="1" color="Rebel">
+				The Priam is dead ahead. Watch out for the surrounding minefield.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="CraftCategory" variable="Mine" condition="Destroyed" />
+				</triggers>
+				Great job taking out the mines!
+			</message>
+			<message delay="25" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BETA" condition="Arrived" />
+				</triggers>
+				The Priam just launched a TIE Bomber!
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="PRIAM" condition="Disabled" />
+				</triggers>
+				Great work, the Priam has been disabled.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="PRIAM" condition="Disabled" />
+				</triggers>
+				Our forces will now arrive to capture the vessel.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MU" condition="Arrived" />
+				</triggers>
+				Enemy reinforcements just arrived, protect the capture teams!
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="OMEGA" condition="Arrived" />
+				</triggers>
+				Those transports are going for the Priam!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="OMEGA" condition="Arrived" />
+				</triggers>
+				We successfully captured the Priam, cover it while it enters hyperspace.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="PRIAM" condition="FiftyHull" />
+				</triggers>
+				The Priam is taking major damage, make sure it isn't destroyed!
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				The operation was a success - congratulations!
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				This is a great victory for the Alliance.
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				Return to base.
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message delay="0" color="Rebel" goal="primaryFail">
+				We didn’t capture the Priam as planned.
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				So much for the Alliance’s newest starfighter...
+			</message>
+			<message delay="2" color="Rebel" goal="primaryFail">
+				Report back immediately for debriefing.
+			</message>
+		</messages>
+	</mission>
+</sidecar>
