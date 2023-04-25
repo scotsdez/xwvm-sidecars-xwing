@@ -49,7 +49,7 @@
 				Excellent work, you’ve destroyed the repair depot.
 			</message>
 			<message delay="1" color="Rebel" goal="primarySuccess">
-				Hyperspace home, before enemy reinforcements arrive.
+				Mission complete, hyperspace home.
 			</message>
 			
 		</messages>

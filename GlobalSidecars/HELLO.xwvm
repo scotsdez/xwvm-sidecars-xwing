@@ -53,13 +53,13 @@
 				<triggers>
 					<trigger amount="AtLeastOne" type="FlightGroup" variable="KARINNE" condition="Attacked" />
 				</triggers>
-				We’re under fire from the TIE Bombers, please assist us!
+				We’re under fire, please assist us!
 			</message>
 			<message color="Rebel">
 				<triggers>
 					<trigger amount="AtLeastOne" type="FlightGroup" variable="KARINNE" condition="FiftyHull" />
 				</triggers>
-				We’ve taken hull damage, please assist!
+				We’ve taken hull damage!
 			</message>
 			
 			<?xwvm clearGoalMessages?>
