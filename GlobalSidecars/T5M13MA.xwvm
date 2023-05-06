@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="T5M13MA">
+		<messages>
+			<message delay="1" color="Rebel">
+				Blue 5 to Red group, thanks for the relief, and good luck.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="INTERCEPTOR" condition="Arrived" />
+				</triggers>
+				We’ve got company!
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="INTERCEPTOR" condition="Destroyed" />
+				</triggers>
+				Magnificent, the frigate Interceptor has been eliminated!
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ALPHA" condition="Arrived" />
+				</triggers>
+				They’re launching bombers! Red 2, let's move to intercept.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BETA" condition="Arrived" />
+				</triggers>
+				We’ve got TIE Interceptors on the way!
+			</message>
+			<message delay="3" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="DELTA" condition="Arrived" />
+				</triggers>
+				This is the Radley, TIE Fighter Delta is headed our way!
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RADLEY" condition="Attacked" />
+				</triggers>
+				This is the Radley, we’re taking fire!
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RADLEY" condition="ZeroShields" />
+				</triggers>
+				Radley to Red group, our shields are down!
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RADLEY" condition="FiftyHull" />
+				</triggers>
+				Our hull is critical, we can’t hold on much longer!
+			</message>			
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="CATHLEEN" condition="Arrived" />
+				</triggers>
+				Cathleen to Alliance craft, we have arrived.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="GOLD" condition="Arrived" />
+				</triggers>
+				We’re launching Gold squadron to attack the Imperial frigate.
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				The Radley has completed its mission.
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				Thanks for your assistance, Red group.
+			</message>	
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				We’ll get those B-Wings online and ready as soon as possible.
+			</message>	
+			<message delay="3" color="Rebel" goal="primarySuccess">
+				Stay to help take on the remaining Imperials, or return to base.
+			</message>	
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primaryFail">
+				The Radley has been lost, and with it, the new B-Wings.
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				We’ll struggle to defend ourselves without those new fighters.
+			</message>	
+			<message delay="2" color="Rebel" goal="primaryFail">
+				Return to base as soon as possible for debriefing.
+			</message>
+		</messages>
+	</mission>
+</sidecar>
