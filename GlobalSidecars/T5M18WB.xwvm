@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="T5M18WB">
+		<messages>
+			<message delay="0" color="Rebel">
+				Red squadron, you’re up. Go for the shield generators!
+			</message>
+
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="GOLD" condition="Arrived" />
+				</triggers>
+				Gold leader to Red group, we’ve got your back.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="DINKO 9" condition="Arrived" />
+				</triggers>
+				Watch out for those corvettes!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="EPSILON" condition="Arrived" />
+				</triggers>
+				The Imperials just sent in more reinforcements!
+			</message>
+			
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RELENTLESS" condition="ZeroShields" />
+				</triggers>
+				The Relentless' shields are down, press the attack!
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Arrived" />
+				</triggers>
+				This is Blue leader: starting our attack run on the Relentless.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Arrived" />
+				</triggers>
+				Blue 3, focus on the corvettes.
+			</message>
+			<message delay="3" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Arrived" />
+				</triggers>
+				Roger, Blue leader.
+			</message>
+			
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RELENTLESS" condition="FiftyHull" />
+				</triggers>
+				The Relentless' hull is in critical condition!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RELENTLESS" condition="Disabled" />
+				</triggers>
+				Good thinking, the Relentless has been disabled!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RELENTLESS" condition="Disabled" />
+				</triggers>
+				It can't escape now!
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				The Relentless has been destroyed, well done!
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				This victory will leave the Empire reeling!
+			</message>	
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				Return to base for preparation on the final phase of the plan.
+			</message>		
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primaryFail">
+				We failed to destroy the Relentless.
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				With it still operational, our forces won’t remain undetected.
+			</message>	
+			<message delay="2" color="Rebel" goal="primaryFail">
+				All fighters, abort mission and return to base.
+			</message>
+		</messages>
+		<flightGroup target="DINKO" globalGroup="1" />
+		<flightGroup target="DINKO 4" globalGroup="1" />
+		<flightGroup target="DINKO 7" globalGroup="1" />
+		<flightGroup target="DINKO 9" globalGroup="1" />
+	</mission>
+</sidecar>

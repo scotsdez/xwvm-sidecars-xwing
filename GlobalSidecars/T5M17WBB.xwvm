@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="T5M17WBB">
+		<messages>
+			<message delay="0" color="Rebel">
+				Red group, let’s make this quick.
+			</message>
+			<message delay="1" color="Rebel">
+				Destroy the containers as they’re dropped off.
+			</message>
+			<message delay="2" color="Rebel">
+				Then get out of there as fast as you can.
+			</message>
+			
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="CHI 4" condition="Arrived" />
+				</triggers>
+				The last container is being dropped off now.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="FiftyPercent" type="GlobalGroup" variable="1" condition="Destroyed" />
+				</triggers>
+				Half of the containers have been destroyed, keep at it!
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="SeventyFivePercent" type="GlobalGroup" variable="1" condition="Destroyed" />
+				</triggers>
+				Only one container left now!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="CHI 2" condition="Arrived" />
+				</triggers>
+				Another container has just arrived.
+			</message>
+			
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RELENTLESS" condition="ZeroShields" />
+				</triggers>
+				Your enthusiasm is commendable, Red leader.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RELENTLESS" condition="ZeroShields" />
+				</triggers>
+				But destroying the Relentless is the next phase of the operation.
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				The TIE Interceptors have all been destroyed, well done!
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				We’ll be able to take on the Relentless head-on now!
+			</message>	
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				Return to base to prepare for the next part of the operation.
+			</message>		
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primaryFail">
+				The TIE Interceptors weren’t destroyed.
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				With them deployed, it’s doubtful we could prevail in a direct assault.
+			</message>	
+			<message delay="2" color="Rebel" goal="primaryFail">
+				Abort mission and return to base.
+			</message>
+		</messages>
+		<flightGroup target="CHI 1" globalGroup="1" />
+		<flightGroup target="CHI 2" globalGroup="1" />
+		<flightGroup target="CHI 3" globalGroup="1" />
+		<flightGroup target="CHI 4" globalGroup="1" />
+	</mission>
+</sidecar>

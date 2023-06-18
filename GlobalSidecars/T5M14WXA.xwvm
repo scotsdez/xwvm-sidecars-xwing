@@ -5,9 +5,6 @@
 			<message delay="2" color="Rebel">
 				Okay, let’s make this look good.
 			</message>
-			<message delay="48" color="Rebel">
-				The corvettes' docking operation is underway.
-			</message>
 			<message color="Rebel">
 				<triggers>
 					<trigger amount="AtLeastOne" type="FlightGroup" variable="MAYHEM" condition="Arrived" />

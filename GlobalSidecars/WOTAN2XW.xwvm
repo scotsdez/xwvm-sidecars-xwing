@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="WOTAN2XW">
+		<messages>
+			<message delay="0" color="Rebel">
+				This is Gold Leader. All flight groups, maintain formation.
+			</message>
+			<message delay="1" color="Rebel">
+				We’ll take out the freighters.
+			</message>
+			<message delay="2" color="Rebel">
+				Red group will destroy the transports.
+			</message>
+			<message delay="3" color="Rebel">
+				Blue group will provide cover.
+			</message>
+			<message delay="4" color="Rebel">
+				Stay sharp, and don't let anything escape!
+			</message>
+			
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="FiftyPercent" type="FlightGroup" variable="EPSILON" condition="Destroyed" />
+				</triggers>
+				Half of the transports from Epsilon have been eliminated.
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="FiftyPercent" type="FlightGroup" variable="M-S" condition="Destroyed" />
+				</triggers>
+				We’ve taken out half of the freighters carrying Walkers.
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="M-S" condition="Destroyed" />
+				</triggers>
+				All of the walker-carrying freighters have been eradicated.
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="EPSILON" condition="Destroyed" />
+				</triggers>
+				The entirety of group Epsilon has been destroyed.
+			</message>
+			
+			
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESOLUTE" condition="Arrived" />
+				</triggers>
+				We're picking up a Star Destroyer entering the area!
+			</message>			
+
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="SEINAR" condition="Arrived" />
+				</triggers>
+				Additional freighters arrived: engage as secondary targets.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="OMICRON" condition="Arrived" />
+				</triggers>
+				New transports dropped in: consider as secondary targets.
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				Excellent, half of the Imperial convoy has been disposed of.
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				Including all of the high priority targets.
+			</message>	
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				Return to base, or stay and help with the rest of the convoy.
+			</message>		
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primaryFail">
+				We failed to destroy key targets in the Imperial convoy.
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				The Empire will be able to use these assets against us.
+			</message>	
+			<message delay="2" color="Rebel" goal="primaryFail">
+				All fighters, abort and return to base.
+			</message>
+		</messages>
+	</mission>
+</sidecar>

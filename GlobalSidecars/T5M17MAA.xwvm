@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="T5M17MAA">
+		<messages>
+			<message delay="0" color="Rebel">
+				Red leader, I’ve got eyes on the convoy.
+			</message>
+			<message delay="1" color="Rebel">
+				Three freighters and three corvettes, this should be easy!
+			</message>
+			<message delay="2" color="Rebel">
+				Oh, and some TIE Bombers have spotted us.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="DOTERMIN" condition="Arrived" />
+				</triggers>
+				Three more freighters have arrived, destroy them too!
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="YOGI" condition="Arrived" />
+				</triggers>
+				Yogi here, we’re engaging the convoy.
+			</message>
+			
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="YOGI" condition="Destroyed" />
+				</triggers>
+				We’re losing it, argh--
+			</message>
+			
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="WESAL" condition="Arrived" />
+				</triggers>
+				Detecting Imperial reinforcements arriving in the area.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="OMICRON" condition="Arrived" />
+				</triggers>
+				There’s an Imperial transport going for the corvettes!
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="SIGMA" condition="Arrived" />
+				</triggers>
+				Beware, an enemy shuttle is on an intercept course.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="SIGMA" condition="Inspected" />
+				</triggers>
+				Imperial officers are on board that shuttle, eliminate it!
+			</message>
+			<message color="Rebel">
+				<triggers operator="or">
+					<trigger amount="HundredPercent" type="FlightGroup" variable="SORNSEN" condition="Destroyed" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="DOTERMIN" condition="Destroyed" />
+				</triggers>
+				The first group of freighters has been wiped out.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="SORNSEN" condition="Destroyed" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="DOTERMIN" condition="Destroyed" />
+				</triggers>
+				The second group of freighters has been obliterated.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="FiftyPercent" type="FlightGroup" variable="SHURIK" condition="Destroyed" />
+				</triggers>
+				Two of the Imperial corvettes have been eradicated, keep going!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="1" condition="Inspected" />
+				</triggers>
+				All cargo has been identified, Intelligence will appreciate that!
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				The convoy has been eliminated, fantastic job!
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				Our attack on the Relentless stands a better chance of succeeding.
+			</message>	
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				All fighters, return to base for debriefing.
+			</message>		
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primaryFail">
+				Some of the Imperial convoy wasn’t destroyed.
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				The Relentless will be able to repel our planned attack.
+			</message>	
+			<message delay="2" color="Rebel" goal="primaryFail">
+				Abort mission and return to base immediately.
+			</message>
+		</messages>
+		<flightGroup target="SORNSEN" globalGroup="1" />
+		<flightGroup target="DOTERMIN" globalGroup="1" />
+	</mission>
+</sidecar>

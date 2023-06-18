@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="T5M16WB">
+		<messages>
+			<message delay="0" color="Rebel">
+				Destroy all probes, and equipment housed in the containers.
+			</message>
+			<message delay="1" color="Rebel">
+				Good luck, Red group.
+			</message>
+			
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="GOLD" condition="Arrived" />
+				</triggers>
+				Gold leader here, we've got your back, Red squadron.
+			</message>
+			
+			<message delay="0" color="Rebel">
+				<triggers operator="or">
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="1" condition="Destroyed" />
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="2" condition="Destroyed" />
+				</triggers>
+				The first group of equipment has been completely destroyed.
+			</message>
+			
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ALPHA" condition="Arrived" />
+				</triggers>
+				The Relentless has just launched some Advanced TIEs.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ALPHA" condition="Arrived" />
+				</triggers>
+				We'll watch your back, Red group, keep attacking the base!
+			</message>
+			
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="1" condition="Destroyed" />
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="2" condition="Destroyed" />
+				</triggers>
+				The second group of equipment has been vaporised.
+			</message>
+			
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="FiftyPercent" type="CraftType" variable="Probe" condition="Destroyed" />
+				</triggers>
+				Half of the probes have been destroyed, keep going!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="CraftType" variable="Probe" condition="Destroyed" />
+				</triggers>
+				Excellent, all of the probes have been eliminated.
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				The probe calibration base has been neutralised.
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				Red group, you have excelled yourselves again!
+			</message>	
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				Report back immediately, the next phase is about to begin.
+			</message>		
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primaryFail">
+				The probe calibration base wasn’t destroyed.
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				The Imperials will be able to track the movements of our fleet.
+			</message>	
+			<message delay="2" color="Rebel" goal="primaryFail">
+				It will be impossible for us to establish a base.
+			</message>
+			<message delay="3" color="Rebel" goal="primaryFail">
+				Abort mission and return to the hangar immediately.
+			</message>
+		</messages>
+		<flightGroup target="CHI 1" globalGroup="1" />
+		<flightGroup target="CHI 2" globalGroup="1" />
+		<flightGroup target="CHI 3" globalGroup="1" />
+		<flightGroup target="CHI 4" globalGroup="1" />
+		<flightGroup target="XI 1" globalGroup="2" />
+		<flightGroup target="XI 2" globalGroup="2" />
+		<flightGroup target="XI 3" globalGroup="2" />
+		<flightGroup target="XI 4" globalGroup="2" />
+	</mission>
+</sidecar>

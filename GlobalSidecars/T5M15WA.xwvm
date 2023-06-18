@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="T5M15WA">
+		<messages>
+			<message delay="0" color="Rebel">
+				Okay, Red group, clear a path for the B-Wings.
+			</message>
+			<message delay="1" color="Rebel">
+				The Juvaini is being resupplied: a perfect attack opportunity!
+			</message>
+			<message delay="2" color="Rebel">
+				Time to get revenge after it attacked our B-Wing transfer!
+			</message>
+			
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="ZeroShields" />
+				</triggers>
+				We're taking a lot of fire, Red group!
+			</message>
+			
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="CraftType" variable="TIEInterceptor" condition="Arrived" />
+				</triggers>
+				The Juvaini's launching TIE Interceptors!
+			</message>
+			
+			
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="SWEEPER" condition="Arrived" />
+				</triggers>
+				That looks like a standard supply drop, we can ignore it.
+			</message>
+			<message delay="3" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="SWEEPER" condition="Arrived" />
+				</triggers>
+				We have more important tasks on hand!
+			</message>
+			
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="GHOST" condition="Arrived" />
+				</triggers>
+				Some Imperial reinforcements have entered the area!
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				Goodbye Juvaini, and good riddance.
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				The Rebel Alliance sends its regards.
+			</message>	
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				Great work, Red group. Return to base for debriefing.
+			</message>		
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primaryFail">
+				The Juvaini wasn't destroyed.
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				The frigate is still active in the Relentless' task force.
+			</message>	
+			<message delay="2" color="Rebel" goal="primaryFail">
+				This will continue to threaten our operations in this sector.
+			</message>
+			<message delay="3" color="Rebel" goal="primaryFail">
+				All fighters, abort mission immediately and return to base.
+			</message>
+		</messages>
+	</mission>
+</sidecar>

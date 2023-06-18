@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="WOTAN3BW">
+		<messages>
+			<message delay="0" color="Rebel">
+				All flight groups, proceed with the attack.
+			</message>
+			<message delay="1" color="Rebel">
+				Red One will attack the Star Destroyer's shield generators.
+			</message>
+			<message delay="2" color="Rebel">
+				Acknowledged, this is Gold Squadron setting up for our attack run.
+			</message>
+			<message delay="3" color="Rebel">
+				This is Blue leader, we'll engage the fighters.
+			</message>
+			<message delay="4" color="Rebel">
+				May the force be with you.
+			</message>
+			<message delay="5" color="Rebel">
+				A transport has been launched to dock with the containers.
+			</message>
+			<message delay="6" color="Rebel">
+				We should destroy it before it docks.
+			</message>
+			
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="SIGMA 1" condition="Destroyed" />
+				</triggers>
+				The Imperial supply transport has been taken care of.
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="KOTIATE" condition="ZeroShields" />
+				</triggers>
+				The Star Destroyer's shields are down!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="KOTIATE" condition="Disabled" />
+				</triggers>
+				Well done, the Star Destroyer has been disabled.
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="KOTIATE" condition="FiftyHull" />
+				</triggers>
+				The Kotiate's hull is critical, keep up the attack!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="KOTIATE" condition="Destroyed" />
+				</triggers>
+				Scratch one Star Destroyer, great work!
+			</message>
+				
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="LAMBDA" condition="Arrived" />
+				</triggers>
+				Two shuttles have launched from the Star Destroyer’s hangar.
+			</message>			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="LAMBDA" condition="Arrived" />
+				</triggers>
+				Consider both as primary targets, and don't let them escape!
+			</message>
+
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="LAMBDA" condition="Identified" />
+				</triggers>
+				Lambda is carrying the senior officers from the Kotiate.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="LAMBDA" condition="Identified" />
+				</triggers>
+				Make sure you don't let them get away!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="LAMBDA" condition="Destroyed" />
+				</triggers>
+				The escaping shuttles have been eliminated.
+			</message>
+			
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BIRD OF PREY" condition="Arrived" />
+				</triggers>
+				Picking up an Imperial frigate entering the area.
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BIRD OF PREY" condition="ZeroShields" />
+				</triggers>
+				Shields are down on that frigate!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BIRD OF PREY" condition="Disabled" />
+				</triggers>
+				The frigate has been disabled, excellent!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BIRD OF PREY" condition="FiftyHull" />
+				</triggers>
+				The frigate has sustained heavy hull damage.
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BIRD OF PREY" condition="Destroyed" />
+				</triggers>
+				Magnificent, the frigate has been destroyed!
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				Mission accomplished, well done.
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				This will set the Imperials back significantly in this sector.
+			</message>	
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				Continue with the attack, or hyperspace home.
+			</message>		
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primaryFail">
+				Mission failed, not all primary targets were destroyed.
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				The Imperials will undoubtedly launch a counter-attack.
+			</message>	
+			<message delay="2" color="Rebel" goal="primaryFail">
+				All fighters, abort and return to base.
+			</message>
+		</messages>
+	</mission>
+</sidecar>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="T5M20MBA">
+		<messages>
+			<message delay="0" color="Rebel">
+				Cathleen to Red squadron, we're glad to see you!
+			</message>
+			<message delay="1" color="Rebel">
+				We’ve already got TIE Bombers inbound!
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="FANG" condition="Arrived" />
+				</triggers>
+				A group of corvettes just jumped in behind us!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="CATHLEEN" condition="ZeroShields" />
+				</triggers>
+				The Cathleen’s shields are down, you must protect it!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="CATHLEEN" condition="FiftyHull" />
+				</triggers>
+				The Cathleen has taken significant damage!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="CATHLEEN" condition="FiftyHull" />
+				</triggers>
+				We can’t take much more of this!
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="EPSILON" condition="Arrived" />
+				</triggers>
+				Transports carrying torpedoes are on an attack run!
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="EPSILON" condition="Arrived" />
+				</triggers>
+				All fighters, intercept immediately!
+			</message>
+			
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="CATHLEEN" condition="CompletedMission" />
+				</triggers>
+				We're making our jump now, thanks for the assistance!
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="1" condition="Destroyed" />
+				</triggers>
+				The transports have been eliminated.
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				The Cathleen has successfully jumped to hyperspace.
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				Thanks to you, the last of our fleet will reach our new base.
+			</message>	
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				Head for the rendezvous coordinates when you're ready.
+			</message>	
+			<message delay="3" color="Rebel" goal="primarySuccess">
+				I hope you remembered to pack your snow gear!
+			</message>				
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primaryFail">
+				The Cathleen has been lost with all hands.
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				This is a terrible tragedy, and a huge blow to the Rebellion.
+			</message>	
+			<message delay="2" color="Rebel" goal="primaryFail">
+				All fighters, abort immediately and head for the rendezvous.
+			</message>
+		</messages>
+		<flightGroup target="SIGMA" globalGroup="1" />
+		<flightGroup target="EPSILON" globalGroup="1" />
+	</mission>
+</sidecar>

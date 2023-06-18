@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="WOTAN1AW">
+		<messages>
+			<message delay="1" color="Rebel">
+				Red group, ID both containers in the asteroid field.
+			</message>
+			
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="XI" condition="Inspected" />
+				</triggers>
+				Excellent, you’ve verified the cargo in both containers.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RENHOEK" condition="Arrived" />
+				</triggers>
+				This is transport Renhoek, heading for the cargo now.
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RENHOEK" condition="Attacked" />
+				</triggers>
+				This is Renhoek, we're taking fire!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RHO" condition="Arrived" />
+				</triggers>
+				A gunboat patrol just hypered into the system, stop them!
+			</message>			
+
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RAPIER" condition="Arrived" />
+				</triggers>
+				New contact emerging from hyperspace... it's an Imperial frigate!
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Arrived" />
+				</triggers>
+				B-Wing Blue is launching to assault the frigate.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BETA" condition="Arrived" />
+				</triggers>
+				Bombers inbound, they're going for the cruiser!
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="FIRESTORM" condition="Arrived" />
+				</triggers>
+				Another frigate has arrived!
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="FIRESTORM" condition="Destroyed" />
+				</triggers>
+				The Firestorm is now blazing in space!
+			</message>
+
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="RENHOEK" condition="CompletedMission" />
+				</triggers>
+				The transports are aboard, the cruiser is preparing its hyper jump.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="STIMSENJ'KAT" condition="ZeroShields" />
+				</triggers>
+				The cruiser's shields are down!
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="STIMSENJ'KAT" condition="FiftyHull" />
+				</triggers>
+				The Stimsenj'kat can't take much more damage!
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				The operation was a success, well done, Red leader.
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				The cruiser has successfully loaded the cargo and escaped.
+			</message>	
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				Hyperspace home for debriefing.
+			</message>		
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primaryFail">
+				The operation was a failure.
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				We failed to identify and extract the cargo as planned.
+			</message>	
+			<message delay="2" color="Rebel" goal="primaryFail">
+				All Alliance craft, abort mission and retreat.
+			</message>
+		</messages>
+	</mission>
+</sidecar>

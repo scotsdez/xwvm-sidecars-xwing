@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="T5M19MB">
+		<messages>
+			<message delay="0" color="Rebel">
+				Red leader, the probe should be directly ahead.
+			</message>
+			<message delay="1" color="Rebel">
+				Vaporise it, and then head home.
+			</message>
+			
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="KAN" condition="Arrived" />
+				</triggers>
+				We're picking up hyperspace signals entering your sector.
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MU" condition="Arrived" />
+				</triggers>
+				Remember, your primary target is that probe.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MU" condition="Arrived" />
+				</triggers>
+				Everything else is secondary.
+			</message>
+			
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="TIE FIRE" condition="Arrived" />
+				</triggers>
+				Some Imperial corvettes just dropped into the system.
+			</message>
+			
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="CraftType" variable="Gunboat" condition="Destroyed" />
+				</triggers>
+				All of the gunboats have been eliminated.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ALPHA" condition="Arrived" />
+				</triggers>
+				TIE bombers headed your way!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="STRIKER" condition="Arrived" />
+				</triggers>
+				More Imperial corvettes have just dropped out of hyperspace.
+			</message>
+			
+			
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				The probe has been destroyed! Good job, Red leader.
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				This will allow the fleet to make our escape to our new base.
+			</message>	
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				Return home for debriefing and evacuation preparations.
+			</message>		
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primaryFail">
+				The surveillance probe wasn’t destroyed.
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				We can’t conceal our fleet as long as it’s operational.
+			</message>	
+			<message delay="2" color="Rebel" goal="primaryFail">
+				Abort mission immediately and return to base.
+			</message>
+		</messages>
+	</mission>
+</sidecar>

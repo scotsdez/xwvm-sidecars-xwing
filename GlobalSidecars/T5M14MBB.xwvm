@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="T5M14MBB">
+		<messages>
+			<message delay="0" color="Rebel">
+				Watch yourself, my proximity alarms are going crazy here.
+			</message>
+			<message delay="1" color="Rebel">
+				I’m getting a reading on... 18 transports!?
+			</message>
+			<message delay="3" color="Rebel">
+				This will be like trying to find a needle in a stack of needles...
+			</message>
+			<message delay="4" color="Rebel">
+				...while the stack is flying around an asteroid field.
+			</message>
+			<message delay="6" color="Rebel">
+				Identify the transport carrying the officers and disable it.
+			</message>
+			<message delay="7" color="Rebel">
+				The Mayhem will be here in less than 10 minutes...
+			</message>
+			<message delay="8" color="Rebel">
+				...so work as quickly as you can!
+			</message>
+			<message delay="9" color="Rebel">
+				Karabast! This is getting better all the time...
+			</message>
+			
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="SIGMA 6" condition="Inspected" />
+				</triggers>
+				Great, you’ve identified the officer transport.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="SIGMA 6" condition="Inspected" />
+				</triggers>
+				Disable it, but be careful not to destroy it!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="SIGMA 6" condition="Disabled" />
+				</triggers>
+				The officer transport has been disabled.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="SIGMA 6" condition="Disabled" />
+				</triggers>
+				TRN Shock will arrive momentarily to begin the capture operation.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="SIGMA 6" condition="Disabled" />
+				</triggers>
+				Make sure to give them cover.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MU" condition="Arrived" />
+				</triggers>
+				Detecting gunboats inbound, watch out!
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="FiftyPercent" type="GlobalGroup" variable="1" condition="Destroyed" />
+				</triggers>
+				Half of the transports have been eliminated.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="1" condition="Inspected" />
+				</triggers>
+				Well done on inspecting those transports.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="1" condition="Inspected" />
+				</triggers>
+				Rebel Intelligence will appreciate that extra attention to detail.
+			</message>
+			<message delay="1" color="Imperial">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MAYHEM" condition="Arrived" />
+				</triggers>
+				This is Commander Pax of the Imperial frigate Mayhem.
+			</message>
+			<message delay="2" color="Imperial">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MAYHEM" condition="Arrived" />
+				</triggers>
+				Rebel ships, stand down immediately or be destroyed.
+			</message>
+			<message delay="6" color="Imperial">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MAYHEM" condition="Arrived" />
+				</triggers>
+				Very well. Prepare to meet your doom, Rebel scum.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BETA" condition="Arrived" />
+				</triggers>
+				The frigate is launching bombers, take them out!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="SHOCK" condition="Docked" />
+				</triggers>
+				The officers are onboard TRN Shock, protect it as it jumps to hyperspace.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="GAMMA" condition="Arrived" />
+				</triggers>
+				Some TIE Advanced just launched from the frigate's hangar.
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				We successfully captured the Imperial officers.
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				We’ll interrogate them for information about the Relentless' task force.
+			</message>	
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				Excellent work, Red group, head for home.
+			</message>		
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primaryFail">
+				We failed to capture the Imperial officers.
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				Without this intel, we are at a crucial disadvantage against the Imperials.
+			</message>	
+			<message delay="2" color="Rebel" goal="primaryFail">
+				Return to base, there isn’t anything more you can do here.
+			</message>
+		</messages>
+		<flightGroup target="KAPPA" globalGroup="1" />
+		<flightGroup target="SIGMA" globalGroup="1" />
+		<flightGroup target="LAMBDA" globalGroup="1" />
+	</mission>
+</sidecar>
