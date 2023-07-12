@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="ATTACKXY">
+		<messages>
+			<message delay="0" color="Rebel">
+				Red 2 to Red leader: I see the convoy directly ahead.
+			</message>
+			<message delay="1" color="Rebel">
+				Better watch for fire from the Ranger.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Arrived" />
+				</triggers>
+				This is Blue leader, we're setting up for our attack run.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Arrived" />
+				</triggers>
+				Try and draw their fire while we take down the cargo ships.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ETA" condition="Arrived" />
+				</triggers>
+				The Invincible just launched reinforcements...
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ETA" condition="Arrived" />
+				</triggers>
+				... luckily, we should be long gone by then.
+			</message>
+			
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="TwentyFivePercent" type="GlobalGroup" variable="1" condition="Destroyed" />
+				</triggers>
+				One of the freighters has been destroyed.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="FiftyPercent" type="GlobalGroup" variable="1" condition="Destroyed" />
+				</triggers>
+				Two freighters down, one to go.
+			</message>
+			
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="INVINCIBLE" condition="Attacked" />
+				</triggers>
+				I admire your bravery, but is it wise to take on the Invincible?
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RANGER" condition="Destroyed" />
+				</triggers>
+				The Ranger has been eliminated!
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				Well done, the convoy has been destroyed.
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				That'll cause some problems for 'Operation Strike Fear'!
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				Head home immediately, and avoid engaging the Invincible.
+			</message>
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primaryFail">
+				The convoy wasn't destroyed.
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				Abort mission and report for debriefing.
+			</message>
+		</messages>
+		<flightGroup target="JUNO 1" globalGroup="1" />
+		<flightGroup target="JUNO 2" globalGroup="1" />
+		<flightGroup target="JUNO 3" globalGroup="1" />
+	</mission>
+</sidecar>

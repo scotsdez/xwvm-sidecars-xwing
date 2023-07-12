@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="ID-RECON">
+		<messages>
+			<message delay="0" color="Rebel">
+				You need to ID all ships entering this sector.
+			</message>
+			<message delay="1" color="Rebel">
+				Reading one vessel already in-system, with escorts.
+			</message>
+			
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="WARSPITE" condition="Inspected" />
+				</triggers>
+				Be careful, that's the Warspite.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="WARSPITE" condition="Inspected" />
+				</triggers>
+				Intelligence suggests it's been modified to carry extra fighters.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="327" condition="Arrived" />
+				</triggers>
+				Sensors are reading two new contacts entering the system.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RUGGERT" condition="Arrived" />
+				</triggers>
+				One cargo vessel has arrived, make sure to inspect it.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="758" condition="Arrived" />
+				</triggers>
+				Another three vessels registering on scanners.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="427" condition="Arrived" />
+				</triggers>
+				Look sharp, there are more ships arriving.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="EICHLER" condition="Arrived" />
+				</triggers>
+				There's another cargo ship dropping in.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="524" condition="Arrived" />
+				</triggers>
+				The reports from the Bixby captain were certainly accurate...
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="524" condition="Arrived" />
+				</triggers>
+				...another two ships just dropped out of hyperspace.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="HARASSER" condition="Arrived" />
+				</triggers>
+				Two capital ships just jumped in - they must be the convoy escorts.
+			</message>
+			<message delay="1" color="Imperial">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="INVINCIBLE" condition="Arrived" />
+				</triggers>
+				This is the Invincible. Rebel craft, surrender now, or be obliterated.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="INVINCIBLE" condition="Inspected" />
+				</triggers>
+				Don't get too close to that Star Destroyer!
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				Great job, the intelligence you've gathered will be very useful.
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				Return to base immediately, do not engage the Imperial ships.
+			</message>
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primaryFail">
+				You didn't ID all of the ships in the convoy.
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				We won't get another chance to gather this intel.
+			</message>
+			<message delay="2" color="Rebel" goal="primaryFail">
+				Return to base immediately.
+			</message>
+		</messages>
+	</mission>
+</sidecar>

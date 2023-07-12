@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="MAX102B">
+		<messages>
+			<message delay="0" color="Rebel">
+				Red leader, we've got enemy shuttles right behind us!
+			</message>
+			<message delay="1" color="Rebel">
+				Blue leader to Red leader, we've got a major problem here.
+			</message>
+			<message delay="2" color="Rebel">
+				We've lost all power. The astromechs are trying to fix it...
+			</message>
+			<message delay="3" color="Rebel">
+				...but for now, we can’t help you.
+			</message>
+			
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="C558" condition="Destroyed" />
+				</triggers>
+				The starfighter munitions containers have been destroyed.
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="C442" condition="Destroyed" />
+				</triggers>
+				All of the small arms containers have been destroyed.
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="OMARA" condition="Arrived" />
+				</triggers>
+				Imperial corvettes have entered the area!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="OMARA" condition="Destroyed" />
+				</triggers>
+				Well done, the corvettes have been finished off.
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="CraftCategory" variable="Mine" condition="Destroyed" />
+				</triggers>
+				All of the mines protecting the yard have been obliterated.
+			</message>
+			
+			
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				The weapons stockyard has been eliminated.
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				This should cause some problems for the Empire!
+			</message>	
+			<message delay="3" color="Rebel" goal="primarySuccess">
+				Well done, return to base when ready.
+			</message>		
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primaryFail">
+				We failed to destroy the weapons stockyard.
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				Our fleet will continue to face overwhelming Imperial forces.
+			</message>	
+			<message delay="2" color="Rebel" goal="primaryFail">
+				Return to base for debriefing.
+			</message>
+		</messages>
+	</mission>
+</sidecar>

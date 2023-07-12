@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="MAX10">
+		<messages>
+			<message delay="0" color="Rebel">
+				This is Blue leader.
+			</message>
+			<message delay="1" color="Rebel">
+				These astromechs hijacked our ships and disabled the controls!
+			</message>
+			<message delay="2" color="Rebel">
+				Please assist!
+			</message>
+			<message delay="3" color="Rebel">
+				Sit tight, Blue leader, we'll have you back with us in no time.
+			</message>
+			<message delay="4" color="Rebel">
+				Red group, switch to ion cannons and target the X-Wings.
+			</message>
+			
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="FiftyPercent" type="GlobalGroup" variable="1" condition="Disabled" />
+				</triggers>
+				Two of the three X-Wings have been disabled, one more to go!
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="1" condition="Disabled" />
+				</triggers>
+				All X-Wings disabled. Good work, Red group.
+			</message>
+			
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE 1" condition="Disabled" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE 3" condition="Disabled" />
+				</triggers>
+				Damn, my controls are locking up! Red 3, you're with me.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE 1" condition="Disabled" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE 3" condition="Disabled" />
+				</triggers>
+				It's up to you now, Red 2.
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE 1" condition="Captured" />
+				</triggers>
+				Blue leader to Red group...
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE 1" condition="Captured" />
+				</triggers>
+				The R2 unit has been swapped out, I've got partial control back!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MAXIMUS" condition="Arrived" />
+				</triggers>
+				This is the Maximus, here to recover all ships.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="1" condition="Captured" />
+				</triggers>
+				Cover the X-Wings and rescue shuttles as they return to the hangar.
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="GlobalGroup" variable="2" condition="Attacked" />
+				</triggers>
+				The rescue shuttles are under attack!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="GlobalGroup" variable="1" condition="FiftyHull" />
+				</triggers>
+				The X-Wings are under attack and need your protection!
+			</message>	
+			
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				We've recovered the X-Wings and shuttles, we're heading out. 
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				We'll meet you at the rendezvous point.
+			</message>
+
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primaryFail">
+				I can't believe we couldn't save those pilots...
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				This is a terrible loss for the fleet.
+			</message>
+			<message delay="2" color="Rebel" goal="primaryFail">
+				Return to base for debriefing.
+			</message>
+		</messages>
+		<flightGroup target="BLUE 1" globalGroup="1" />
+		<flightGroup target="BLUE 2" globalGroup="1" />
+		<flightGroup target="BLUE 3" globalGroup="1" />
+		<flightGroup target="RESCUE 1" globalGroup="2" />
+		<flightGroup target="RESCUE 2" globalGroup="2" />
+		<flightGroup target="RESCUE 3" globalGroup="2" />
+	</mission>
+</sidecar>

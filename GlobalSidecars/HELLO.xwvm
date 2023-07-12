@@ -10,13 +10,13 @@
         </briefing>
 		<messages>
 			<message delay="0" color="Rebel">
-				Red group, you’ve arrived behind the Imperial forces.
+				Red group, you've arrived behind the Imperial forces.
 			</message>
 			<message delay="1" color="Rebel">
 				Catch up with the TIE Bombers and destroy them as quickly as possible.
 			</message>
 			<message delay="2" color="Rebel">
-				Don’t let them destroy that corvette under any circumstances!
+				Don't let them destroy that corvette under any circumstances!
 			</message>
 			<message delay="3" color="Rebel">
 				You may wish to split your flight group and attack different targets.
@@ -41,7 +41,7 @@
 				<triggers>
 					<trigger amount="AtLeastOne" type="FlightGroup" variable="KARINNE" condition="CompletedMission" />
 				</triggers>
-				The Karinne has successfully entered hyperspace - the Twi’lek delegation is safe.
+				The Karinne has successfully entered hyperspace - the Twi'lek delegation is safe.
 			</message>
 			<message color="Rebel">
 				<triggers>
@@ -53,13 +53,13 @@
 				<triggers>
 					<trigger amount="AtLeastOne" type="FlightGroup" variable="KARINNE" condition="Attacked" />
 				</triggers>
-				We’re under fire, please assist us!
+				We're under fire, please assist us!
 			</message>
 			<message color="Rebel">
 				<triggers>
 					<trigger amount="AtLeastOne" type="FlightGroup" variable="KARINNE" condition="FiftyHull" />
 				</triggers>
-				We’ve taken hull damage!
+				We've taken hull damage!
 			</message>
 			
 			<?xwvm clearGoalMessages?>
@@ -68,7 +68,7 @@
 			</message>
 			<?xwvm clearGoalMessages?>
 			<message color="Rebel" goal="primaryFail">
-				The Karinne, and the Twi’lek delegation, have been lost.
+				The Karinne, and the Twi'lek delegation, have been lost.
 			</message>
 			<message delay="2" color="Rebel" goal="primaryFail">
 				Red group, return to base for immediate debriefing.

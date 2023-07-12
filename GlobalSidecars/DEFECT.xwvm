@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="DEFECT">
+		<messages>
+			<message delay="0" color="Rebel">
+				Blue leader to Red group: welcome to the party!
+			</message>
+			<message delay="1" color="Rebel">
+				The Bixby has stopped their ship and dropped their shields.
+			</message>
+			<message delay="2" color="Rebel">
+				We'll stand guard while you take care of the convoy.
+			</message>
+			<message delay="3" color="Rebel">
+				Roger that, Blue leader.
+			</message>
+			<message delay="4" color="Rebel">
+				Fire at will on the cargo ships.
+			</message>
+			
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BIXBY" condition="Attacked" />
+				</triggers>
+				What are you doing? Stop firing on the Bixby, immediately!
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="FiftyPercent" type="GlobalGroup" variable="1" condition="Destroyed" />
+				</triggers>
+				Half of the freighters have been destroyed.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="1" condition="Destroyed" />
+				</triggers>
+				Great job, we've wiped out the important convoy craft.
+			</message>
+			
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MURTCEPS" condition="Destroyed" />
+				</triggers>
+				Way to go, I didn't think we'd be able to get that one in time!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="GORGON" condition="Arrived" />
+				</triggers>
+				Looks like the Imperials sent reinforcements... how nice.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BETA" condition="Arrived" />
+				</triggers>
+				TIE Fighters, inbound!
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="DAGGER" condition="Arrived" />
+				</triggers>
+				Dagger to Bixby: prepare to be boarded.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="DAGGER" condition="Docked" />
+				</triggers>
+				This is Dagger, the operation was successful. Heading for home.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="GORGON" condition="Destroyed" />
+				</triggers>
+				Wow, you took out a frigate on your first mission!
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="GORGON" condition="Destroyed" />
+				</triggers>
+				I don't think we'll be calling you Rookie for long!
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				Well done, that was a very successful mission, good work.
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				The Bixby was successfully captured.
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				Return to base.
+			</message>
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primaryFail">
+				We failed to destroy the convoy.
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				This doesn't bode well for your piloting career, rookie.
+			</message>
+			<message delay="2" color="Rebel" goal="primaryFail">
+				Return to base immediately.
+			</message>
+		</messages>
+		<flightGroup target="ORCIM" globalGroup="1" />
+		<flightGroup target="ESORP" globalGroup="1" />
+		<flightGroup target="ARREIS" globalGroup="1" />
+		<flightGroup target="NIGIRO" globalGroup="1" />
+	</mission>
+</sidecar>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="MAX103A">
+		<messages>
+			<message delay="0" color="Rebel">
+				Red squadron, this is Excelsior.
+			</message>
+			<message delay="1" color="Rebel">
+				We're prepping X-Wings and Y-Wings for launch...
+			</message>
+			<message delay="2" color="Rebel">
+				...but for now, you're our only line of defence.
+			</message>
+			<message delay="3" color="Rebel">
+				We’ve already got incoming TIE Bombers!
+			</message>
+			
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="EXCELSIOR" condition="ZeroShields" />
+				</triggers>
+				This is Excelsior, our shields are out!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="EXCELSIOR" condition="FiftyHull" />
+				</triggers>
+				We've taken heavy damage to our hull!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Arrived" />
+				</triggers>
+				This is Blue leader, we're setting up our attack run.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="GOLD" condition="Arrived" />
+				</triggers>
+				Gold leader here, engaging enemy craft. 
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RAIDER" condition="Arrived" />
+				</triggers>
+				We're detecting enemy corvettes exiting hyperspace!
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RAIDER" condition="Arrived" />
+				</triggers>
+				They're going for the Excelsior!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="RAIDER" condition="Destroyed" />
+				</triggers>
+				Yes! The corvettes have been eradicated.
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE FOX" condition="ZeroShields" />
+				</triggers>
+				The Blue Fox has lost its shields!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE FOX" condition="FiftyHull" />
+				</triggers>
+				Detecting significant damage to the Blue Fox.
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE FOX" condition="Destroyed" />
+				</triggers>
+				Fantastic work, the Blue Fox has been annihilated!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE FOX" condition="Destroyed" />
+				</triggers>
+				That'll teach them to mess with the Excelsior!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="LAMBDA" condition="Arrived" />
+				</triggers>
+				Enemy transports have entered the area!
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="LAMBDA" condition="Arrived" />
+				</triggers>
+				All fighters, hold them off!
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				The Excelsior has safely entered hyperspace.
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				Thank you for your excellent defence against great odds.
+			</message>	
+			<message delay="3" color="Rebel" goal="primarySuccess">
+				Return to base when you're ready.
+			</message>		
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primaryFail">
+				The Excelsior has been lost with all hands.
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				This is a dark day for the Alliance.
+			</message>	
+			<message delay="2" color="Rebel" goal="primaryFail">
+				All craft, abort mission and evacuate the area immediately!
+			</message>
+		</messages>
+	</mission>
+</sidecar>

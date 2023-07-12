@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="WXPROT2">
+		<messages>
+			<message delay="1" color="Rebel">
+				Red group, stay alert for Imperial activity.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MEDEVAC" condition="Arrived" />
+				</triggers>
+				This is Medevac 1, requesting permission to dock.
+			</message>
+			<message delay="3" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MEDEVAC" condition="Arrived" />
+				</triggers>
+				Roger that, Medevac, permission granted.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="KOROLEV" condition="Arrived" />
+				</triggers>
+				Redemption, this is the Korolev. We have wounded to transfer aboard.
+			</message>
+			<message delay="3" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="KOROLEV" condition="Arrived" />
+				</triggers>
+				Acknowledged, Korolev. Please stand by until the shuttles have docked.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="MEDEVAC" condition="Docked" />
+				</triggers>
+				Korolev, you are cleared to begin docking sequence.
+			</message>
+			<message delay="3" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="MEDEVAC" condition="Docked" />
+				</triggers>
+				Acknowledged, Redemption.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="WARSPITE" condition="Arrived" />
+				</triggers>
+				Alert! An Imperial cruiser just dropped out of hyperspace!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ALPHA" condition="Arrived" />
+				</triggers>
+				TIE Bombers inbound. Red group, let's go and meet the neighbours.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="WARSPITE_2" condition="Arrived" />
+				</triggers>
+				The Warspite. I'd hoped never to see it again.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RED 2" condition="Attacked" />
+				</triggers>
+				Watch it Red 2, you've picked up some attention!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="KOROLEV" condition="Docked" />
+				</triggers>
+				Korolev to Redemption: patient transfer complete.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="KOROLEV" condition="Attacked" />
+				</triggers>
+				Korolev to Red group - we're under attack!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MEDEVAC" condition="Attacked" />
+				</triggers>
+				This is Medevac, we are under attack.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="REDEMPTION" condition="Attacked" />
+				</triggers>
+				Redemption to all fighters: we're under attack.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="REDEMPTION" condition="ZeroShields" />
+				</triggers>
+				Our shields are failing!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="REDEMPTION" condition="FiftyHull" />
+				</triggers>
+				This is Redemption, we can't take much more of this!
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				Great job, Red group.
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				The Redemption has successfully taken on the wounded personnel.
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				Return to base.
+			</message>
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primaryFail">
+				We failed to protect the wounded.
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				This is a tragic day for the Alliance.
+			</message>
+		</messages>
+	</mission>
+</sidecar>
