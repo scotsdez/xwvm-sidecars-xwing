@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="WYCAPT2">
+		<messages>
+			<message delay="0" color="Rebel">
+				We need to capture that freighter.
+			</message>
+			<message delay="1" color="Rebel">
+				Under no circumstances let the Empire take that cargo.
+			</message>
+			<message delay="2" color="Rebel">
+				ID and disable the freighter when it's safe to do so.
+			</message>
+			<message delay="3" color="Rebel">
+				Watch out for those escorts!
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="WILSEY" condition="Arrived" />
+				</triggers>
+				This is the Wilsey, ready to deliver the capture team.
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="WILSEY" condition="Attacked" />
+				</triggers>
+				Wilsey to Red 1, we're under attack!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="PHOENIX" condition="Disabled" />
+				</triggers>
+				The freighter's been disabled!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="PHOENIX" condition="FiftyHull" />
+				</triggers>
+				The Phoenix has taken heavy damage!
+			</message>
+			
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="GlobalGroup" variable="1" condition="Destroyed" />
+				</triggers>
+				The shuttles have been eliminated.
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="EPSILON" condition="Docked" />
+				</triggers>
+				An Imperial transport just captured the freighter, stop it!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="WILSEY" condition="Docked" />
+				</triggers>
+				Phoenix to Red 1, we've got control of the freighter.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="INTREPID" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="WILSEY" condition="Docked" />
+				</triggers>
+				A Star Destroyer just dropped out of hyperspace.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="INTREPID" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="WILSEY" condition="Docked" />
+				</triggers>
+				Cover the freighter until it can make its hyperjump.
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				The Phoenix has been successfully captured, great work.
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				See you back at base for debriefing.
+			</message>
+
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primaryFail">
+				The freighter carrying the comms satellites has been lost.
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				Our plan to learn about the Empire's secret project is a failure.
+			</message>
+		</messages>
+		<flightGroup target="LAMBDA" globalGroup="1" />
+		<flightGroup target="OMICRON" globalGroup="1" />
+	</mission>
+</sidecar>

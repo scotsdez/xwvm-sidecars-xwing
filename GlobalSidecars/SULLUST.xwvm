@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="SULLUST">
+		<messages>
+			<message delay="0" color="Rebel">
+				Looks like we got here first.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="DS" condition="Arrived" />
+				</triggers>
+				Here comes the delegation now.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="SOR-SULL II" condition="Arrived" />
+				</triggers>
+				The Sullustans are right on time.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="SOR-SULL II" condition="Arrived" />
+				</triggers>
+				Assume a standard patrol pattern, and watch for trouble.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="INVINCIBLE" condition="Arrived" />
+				</triggers>
+				I might have guessed the Empire would show up.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="INVINCIBLE" condition="Arrived" />
+				</triggers>
+				No prizes for guessing which ship that is.
+			</message>
+			<message delay="3" color="Imperial">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="INVINCIBLE" condition="Arrived" />
+				</triggers>
+				Attention all ships, this is the Invincible. 
+			</message>
+			<message delay="4" color="Imperial">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="INVINCIBLE" condition="Arrived" />
+				</triggers>
+				Stand down immediately... this is your only warning.
+			</message>
+			<message delay="5" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="INVINCIBLE" condition="Arrived" />
+				</triggers>
+				This is Freedom, keep us covered.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ZETA" condition="Arrived" />
+				</triggers>
+				Take out those bombers!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="IOTA" condition="Arrived" />
+				</triggers>
+				The Invincible just launched more bombers!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="FREEDOM I" condition="Attacked" />
+				</triggers>
+				This is the Freedom, we're under attack!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="FREEDOM I" condition="Docked" />
+				</triggers>
+				This is Freedom, the first stage of negotiations has concluded.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="FREEDOM I" condition="Docked" />
+				</triggers>
+				Heading for the hangar now.
+			</message>
+			
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="SOR-SULL II" condition="Attacked" />
+				</triggers>
+				Sor-Sull II, we're under fire!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="COSOF" condition="Attacked" />
+				</triggers>
+				This is Cosof, we're taking damage!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="TECTOR" condition="Attacked" />
+				</triggers>
+				Tector here, we need some help!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="SAR X" condition="Attacked" />
+				</triggers>
+				This is the Sar Ten. We require some assistance.
+			</message>
+			
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="SOR-SULL II" condition="CompletedMission" />
+				</triggers>
+				So long, Invincible!
+			</message>
+			
+			
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				The delegation has made it safely away, great job, Red 2!
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				Return to base.
+			</message>
+
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primaryFail">
+				One of the diplomatic ships has been destroyed - this is a disaster.
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				The Sullustans will never agree to an alliance now.
+			</message>
+			<message delay="2" color="Rebel" goal="primaryFail">
+				All ships, return to base.
+			</message>
+		</messages>
+	</mission>
+</sidecar>

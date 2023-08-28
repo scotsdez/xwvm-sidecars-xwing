@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="ACK-HARD">
+		<messages>
+			<message delay="0" color="Rebel">
+				We've got your back, go ahead and inspect the shuttles.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="KAPPA 5" condition="Inspected" />
+				</triggers>
+				Disable that shuttle, it's carrying the Sullustan leader!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="KAPPA 5" condition="Inspected" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="KAPPA 5" condition="Disabled" />
+				</triggers>
+				The shuttle carrying the Sullustan leader has been disabled.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESCUE 1" condition="Arrived" />
+				</triggers>
+				This is Rescue 1, moving to rendezvous with the target.
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESCUE 1" condition="Attacked" />
+				</triggers>
+				This is Rescue 1, we're taking fire!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="KAPPA 5" condition="FiftyHull" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="KAPPA 5" condition="Inspected" />
+				</triggers>
+				The shuttle with the Sullustan leader is in critical condition!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESCUE 1" condition="Docked" />
+				</triggers>
+				We've got the Sullustan leader, let's go!
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="DELTA" condition="Arrived" />
+				</triggers>
+				Additional TIEs inbound, be on your guard.
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				Fantastic job, we rescued the Sullustan leader from the Empire.
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				This incident can only cement their desire to ally with us.
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				Return to base.
+			</message>
+
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primaryFail">
+				We've lost the Sullustan leader, and any chance of an alliance.
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				Abort immediately and return to base.
+			</message>
+			<message delay="48" color="Rebel" goal="primaryFail">
+				Abort immediately, that’s an order!
+			</message>
+		</messages>
+	</mission>
+</sidecar>

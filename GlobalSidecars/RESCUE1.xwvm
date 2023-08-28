@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="RESCUE1">
+		<messages>
+			<message delay="0" color="Rebel">
+				All right, the freighter is directly ahead.
+			</message>
+			<message delay="1" color="Rebel">
+				Unfortunately, some of those new gunboats are in the way.
+			</message>
+			<message delay="2" color="Rebel">
+				Let's see what we can do about that, shall we?
+			</message>
+			
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="GlobalGroup" variable="1" condition="Destroyed" />
+				</triggers>
+				The Empire's new ship isn't so impressive after all!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="TORAL" condition="Inspected" />
+				</triggers>
+				We've found the wookies!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="GOLD" condition="Arrived" />
+				</triggers>
+				Gold leader to Red group, we're here to disable the freighter.
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="GOLD" condition="Attacked" />
+				</triggers>
+				This is Gold leader, we're taking fire!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="TORAL" condition="FiftyHull" />
+				</triggers>
+				The Toral's hull is taking heavy damage.
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="TORAL" condition="Disabled" />
+				</triggers>
+				The freighter's been disabled; calling in Rescue 1.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESCUE 1" condition="Arrived" />
+				</triggers>
+				Rescue 1 here, let's liberate the wookies!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESCUE 1" condition="Attacked" />
+				</triggers>
+				This is Rescue 1, we're under attack!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESCUE 1" condition="Docked" />
+				</triggers>
+				Rescue 1 here, we've got the wookies and are heading out!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESCUE 1" condition="Docked" />
+				</triggers>
+				[Happy wookie growling noises]
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESCUE 1" condition="Docked" />
+				</triggers>
+				I think that says it all!
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ZETA" condition="Arrived" />
+				</triggers>
+				More TIEs inbound, don't let them interfere with the rescue!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="INTREPID" condition="Inspected" />
+				</triggers>
+				Don't get too close to that Star Destroyer!
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				Well done, the wookies are safe.
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				Hopefully, they can tell us about the Empire's secret project.
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				Head back to the fleet for debriefing.
+			</message>
+
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primaryFail">
+				The wookies have been lost.
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				What is the Rebellion if we can't protect our allies?
+			</message>
+			<message delay="2" color="Rebel" goal="primaryFail">
+				Abort mission and return to base.
+			</message>
+		</messages>
+		<flightGroup target="MU" globalGroup="1" />
+		<flightGroup target="NU" globalGroup="1" />
+		<flightGroup target="TAU" globalGroup="1" />
+	</mission>
+</sidecar>

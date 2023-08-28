@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="ATTACK3">
+		<messages>
+			<message delay="0" color="Rebel">
+				It's critical that we rescue the captured Sullustans.
+			</message>
+			<message delay="1" color="Rebel">
+				We could really use another ally right now.
+			</message>
+			<message delay="2" color="Rebel">
+				Inspect the transports and disable the ones with prisoners aboard.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="SpecialCraft" type="FlightGroup" variable="LAMBDA" condition="Inspected" />
+				</triggers>
+				That transport has Sullustans aboard, make sure to disable it!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="SpecialCraft" type="FlightGroup" variable="OMICRON" condition="Inspected" />
+				</triggers>
+				You've located a group of Sullustan prisoners, disable that ship.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers operator="OR">
+					<trigger amount="SpecialCraft" type="FlightGroup" variable="OMICRON" condition="FiftyHull" />
+					<trigger amount="SpecialCraft" type="FlightGroup" variable="LAMBDA" condition="FiftyHull" />
+				</triggers>
+				One of the prisoner transports is heavily damaged - protect that ship!
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers operator="OR">
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESCUE 1" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESCUE 2" condition="Arrived" />
+				</triggers>
+				Rescue team here, we're moving into position.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers operator="OR">
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESCUE 1" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESCUE 2" condition="Attacked" />
+				</triggers>
+				This is the Rescue team, we're under attack!
+			</message>
+			
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="LAMBDA" condition="Inspected" />
+				</triggers>
+				Transport group Lambda has been fully inspected.
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="OMICRON" condition="Inspected" />
+				</triggers>
+				All of flight group Omicron has been scanned.
+			</message>
+			
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BETA" condition="Arrived" />
+				</triggers>
+				TIEs are going after Rescue 2!
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ALPHA" condition="Arrived" />
+				</triggers>
+				More TIEs have launched - it looks like they're going straight for Rescue 1!
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESCUE 1" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESCUE 2" condition="Docked" />
+				</triggers>
+				Okay, that's everyone accounted for - let's get out of here!
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				The Sullustan techs are safely away - great job!
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				Report back for debriefing.
+			</message>
+
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primaryFail">
+				We couldn't save the Sullustan prisoners.
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				It's unlikely they will agree to help the Alliance now.
+			</message>
+			<message delay="2" color="Rebel" goal="primaryFail">
+				Abort mission and return for debriefing.
+			</message>
+		</messages>
+	</mission>
+</sidecar>

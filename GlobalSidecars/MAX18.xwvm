@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="MAX18">
+		<messages>
+			<message delay="0" color="Rebel">
+				Blue 1 to Red Group, you are a sight for sore eyes!
+			</message>
+			<message delay="1" color="Rebel">
+				My ship had some kind of electrical malfunction.
+			</message>
+			<message delay="2" color="Rebel">
+				It's taken out most of my systems, including propulsion...
+			</message>
+			<message delay="3" color="Rebel">
+				...and somehow disabled my astromech.
+			</message>
+			<message delay="4" color="Rebel">
+				It's the worst possible timing, too.
+			</message>
+			<message delay="5" color="Rebel">
+				I'm carrying data tapes with vital intel.
+			</message>
+			<message delay="6" color="Rebel">
+				It's about a massive Imperial weapons project.
+			</message>
+			<message delay="7" color="Rebel">
+				I can't say any more than that for now.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MU" condition="Arrived" />
+				</triggers>
+				Karabast... looks like we have company!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE 1" condition="ZeroShields" />
+				</triggers>
+				I'm taking damage!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE 1" condition="FiftyHull" />
+				</triggers>
+				My ship can't take much more of this!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ATK 253" condition="Arrived" />
+				</triggers>
+				That looks like an Imperial capture team, and they're getting very close!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ATK 592" condition="Arrived" />
+				</triggers>
+				Keep these guys off of me!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ATK 664" condition="Arrived" />
+				</triggers>
+				We can't let them get this intel!
+			</message>
+			
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="GlobalGroup" variable="1" condition="Docked" />
+				</triggers>
+				I'm in trouble, they've--
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESCUE 1" condition="Arrived" />
+				</triggers>
+				Rescue 1 calling X-Wing Blue, we're here to get you going again.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESCUE 1" condition="Arrived" />
+				</triggers>
+				Happy to hear it, Rescue 1!
+			</message>
+			<message delay="3" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESCUE 1" condition="Arrived" />
+				</triggers>
+				I'm ready to go, I don't like the neighbourhood much!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESCUE 1" condition="Docked" />
+				</triggers>
+				I'm online and back in control!
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESCUE 1" condition="Docked" />
+				</triggers>
+				Setting hyperspace coordinates now. Thanks for the assist!
+			</message>
+			<message delay="2" color="Imperial">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="INTREPID" condition="Arrived" />
+				</triggers>
+				Rebels! Stand down or die.
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				The X-Wing has escaped, great job in holding off the Imperials.
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				That intel could hold the key to our survival.
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				Head back to base.
+			</message>
+
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primaryFail">
+				All ships, abort and return to base immediately.
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				Without that intel, we don’t know what the Empire has planned.
+			</message>
+		</messages>
+		<flightGroup target="ATK 253" globalGroup="1" />
+		<flightGroup target="ATK 592" globalGroup="1" />
+		<flightGroup target="ATK 664" globalGroup="1" />
+	</mission>
+</sidecar>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="STARSNDB">
+		<messages>
+			<message delay="0" color="Neutral">
+				--boarded by stormtroopers, they're-- [static]
+			</message>
+			<message delay="1" color="Rebel">
+				Damn, there's not much time!
+			</message>
+			<message delay="2" color="Rebel">
+				We'd better take out that transport, fast!
+			</message>
+			
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="LAMBDA" condition="Destroyed" />
+				</triggers>
+				Scratch one Imperial boarding party!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="LAMBDA" condition="Docked" />
+				</triggers>
+				The Imperials have seized the freighter!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="LAMBDA" condition="Docked" />
+				</triggers>
+				We can't do anything for the pilots now, abort mission! 
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="GENUE" condition="Inspected" />
+				</triggers>
+				Confirmed: the pilots are aboard the freighter.
+			</message>
+
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ETA" condition="Arrived" />
+				</triggers>
+				The Intrepid just launched some bombers!
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="DRAGO" condition="Arrived" />
+				</triggers>
+				This is the Drago, I have eyes on the freighter.
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="DRAGO" condition="Attacked" />
+				</triggers>
+				This is the Drago, we're taking fire, please assist!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="DRAGO" condition="Docked" />
+				</triggers>
+				Drago here, we're heading out.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="DRAGO" condition="Docked" />
+				</triggers>
+				This is the Genue, now under Alliance control.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="DRAGO" condition="Docked" />
+				</triggers>
+				We found the pilots, and they're in a stable condition.
+			</message>
+			<message delay="3" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="DRAGO" condition="Docked" />
+				</triggers>
+				Cover us while we make the jump to hyperspace.
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				This is the Defiance: great work!
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				The freighter and the capture team have escaped safely.
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				Return to base for debriefing.. and a celebratory drink!
+			</message>
+
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primaryFail">
+				We lost the pilots. This is a huge blow to the Rebellion.
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				Return to base immediately.
+			</message>
+		</messages>
+	</mission>
+</sidecar>

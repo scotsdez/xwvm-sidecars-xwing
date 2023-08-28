@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="CRNDRFT1">
+		<messages>
+			<message delay="1" color="Rebel">
+				I hate asteroids.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MAGNUS" condition="Arrived" />
+				</triggers>
+				Magnus to Jeffrey, ready to deliver supplies.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="OJAI" condition="Arrived" />
+				</triggers>
+				Ojai to Jeffrey, standing by to transfer cargo.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MU" condition="Arrived" />
+				</triggers>
+				Imperial fighters just entered the area!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MAGNUS" condition="Docked" />
+				</triggers>
+				Supply transfer is complete, preparing for our jump.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MAGNUS" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="OJAI" condition="Survived" />
+				</triggers>
+				Ojai, you are cleared to begin docking.
+			</message>
+			<message delay="3" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MAGNUS" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="OJAI" condition="Survived" />
+				</triggers>
+				This is Ojai, starting our approach.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MAGNUS" condition="Docked" />
+				</triggers>
+				Acknowledged, Magnus.
+			</message>
+			
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="OJAI" condition="Attacked" />
+				</triggers>
+				Ojai to all fighters, we're taking fire!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="OJAI" condition="ZeroShields" />
+				</triggers>
+				Ojai: Our shields are down, we need immediate assistance!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="JEFFREY" condition="ZeroShields" />
+				</triggers>
+				Jeffrey to Red group, we've lost our shields!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="JEFFREY" condition="FiftyHull" />
+				</triggers>
+				Jeffrey: We've taken severe damage!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="OJAI" condition="Docked" />
+				</triggers>
+				Cargo transfer complete, plotting hyperspace coordinates now.
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="JEFFREY" condition="CompletedMission" />
+				</triggers>
+				We're making our jump now. Thanks for the protection, Red Group.
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				The Jeffrey has made it to hyperspace with the satellites. 
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				Now we can begin our surveillance operation.
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				Hopefully, we can learn what the Empire is planning.
+			</message>
+			<message delay="3" color="Rebel" goal="primarySuccess">
+				Return to base when you are ready.
+			</message>
+
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primaryFail">
+				Abort mission - the satellite transfer has failed.
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				Without them, we can’t begin critical surveillance activities.
+			</message>
+		</messages>
+	</mission>
+</sidecar>

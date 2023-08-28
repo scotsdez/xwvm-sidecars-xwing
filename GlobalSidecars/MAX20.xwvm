@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="MAX20">
+		<messages>
+			<message delay="0" color="Rebel">
+				Clear the minefield as your top priority.
+			</message>
+			<message delay="1" color="Rebel">
+				Then disable the freighter.
+			</message>
+			
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="FiftyPercent" type="CraftCategory" variable="Mine" condition="Destroyed" />
+				</triggers>
+				Half of the mines have been cleared.
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="CraftCategory" variable="Mine" condition="Destroyed" />
+				</triggers>
+				Good work, the minefield has been cleared.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="GAFRA" condition="Inspected" />
+				</triggers>
+				Smart thinking, it's always wise to confirm cargo contents.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="GAFRA" condition="Disabled" />
+				</triggers>
+				The freighter has been disabled.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="GAFRA" condition="Disabled" />
+				</triggers>
+				Our boarding party will arrive shortly to secure the warheads.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="HERALD" condition="Arrived" />
+				</triggers>
+				This is Herald, we've got the commando team...
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="HERALD" condition="Arrived" />
+				</triggers>
+				...and are starting our approach. Carefully.
+			</message>
+			<message delay="9" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="HERALD" condition="Arrived" />
+				</triggers>
+				What I wouldn't give to be anywhere but here right now.
+			</message>
+			<message delay="10" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="HERALD" condition="Arrived" />
+				</triggers>
+				I don't like being this close. One wrong move, and...
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="HERALD" condition="Docked" />
+				</triggers>
+				This is Herald, boarding is complete! And not a moment too soon.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="LAMBDA" condition="Arrived" />
+				</triggers>
+				We've got company! Don't let them touch that freighter!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="1" condition="Destroyed" />
+				</triggers>
+				The Imperial capture team has been completely destroyed.
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				Amazing job, we've captured the warheads.
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				Now we can move to the next stage of General Madine's plan.
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				Let's end the Invincible's reign of terror in this sector.
+			</message>
+			<message delay="3" color="Rebel" goal="primarySuccess">
+				Hyperspace back to the Defiance for debriefing.
+			</message>
+
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primaryFail">
+				The freighter carrying the warheads has been lost...
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				...and with them, our hope for combating Operation Strike Fear.
+			</message>
+			<message delay="2" color="Rebel" goal="primaryFail">
+				Return to base immediately.
+			</message>
+		</messages>
+		<flightGroup target="PSI" globalGroup="1" />
+		<flightGroup target="LAMBDA" globalGroup="1" />
+	</mission>
+</sidecar>
