@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="MAX14">
+		<messages>
+			<message delay="1" color="Rebel">
+				This is shuttle Hunter: ready to board the transport.
+			</message>
+			<message delay="2" color="Rebel">
+				Hopefully, those intelligence officers will be on board.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MU" condition="Arrived" />
+				</triggers>
+				Looks like we have company...
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MU" condition="Arrived" />
+				</triggers>
+				Have I ever told you how much I hate gunboats?
+			</message>
+			<message delay="3" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MU" condition="Arrived" />
+				</triggers>
+				Only about a dozen times, Red 3.
+			</message>
+			
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="HUNTER 1" condition="Docked" />
+				</triggers>
+				The capture was successful.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="HUNTER 1" condition="Docked" />
+				</triggers>
+				Give us some cover while we get out of here!
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="INAD" condition="Arrived" />
+				</triggers>
+				Inad, arriving to recover the captured transport.
+			</message>
+			
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="LAMBDA 1" condition="Arrived" />
+				</triggers>
+				Intercept that attacking transport!
+			</message>
+			
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="OMICRON 1" condition="Captured" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="OMICRON 1" condition="Attacked" />
+				</triggers>
+				This is Omicron 1, we're under attack!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="OMICRON 1" condition="Captured" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="OMICRON 1" condition="ZeroShields" />
+				</triggers>
+				Our shields are down!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="OMICRON 1" condition="Inspected" />
+				</triggers>
+				Cargo confirmed, the transport is carrying military advisors.
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				The intelligence officers have been captured, well done.
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				Our own intelligence analysts will be anxious to question them.
+			</message>
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primaryFail">
+				Abort mission, we've lost the Imperial intelligence officers.
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				Return to base immediately.
+			</message>
+		</messages>
+	</mission>
+</sidecar>

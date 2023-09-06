@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="DEFEND2">
+		<messages>
+			<message delay="1" color="Rebel">
+				Incoming TIEs at mark 0 7!
+			</message>
+			<message delay="30" color="Rebel">
+				Those TIE Bombers look like trouble, we should intercept.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="FRAZIER" condition="Arrived" />
+				</triggers>
+				This is the Frazier: beginning rendezvous manoeuvres.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="FRAZIER" condition="Arrived" />
+				</triggers>
+				Roger Frazier, this is Sidral II, standing by.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="FRAZIER" condition="Attacked" />
+				</triggers>
+				Frazier to Red group, we're under attack!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="SIDRAL II" condition="Attacked" />
+				</triggers>
+				Sidral II, we're taking fire!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="FRAZIER" condition="FiftyHull" />
+				</triggers>
+				Frazier here, we're in bad shape!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="SIDRAL II" condition="FiftyHull" />
+				</triggers>
+				Sidral II to Red Group: our hull is badly damaged!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="FRAZIER" condition="Docked" />
+				</triggers>
+				This is the Frazier, the transfer is complete.
+			</message>
+			
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="1" condition="Destroyed" />
+				</triggers>
+				The Imperials have destroyed the supply containers.
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				Great job, the transfer operation was a success.
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				Hyperspace home when you’re ready.
+			</message>
+
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primaryFail">
+				The transfer operation has been a failure.
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				We needed to protect both ships.
+			</message>
+			<message delay="2" color="Rebel" goal="primaryFail">
+				Abort mission and return to base immediately.
+			</message>
+		</messages>
+		<flightGroup target="DARA 1" globalGroup="1" />
+		<flightGroup target="DARA 2" globalGroup="1" />
+	</mission>
+</sidecar>

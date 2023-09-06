@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="STD2">
+		<messages>
+			<message delay="0" color="Rebel">
+				Blue leader to Red Group... 
+			</message>
+			<message delay="1" color="Rebel">
+				Take out those shield generators over the bridge.
+			</message>
+			<message delay="2" color="Rebel">
+				It'll make our torpedo attack runs more effective.
+			</message>
+			<message delay="3" color="Rebel">
+				This is Gold leader: we've got your back.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="INTREPID" condition="ZeroShields" />
+				</triggers>
+				The Intrepid's shields are down!
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="INTREPID" condition="ZeroShields" />
+				</triggers>
+				Target the hull, and cause as much damage as you can!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="INTREPID" condition="FiftyHull" />
+				</triggers>
+				Finish it off, keep up the attack!
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				The Intrepid has been destroyed!
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				Exemplary work, team. This is a major victory for the Alliance.
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				You should be proud of what you've accomplished today.
+			</message>
+			<message delay="3" color="Rebel" goal="primarySuccess">
+				Hyperspace home when you're ready.
+			</message>
+
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primaryFail">
+				This is a dark day, the Intrepid wasn't destroyed.
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				The Empire may yet learn we have the plans to their new weapon.
+			</message>
+			<message delay="2" color="Rebel" goal="primaryFail">
+				All fighters, abort mission and return to base.
+			</message>
+		</messages>
+	</mission>
+</sidecar>

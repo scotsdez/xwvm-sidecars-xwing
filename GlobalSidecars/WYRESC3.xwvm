@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="WYRESC3">
+		<messages>
+			<message delay="0" color="Rebel">
+				This is Blue leader.
+			</message>
+			<message delay="1" color="Rebel">
+				You go after the corvette, we'll keep these fighters occupied.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="GODAR" condition="Disabled" />
+				</triggers>
+				The corvette has been disabled.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="GODAR" condition="Disabled" />
+				</triggers>
+				It will take a minute for the capture team to arrive.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="GODAR" condition="Inspected" />
+				</triggers>
+				Confirmed, the corvette is carrying the Death Star designers.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESCUE 1" condition="Arrived" />
+				</triggers>
+				This is Rescue 1, starting our run now.
+			</message>
+			
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESCUE 1" condition="Attacked" />
+				</triggers>
+				This is Rescue 1, we're taking fire! 
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESCUE 1" condition="ZeroShields" />
+				</triggers>
+				They've taken out our shields! 
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESCUE 1" condition="Destroyed" />
+				</triggers>
+				Rescue 1, mayd-- 
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESCUE 1" condition="Docked" />
+				</triggers>
+				Our commandos were able to extract the design team. 
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESCUE 1" condition="Docked" />
+				</triggers>
+				Cover us while we make the jump back to base. 
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				The capture team has successfully made it into hyperspace.
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				The interrogation of the designers will begin immediately.
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				Jump back to base for debriefing.
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primaryFail">
+				We weren't able to capture the design team.
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				Finding a flaw in the Death Star may be impossible now.
+			</message>
+			<message delay="2" color="Rebel" goal="primaryFail">
+				Abort mission and return to base.
+			</message>
+		</messages>
+	</mission>
+</sidecar>

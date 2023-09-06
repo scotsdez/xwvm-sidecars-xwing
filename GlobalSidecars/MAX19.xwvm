@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="MAX19">
+		<messages>
+			<message delay="1" color="Rebel">
+				Red 2 here. This place is... dead.
+			</message>
+			<message delay="2" color="Rebel">
+				How did we land this assignment?
+			</message>
+			<message delay="3" color="Rebel">
+				Well, maybe if you did better on your last marksmanship exam...
+			</message>
+			<message delay="4" color="Rebel">
+				Look, there was some kind of bug in the targeting computer!
+			</message>
+			<message delay="5" color="Rebel">
+				Here we go with the bug story again...
+			</message>
+			<message delay="6" color="Rebel">
+				The ship was checked over twice - with no problems found!
+			</message>
+			<message delay="7" color="Rebel">
+				Maybe we should just focus on the patrol.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RETSUB" condition="Arrived" />
+				</triggers>
+				I'm reading a contact entering the system...
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RETSUB" condition="Arrived" />
+				</triggers>
+				...it's Imperial, and a capital ship by the looks of it!
+			</message>
+			<message delay="3" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RETSUB" condition="Arrived" />
+				</triggers>
+				There goes our quiet patrol...
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ALPHA" condition="Arrived" />
+				</triggers>
+				It's launching bombers!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="FiftyPercent" type="FlightGroup" variable="ZL" condition="Destroyed" />
+				</triggers>
+				We've lost half of ZL!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="FiftyPercent" type="FlightGroup" variable="LT" condition="Destroyed" />
+				</triggers>
+				Half of LT is gone!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="FiftyPercent" type="FlightGroup" variable="XZ" condition="Destroyed" />
+				</triggers>
+				They've destroyed half of XZ!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ZEP" condition="Arrived" />
+				</triggers>
+				This is Zep, we'll... come back another time.
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				Blue Leader to Red Group, we're here to relieve you.
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				We'll look after the supply depot from here.
+			</message>
+
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primaryFail">
+				We've lost too many supplies from the depot.
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				With these losses, recovery won't be worthwhile now.
+			</message>
+			<message delay="2" color="Rebel" goal="primaryFail">
+				Abort mission and return for debriefing.
+			</message>
+		</messages>
+	</mission>
+</sidecar>

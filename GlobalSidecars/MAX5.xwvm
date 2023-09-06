@@ -3,7 +3,7 @@
 	<mission target="MAX5">
 		<messages>
 			<message delay="1" color="Rebel">
-				Look sharp, we’ve got TIEs incoming!
+				Look sharp, we've got TIEs incoming!
 			</message>
 			<message color="Rebel">
 				<triggers>
@@ -21,13 +21,13 @@
 				<triggers>
 					<trigger amount="HundredPercent" type="FlightGroup" variable="GAMMA" condition="Destroyed" />
 				</triggers>
-				That’s TIE group Gamma gone!
+				That's TIE group Gamma gone!
 			</message>
 			<message color="Rebel">
 				<triggers>
 					<trigger amount="AllNonPlayerCraft" type="FlightGroup" variable="RED" condition="Destroyed" />
 				</triggers>
-				Both of your wingmen are gone, it’s up to you now!
+				Both of your wingmen are gone, it's up to you now!
 			</message>
 			<?xwvm clearGoalMessages?>
 			<message color="Rebel" goal="primarySuccess">

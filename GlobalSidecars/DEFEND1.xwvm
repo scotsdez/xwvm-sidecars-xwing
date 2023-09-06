@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="DEFEND1">
+		<messages>
+			<message delay="0" color="Rebel">
+				Glad you could join us, Red group, are we happy to see you!
+			</message>
+			<message delay="1" color="Rebel">
+				We heard you had a spot of trouble with the locals.
+			</message>
+			<message delay="2" color="Rebel">
+				You might say that, we've got incoming bombers!
+			</message>
+			<message delay="3" color="Rebel">
+				We're on it, Independence.
+			</message>
+			
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="INDEPENDENCE" condition="ZeroShields" />
+				</triggers>
+				This is the Independence, our shields are down!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="INDEPENDENCE" condition="FiftyHull" />
+				</triggers>
+				We're taking heavy damage!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="IMMORTAL" condition="Attacked" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="RED" condition="Survived" />
+				</triggers>
+				Is attacking the Star Destroyer head-on wise, Red Leader?
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="IMMORTAL" condition="Destroyed" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="RED" condition="Survived" />
+				</triggers>
+				I take it back, that was amazing!
+			</message>
+			<message delay="108" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="INDEPENDENCE" condition="Survived" />
+				</triggers>
+				We're making our final preparations to jump now - we just need a bit more cover.
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				The Independence made it into hyperspace, well done!
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				Return to the Defiance as soon as possible.
+			</message>
+			<message delay="3" color="Rebel" goal="primarySuccess">
+				A major offensive is about to begin.
+			</message>
+
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primaryFail">
+				The Independence... our flagship... has been destroyed.
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				Our struggle just became much more desperate.
+			</message>
+			<message delay="2" color="Rebel" goal="primaryFail">
+				All fighters, make an emergency jump to the Defiance!
+			</message>
+		</messages>
+	</mission>
+</sidecar>

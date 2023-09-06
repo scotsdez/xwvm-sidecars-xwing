@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="STD1">
+		<messages>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Arrived" />
+				</triggers>
+				Red group, this is Blue leader.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Arrived" />
+				</triggers>
+				I'll give you some cover as you take care of the corvettes.
+			</message>
+			<message delay="3" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Arrived" />
+				</triggers>
+				I expect stiff resistance from that fighter escort, though.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="INTREPID" condition="Attacked" />
+				</triggers>
+				Focus on the escorts - we'll deal with the Intrepid later!
+			</message>
+			
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="TwentyFivePercent" type="GlobalGroup" variable="1" condition="Destroyed" />
+				</triggers>
+				The first of the corvettes has been destroyed.
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="FiftyPercent" type="GlobalGroup" variable="1" condition="Destroyed" />
+				</triggers>
+				Another corvette has been eliminated.
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="1" condition="Destroyed" />
+				</triggers>
+				That's all of the corvettes escorting the Intrepid taken care of!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="2" condition="Destroyed" />
+				</triggers>
+				The gunboats have been wiped out, well done!
+			</message>
+			
+			
+			
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				The Intrepid's escort has been completely destroyed.
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				This leaves the Intrepid vulnerable to a direct assault.
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				Return to base to prepare for the next phase of the attack.
+			</message>
+
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primaryFail">
+				The Star Destroyer's escort wasn’t eliminated.
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				A direct assault on the Intrepid will be almost impossible now.
+			</message>
+			<message delay="2" color="Rebel" goal="primaryFail">
+				Return to base immediately for debriefing.
+			</message>
+		</messages>
+		<flightGroup target="VIPER 1" globalGroup="1" />
+		<flightGroup target="VIPER 2" globalGroup="1" />
+		<flightGroup target="VIPER 3" globalGroup="1" />
+		<flightGroup target="MU" globalGroup="2" />
+		<flightGroup target="RHO" globalGroup="2" />
+		<flightGroup target="TAU" globalGroup="2" />
+	</mission>
+</sidecar>

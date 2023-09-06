@@ -13,6 +13,30 @@
 			</message>
 			<message color="Rebel">
 				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ROUH" condition="Inspected" />
+				</triggers>
+				You've just identified (or <b>inspected</b>) the freighter.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ROUH" condition="Inspected" />
+				</triggers>
+				By targeting an enemy ship and flying in close proximity...
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ROUH" condition="Inspected" />
+				</triggers>
+				...your targeting computer will display the craft designation...
+			</message>
+			<message delay="3" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ROUH" condition="Inspected" />
+				</triggers>
+				...and any cargo. Some missions may require you to identify enemy craft.
+			</message>
+			<message color="Rebel">
+				<triggers>
 					<trigger amount="AtLeastOne" type="GlobalGroup" variable="1" condition="Destroyed" />
 				</triggers>
 				Excellent, that’s one Imperial craft destroyed, keep going!

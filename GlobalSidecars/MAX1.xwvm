@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="MAX1">
+		<messages>
+			<message delay="0" color="Rebel">
+				This is Blue leader, we'll cover you.
+			</message>
+			<message delay="1" color="Rebel">
+				Find the freighters carrying hyperdrive parts and destroy them.
+			</message>
+			
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="FiftyPercent" type="GlobalGroup" variable="1" condition="Inspected" />
+				</triggers>
+				That looks like one of the shipments to be eliminated.
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="1" condition="Inspected" />
+				</triggers>
+				Take out that freighter, it's carrying hyperdrive components!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="FiftyPercent" type="GlobalGroup" variable="1" condition="Destroyed" />
+				</triggers>
+				One shipment of hyperdrive parts has been destroyed.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="FiftyPercent" type="GlobalGroup" variable="1" condition="Destroyed" />
+				</triggers>
+				There should be at least one more, check the others!
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="DELTA" condition="Arrived" />
+				</triggers>
+				More TIEs inbound!
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="INTREPID" condition="Attacked" />
+				</triggers>
+				No need to take on the Intrepid for now.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="INTREPID" condition="Attacked" />
+				</triggers>
+				Let's focus on the hyperdrive shipment.
+			</message>
+			<message delay="3" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="INTREPID" condition="Attacked" />
+				</triggers>
+				We'll eliminate it later, we have a special operation planned.
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				The hyperdrive parts have been destroyed.
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				This should leave the Intrepid stranded here.
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				Return to base, so we plan the next step of the operation.
+			</message>
+
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primaryFail">
+				The hyperdrive parts weren't destroyed.
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				The Intrepid will surely continue to threaten this sector.
+			</message>
+			<message delay="2" color="Rebel" goal="primaryFail">
+				Abort mission, return to base.
+			</message>
+		</messages>
+		<flightGroup target="KIAM III" globalGroup="1" />
+		<flightGroup target="KIAM V" globalGroup="1" />
+	</mission>
+</sidecar>

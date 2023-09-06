@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="LARRY2">
+		<messages>
+			<message delay="0" color="Rebel">
+				This is Blue Leader: we'll take on the fighters.
+			</message>
+			<message delay="1" color="Rebel">
+				That way you can focus on the corvettes.
+			</message>
+			<message delay="2" color="Rebel">
+				If you can take out that minefield, it'd be a great bonus!
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="TwentyFivePercent" type="GlobalGroup" variable="1" condition="Destroyed" />
+				</triggers>
+				That's one of the corvettes down!
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="FiftyPercent" type="GlobalGroup" variable="1" condition="Destroyed" />
+				</triggers>
+				That's one of the corvettes down!
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="DAR ES III" condition="Arrived" />
+				</triggers>
+				Another corvette just dropped into the system, must be a late arrival.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="OMEGA" condition="Arrived" />
+				</triggers>
+				We've also got a transport showing on sensors.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="OMEGA" condition="Arrived" />
+				</triggers>
+				Don't let it dock with the Priam!
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="PRIAM" condition="ZeroShields" />
+				</triggers>
+				Don't destroy the Priam yet - focus on the escorts for now!
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				The Priam's escort has been taken out, well done.
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				Return to base to rearm and prepare for the next operation.
+			</message>
+
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primaryFail">
+				We couldn't destroy the Priam's escort.
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				We won't be able to complete the General's plan now!
+			</message>
+			<message delay="2" color="Rebel" goal="primaryFail">
+				Abort mission and return to base for debriefing.
+			</message>
+		</messages>
+		<flightGroup target="DAR ES I" globalGroup="1" />
+		<flightGroup target="DAR ES II" globalGroup="1" />
+		<flightGroup target="DAR ES III" globalGroup="1" />
+	</mission>
+</sidecar>

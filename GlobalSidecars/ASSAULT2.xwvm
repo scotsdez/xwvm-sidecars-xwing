@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="ASSAULT2">
+		<messages>
+			<message delay="0" color="Rebel">
+				All right, Red group, I've got eyes on the corvettes.
+			</message>
+			<message delay="1" color="Rebel">
+				Looks like the Empire has sent repair teams in, as well.
+			</message>
+			<message delay="2" color="Rebel">
+				At max speed, we might be able to take out the repair ships.
+			</message>
+			<message delay="3" color="Rebel">
+				Otherwise, we'll just take out the escorts...
+			</message>
+			<message delay="4" color="Rebel">
+				...and let the Y-Wings do their thing.
+			</message>
+			<message delay="5" color="Rebel">
+				Copy, Red leader.
+			</message>
+			
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="1" condition="Destroyed" />
+				</triggers>
+				The Imperial repair team has been taken care of!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="GOLD" condition="Arrived" />
+				</triggers>
+				This is Gold Leader, we're starting our run on the corvettes.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="GOLD" condition="Arrived" />
+				</triggers>
+				Copy that, Gold Leader. This is Blue Leader.
+			</message>
+			<message delay="3" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="GOLD" condition="Arrived" />
+				</triggers>
+				We'll focus on Ethar II, if you can take out the other one.
+			</message>
+			
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="GlobalGroup" variable="1" condition="Docked" />
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="2" condition="Disabled" />
+				</triggers>
+				Both corvettes have been disabled.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ROGUE 1" condition="Arrived" />
+				</triggers>
+				This is Rogue 1, we’re here to recapture the corvettes.
+			</message>
+
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="GlobalGroup" variable="3" condition="Attacked" />
+				</triggers>
+				We're under attack, we need some cover!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="3" condition="Docked" />
+				</triggers>
+				Capture operation complete, heading home.
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="GlobalGroup" variable="2" condition="FiftyHull" />
+				</triggers>
+				The hull on one of the corvettes is critical, protect it!
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="NU" condition="Arrived" />
+				</triggers>
+				Gunboat group Nu looks like they're going for Rogue group!
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				Ethar I and II have been successfully recaptured; well done.
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				We're glad to have them back in the fleet.
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				All fighters, head for the rendezvous coordinates.
+			</message>
+
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primaryFail">
+				We were unable to recapture the corvettes.
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				This is an unfortunate blow to the strength of our fleet.
+			</message>
+			<message delay="2" color="Rebel" goal="primaryFail">
+				All fighters, abort mission and return to base immediately.
+			</message>
+		</messages>
+		<flightGroup target="CEPTOR 1" globalGroup="1" />
+		<flightGroup target="CEPTOR 2" globalGroup="1" />
+		<flightGroup target="ETHAR I" globalGroup="2" />
+		<flightGroup target="ETHAR II" globalGroup="2" />
+		<flightGroup target="ROGUE 1" globalGroup="3" />
+		<flightGroup target="ROGUE 2" globalGroup="3" />
+	</mission>
+</sidecar>

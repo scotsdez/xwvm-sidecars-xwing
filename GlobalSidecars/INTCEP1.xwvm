@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="INTCEP1">
+		<messages>
+			<message delay="0" color="Rebel">
+				This is Red leader, we're moving into attack position.
+			</message>
+			<message delay="1" color="Rebel">
+				Roger, Red leader. Watch out for those TIE Bomber squadrons!
+			</message>
+			<message delay="2" color="Rebel">
+				This is Gold leader: maintaining escort of the Tantive IV.
+			</message>
+			
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="TANTIVE IV" condition="Attacked" />
+				</triggers>
+				Tantive IV here, we're under attack!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="TANTIVE IV" condition="ZeroShields" />
+				</triggers>
+				This is the Tantive IV, our shields are gone!
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="TAU" condition="Arrived" />
+				</triggers>
+				Some gunboats just dropped in, stay focussed on the TIEs!
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				Thanks for your help, we made it!
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				We'll make sure the plans get to High Command safely.
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				Well done, the Tantive IV has successfully escaped!
+			</message>
+			<message delay="3" color="Rebel" goal="primarySuccess">
+				You've helped give us hope against the Empire's newest weapon.
+			</message>
+			<message delay="4" color="Rebel" goal="primarySuccess">
+				Return to the base for debriefing.
+			</message>
+
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primaryFail">
+				We've failed to protect the Princess, and the Death Star plans.
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				We now have little hope of finding a flaw in this new weapon.
+			</message>
+			<message delay="2" color="Rebel" goal="primaryFail">
+				All fighters, abort mission and return to base.
+			</message>
+		</messages>
+	</mission>
+</sidecar>

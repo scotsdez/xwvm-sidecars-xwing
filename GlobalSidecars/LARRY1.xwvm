@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="LARRY1">
+		<messages>
+			<message delay="0" color="Rebel">
+				There's the base, Red leader. We'll follow your lead.
+			</message>
+			<message delay="1" color="Rebel">
+				That is one nasty-looking minefield!
+			</message>
+			<message delay="2" color="Rebel">
+				Have you ever seen a nice-looking minefield, Red 3?
+			</message>
+			<message delay="3" color="Rebel">
+				You make a fair point.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="DIPUTS" condition="Arrived" />
+				</triggers>
+				Two resupply freighters just dropped into the system.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="DIPUTS" condition="Arrived" />
+				</triggers>
+				Don't let them escape!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="1" condition="Destroyed" />
+				</triggers>
+				The base containers have been completely destroyed.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="DIPUTS" condition="Destroyed" />
+				</triggers>
+				The resupply freighters have been neutralised. 
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="PRIAM" condition="Arrived" />
+				</triggers>
+				An Imperial frigate just arrived, let's finish up quickly and go.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="PRIAM" condition="Arrived" />
+				</triggers>
+				Looks like the General's strategy worked, we've got them now!
+			</message>
+			<message delay="3" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="PRIAM" condition="Arrived" />
+				</triggers>
+				They have no idea what they just walked into!
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="PRIAM" condition="Attacked" />
+				</triggers>
+				Red Group, don't destroy that frigate.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="PRIAM" condition="Attacked" />
+				</triggers>
+				General Dodonna has something special planned for it.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="PRIAM" condition="Destroyed" />
+				</triggers>
+				That frigate was key to General Dodonna's plans, Red Group! 
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="PRIAM" condition="Destroyed" />
+				</triggers>
+				This kind of insubordination will not be tolerated!
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="CraftCategory" variable="Mine" condition="Destroyed" />
+				</triggers>
+				All mines in the area have been eliminated.
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				The supply base has been completely destroyed.
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				The next ship to drop by for repairs is in for a big surprise!
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				Return to base for details of the next stage of the operation.
+			</message>
+
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primaryFail">
+				The supply base and freighters were not completely destroyed.
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				This will allow the Empire to keep operating from this sector.
+			</message>
+			<message delay="2" color="Rebel" goal="primaryFail">
+				Abort mission and return to base.
+			</message>
+		</messages>
+		<flightGroup target="CHI" globalGroup="1" />
+		<flightGroup target="PI" globalGroup="1" />
+		<flightGroup target="PSI" globalGroup="1" />
+	</mission>
+</sidecar>

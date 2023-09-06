@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="MAX17">
+		<messages>
+			<message delay="0" color="Rebel">
+				Red 2, Red 3: throttle up, and let's get to it.
+			</message>
+			<message delay="3" color="Rebel">
+				The bombers have already started launching torpedoes!
+			</message>
+			<message delay="4" color="Rebel">
+				Red 3, can you intercept?
+			</message>
+			<message delay="5" color="Rebel">
+				We're in the thick of it now!
+			</message>
+			<message delay="6" color="Rebel">
+				Well, you wouldn't want to be bored... eh, Red 2?
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="IMMORTAL_2" condition="Arrived" />
+				</triggers>
+				The Immortal has just jumped back into the system...
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="IMMORTAL_2" condition="Arrived" />
+				</triggers>
+				...that can't be good for us.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BETA_2" condition="Arrived" />
+				</triggers>
+				Reading additional bombers inbound!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ZETA" condition="Arrived" />
+				</triggers>
+				An Interceptor squadron just launched!
+			</message>
+			
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="DEFIANCE" condition="ZeroShields" />
+				</triggers>
+				This is the Defiance, we've lost our shields!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="DEFIANCE" condition="FiftyHull" />
+				</triggers>
+				Our hull is heavily damaged!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="DEFIANCE" condition="FiftyHull" />
+				</triggers>
+				We need more time to make the jump to hyperspace!
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				We've made it into hyperspace, thanks for your help!
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				The hyperspace coordinates have been sent to your R2 unit.
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				Follow us when you can.
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primaryFail">
+				The Defiance has been lost.
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				This is a truly dark day for the Rebellion.
+			</message>
+			<message delay="2" color="Rebel" goal="primaryFail">
+				All fighters, make an emergency hyperspace jump...
+			</message>
+			<message delay="3" color="Rebel" goal="primaryFail">
+				...and rendezvous at Site Bravo.
+			</message>
+		</messages>
+	</mission>
+</sidecar>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="YRAID">
+		<messages>
+			<message delay="1" color="Rebel">
+				Okay, there's the repair dock.
+			</message>
+			<message delay="2" color="Rebel">
+				I'll take out the large ships, you focus on the smaller ones.
+			</message>
+			<message delay="3" color="Rebel">
+				And that minefield!
+			</message>
+			
+			<message delay="1" color="Imperial">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="VULTURE" condition="Arrived" />
+				</triggers>
+				Attention, Rebel craft!
+			</message>
+			<message delay="2" color="Imperial">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="VULTURE" condition="Arrived" />
+				</triggers>
+				Stand down your attack and surrender for interrogation!
+			</message>
+			<message delay="3" color="Imperial">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="VULTURE" condition="Arrived" />
+				</triggers>
+				This is your only warning.
+			</message>
+			<message delay="4" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="VULTURE" condition="Arrived" />
+				</triggers>
+				[Sarcastic] I don’t know, do you think we should do what they say?
+			</message>
+
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="1" condition="Destroyed" />
+				</triggers>
+				The transports and shuttles have all been destroyed.
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="2" condition="Destroyed" />
+				</triggers>
+				All of the fighters from the repair dock have been destroyed.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="VULTURE" condition="Destroyed" />
+				</triggers>
+				Excellent work taking down that frigate!
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				The repair area has been completely destroyed.
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				This will help cripple the Empire’s supply network.
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				It should also help delay completion of the Death Star.
+			</message>
+			<message delay="3" color="Rebel" goal="primarySuccess">
+				Return to base for debriefing.
+			</message>
+
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primaryFail">
+				The repair dock and starship supply lines remain operational.
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				We've failed to impact the Death Star's supply infrastructure.
+			</message>
+			<message delay="2" color="Rebel" goal="primaryFail">
+				If we can't delay its completion, it will be the end of us all.
+			</message>
+			<message delay="3" color="Rebel" goal="primaryFail">
+				Abort mission and return to base immediately.
+			</message>
+		</messages>
+		<flightGroup target="OMEGA" globalGroup="1" />
+		<flightGroup target="LAMBDA" globalGroup="1" />
+		<flightGroup target="GAMMA" globalGroup="2" />
+		<flightGroup target="ZETA" globalGroup="2" />
+		<flightGroup target="DELTA" globalGroup="2" />
+		<flightGroup target="BETA" globalGroup="2" />
+	</mission>
+</sidecar>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="LARRY3">
+		<messages>
+			<message delay="0" color="Rebel">
+				This is Gold Leader, I have eyes on the Priam.
+			</message>
+			<message delay="1" color="Rebel">
+				Unfortunately, I'm also seeing that minefield.
+			</message>
+			<message delay="2" color="Rebel">
+				Could you do the honours, Red Leader?
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="PRIAM" condition="Disabled" />
+				</triggers>
+				The Priam has been disabled, capture craft inbound.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ASSAULT 1" condition="Arrived" />
+				</triggers>
+				Assault 1 here, starting our approach to the Priam.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="CraftCategory" variable="Mine" condition="Destroyed" />
+				</triggers>
+				The Priam's minefield has been cleared.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="TAU" condition="Arrived" />
+				</triggers>
+				Keep those gunboats off our backs!
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="GlobalGroup" variable="1" condition="Destroyed" />
+				</triggers>
+				We lost some of the operation's key personnel!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="PRIAM" condition="Destroyed" />
+				</triggers>
+				We were supposed to capture the Priam, not destroy it!
+			</message>	
+			
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				The Priam's captain has surrendered control to our commandos.
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				Our personnel have been ferried aboard, the vessel is ours!
+			</message>
+			<message delay="3" color="Rebel" goal="primarySuccess">
+				Fantastic job, now head back to base!
+			</message>
+
+			<?xwvm clearGoalMessages?>
+			<message delay="2" color="Rebel" goal="primaryFail">
+				Without the Priam, General Dodonna's plan is in ruins.
+			</message>
+			<message delay="3" color="Rebel" goal="primaryFail">
+				Abort mission and return to base for debriefing.
+			</message>
+		</messages>
+		<flightGroup target="ASSAULT 1" globalGroup="1" />
+		<flightGroup target="ASSAULT 2" globalGroup="1" />
+		<flightGroup target="PANDA 1" globalGroup="1" />
+		<flightGroup target="PANDA 2" globalGroup="1" />
+		<flightGroup target="JORDI 1" globalGroup="1" />
+		<flightGroup target="JORDI 2" globalGroup="1" />
+	</mission>
+</sidecar>
