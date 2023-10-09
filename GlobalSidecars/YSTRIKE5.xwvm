@@ -3,55 +3,66 @@
 	<mission target="YSTRIKE5">
 		<messages>
 			<message delay="1" color="Rebel">
-				All wings, this is Red leader.
+				All wings, this is Red Leader.
+				<text>Red Leader to all wings.</text>
 			</message>
 			<message delay="2" color="Rebel">
 				Form up and stay alert for the convoy, it'll arrive any minute.
+				<text>Stay in formation, and watch out for the convoy.</text>
 			</message>
 			<message delay="3" color="#df0">
-				What do you think it’s carrying?
+				What do you think it's carrying?
+				<text>I wonder what it's carrying.</text>
+				<text>They've tried to keep this quiet... must be important.</text>
 			</message>
 			<message delay="4" color="#1890ff">
 				I heard rumours that the Empire is building something...
+				<text>Word around the hangar is, the Empire is building something...</text>
 			</message>
 			<message delay="5" color="#1890ff">
 				...some kind of new, bigger Star Destroyer.
 			</message>
 			<message delay="6" color="#1890ff">
-				Maybe it’s materials for that.
+				Maybe it's materials for that.
+				<text>Could be materials for that.</text>
 			</message>
 			<message delay="7" color="#df0">
 				You should know better than to believe random rumours!
+				<text>If I had a credit for every time I heard that...</text>
 			</message>
 			<message delay="8" color="#df0">
-				Besides, they’ve been saying that for years now...
+				Besides, they've been saying that for years now...
 			</message>
 			<message delay="9" color="#df0">
-				...and I’ve not seen any sign of it yet.
+				...and I've not seen any sign of it yet.
 			</message>
 			<message delay="10" color="Rebel">
 				Whatever it is...
 			</message>
 			<message delay="11" color="Rebel">
-				...you can bet it isn’t going to be good news for the Alliance.
+				...you can bet it isn't going to be good news for the Alliance.
 			</message>
 			<message delay="1" color="#1890ff">
 				<triggers>
 					<trigger amount="AtLeastOne" type="FlightGroup" variable="HYKO" condition="Arrived" />
 				</triggers>
 				There's the convoy, right on time!
+				<text>That's the convoy - the Empire is as punctual as ever!</text>
+				<text>There's activity on the scopes - looks like the convoy.</text>
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
 					<trigger amount="AtLeastOne" type="FlightGroup" variable="HYKO" condition="Arrived" />
 				</triggers>
 				I see it. All wings, fire at will.
+				<text>Acknowleged. All wings, engage and destroy.</text>
 			</message>
 			<message delay="2" color="#1890ff">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="TAO" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="TAU" condition="Arrived" />
 				</triggers>
 				Watch out for those escorts!
+				<text>Keep an eye on those escorts!</text>
 			</message>
 			<message color="Rebel">
 				<triggers>
@@ -64,6 +75,7 @@
 					<trigger amount="HundredPercent" type="GlobalGroup" variable="1" condition="Inspected" />
 				</triggers>
 				Great initiative, you managed to inspect the whole convoy!
+				<text>Rebel Intelligence will be very interested in the convoy's contents.</text>
 			</message>
 			<?xwvm clearGoalMessages?>
 			<message color="#dfd" goal="primarySuccess">

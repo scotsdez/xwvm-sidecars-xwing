@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="T4M01AM">
+		<messages>
+			<message color="Rebel">
+				This is Dobll 1, we've got fighters inbound!
+			</message>
+			<message delay="1" color="Rebel">
+				Stay with the corvettes, Red 1.
+			</message>
+			<message delay="2" color="Rebel">
+				We need to prioritise our personnel over supplies.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RED WIND" condition="Arrived" />
+				</triggers>
+				Imperial craft inbound!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ALPHA" condition="Arrived" />
+				</triggers>
+				They're launching bombers, move to intercept, Red 1! 
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="TAU" condition="Arrived" />
+				</triggers>
+				Some gunboats just dropped out of hyperspace.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="CRESCENT" condition="ZeroShields" />
+				</triggers>
+				One of the corvettes just lost its shields!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="CRESCENT" condition="FiftyHull" />
+				</triggers>
+				One of the corvettes just lost its shields!
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="CRESCENT" condition="FiftyHull" />
+				</triggers>
+				They can’t take much more punishment!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="DOBLL" condition="Destroyed" />
+				</triggers>
+				May the Force be with you, Dobll.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="DOBLL" condition="Destroyed" />
+				</triggers>
+				All of the freighters have been lost.
+			</message>
+			<message delay="3" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="DOBLL" condition="Destroyed" />
+				</triggers>
+				Concentrate on defending the corvettes, Red 1.
+			</message>
+			
+			
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				The personnel ships have made it into hyperspace safely.
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				Our efforts to scatter the fleet are proceeding well.
+			</message>	
+			<message delay="3" color="Rebel" goal="primarySuccess">
+				Jump to the preset coordinates when you're ready.
+			</message>	
+			
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				We lost one of the corvettes carrying our personnel.
+			</message>
+			<message delay="2" color="Rebel" goal="primaryFail">
+				We can't afford these losses, not at this critical time.
+			</message>
+			<message delay="3" color="Rebel" goal="primaryFail">
+				We have to do better at protecting our people.
+			</message>
+		</messages>
+	</mission>
+</sidecar>

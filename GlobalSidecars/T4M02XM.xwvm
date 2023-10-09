@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="T4M02XM">
+		<messages>
+			<message color="Rebel">
+				Form up, and watch your positioning.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="LEBO" condition="Arrived" />
+				</triggers>
+				Here comes the convoy.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="LEBO" condition="Arrived" />
+				</triggers>
+				Sensors are picking up some kind of probe about 20 clicks away.
+			</message>
+			<message delay="3" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="LEBO" condition="Arrived" />
+				</triggers>
+				Let's hope it's not Imperial.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MU" condition="Arrived" />
+				</triggers>
+				I can't remember the last time our luck was good...
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MU" condition="Arrived" />
+				</triggers>
+				... Imperial fighters on an intercept course, stay sharp!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ASSASSIN" condition="Arrived" />
+				</triggers>
+				They've sent in a Star Destroyer... how nice.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ALPHA" condition="Arrived" />
+				</triggers>
+				It's launching fighters!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RHO" condition="Arrived" />
+				</triggers>
+				Rho looks like they're going after the freighters!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="SIGMA" condition="Arrived" />
+				</triggers>
+				We'd better get rid of those transports, fast!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="LAMBDA" condition="Arrived" />
+				</triggers>
+				More Imperial transports just arrived!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="LEBO" condition="CompletedMission" />
+				</triggers>
+				The first set of transports is away.
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="CHIPR" condition="CompletedMission" />
+				</triggers>
+				The shuttles have entered hyperspace.
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BO" condition="ZeroShields" />
+				</triggers>
+				This is Bo, we need assistance!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="BO" condition="CompletedMission" />
+				</triggers>
+				Thanks for the protection, Red group!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="PROBE" condition="Destroyed" />
+				</triggers>
+				I think it's a bit late for that, but good shooting anyway, Red 2!
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				The convoy has made it to hyperspace safely, well done.
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				Unfortunately, the celebration will have to wait, I'm afraid.
+			</message>	
+			<message delay="3" color="Rebel" goal="primarySuccess">
+				We've just had word of an urgent situation developing.
+			</message>	
+			<message delay="4" color="Rebel" goal="primarySuccess">
+				Get back to base ASAP for the details.
+			</message>	
+			
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				We lost some of the convoy.
+			</message>
+			<message delay="2" color="Rebel" goal="primaryFail">
+				We were relying on those personnel and supplies.
+			</message>
+			<message delay="3" color="Rebel" goal="primaryFail">
+				Our situation has become even more desperate.
+			</message>
+			<message delay="4" color="Rebel" goal="primaryFail">
+				Abort mission and return for debriefing.
+			</message>
+		</messages>
+	</mission>
+</sidecar>

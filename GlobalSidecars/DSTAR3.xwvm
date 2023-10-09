@@ -9,6 +9,16 @@
 				Then turn left, and make your way along the trench.
 			</message>
 			
+			<message delay="20" color="Rebel">
+				Stay low, adjust your deflectors and blast any obstacles.
+			</message>
+			<message delay="21" color="Rebel">
+				Watch out for those laser batteries...
+			</message>
+			<message delay="22" color="Rebel">
+				...some will be angled to point at your rear after you pass.
+			</message>
+			
 			<?xwvm clearGoalMessages?>
 			<message color="Rebel" goal="primarySuccess">
 				Yes! Way to go, that was a great shot, one in a million!

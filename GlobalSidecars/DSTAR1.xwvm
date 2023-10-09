@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="DSTAR1">
+		<messages>
+			<message delay="0" color="Rebel">
+				Red 2 to Red Leader.
+			</message>
+			<message delay="1" color="Rebel">
+				We'll focus on the fighters, while you go after the comm sat.
+			</message>
+			<message delay="2" color="Rebel">
+				This is Blue Leader: we'll give you cover.
+			</message>
+			<message delay="3" color="Rebel">
+				It doesn’t look like we'll be short of targets.
+			</message>
+			<message delay="300" color="Rebel">
+				The Death Star is almost in firing range!
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="DELTA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Survived" />
+				</triggers>
+				There's something new on sensors.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="DELTA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Survived" />
+				</triggers>
+				What are those!?
+			</message>
+			<message delay="3" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="DELTA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Survived" />
+				</triggers>
+				Whatever they are, I'm betting they aren't friendly.
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="DELTA" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Survived" />
+				</triggers>
+				Well, they're not invincible, at least.
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				The comm sat has been destroyed.
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				They can't call in reinforcements without that satellite!
+			</message>
+			<message delay="3" color="Rebel" goal="primarySuccess">
+				We can begin the next phase of the operation.
+			</message>
+			<message delay="4" color="Rebel" goal="primarySuccess">
+				All fighters, make a short hyperjump to the preset coordinates.
+			</message>
+
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primaryFail">
+				The Death Star is in firing range of Yavin IV!
+			</message>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				It's too late for us, save yourselves!
+			</message>
+			<message delay="2" color="Rebel" goal="primaryFail">
+				Carry on the fire of the Rebellion! May the force be w-- [static]
+			</message>
+		</messages>
+	</mission>
+</sidecar>

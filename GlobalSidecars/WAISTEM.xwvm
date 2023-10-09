@@ -15,7 +15,7 @@
 				<triggers>
 					<trigger amount="AtLeastOne" type="FlightGroup" variable="ROUH" condition="Inspected" />
 				</triggers>
-				You've just identified (or <b>inspected</b>) the freighter.
+				You've just identified (or inspected) the freighter.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>

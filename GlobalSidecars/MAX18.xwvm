@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <sidecar>
 	<mission target="MAX18">
+		<briefing>
+            <messages>
+                <message target="3">
+                      A lone [[X-wing]], carrying the most vital intelligence data the Rebel Alliance has ever discovered, is disabled near the [[Cron Drift]].  This craft carries with it a detailed readout of the technical specifications of their military construction project.  All we know right now is that this project is code-named [[Stardust]] and is a mighty weapon of frightening power.
+  This information was intercepted 
+                </message>
+            </messages>
+        </briefing>
 		<messages>
 			<message delay="0" color="Rebel">
 				Blue 1 to Red Group, you are a sight for sore eyes!

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="LEVEL1">
+		<messages>
+			<message delay="0" color="Rebel">
+				Welcome to the proving ground, pilot.
+			</message>
+			<message delay="1" color="Rebel">
+				Here, we'll get you ready for combat.
+			</message>
+			<message delay="2" color="Rebel">
+				By the time we're finished, you'll be able to take on the best the Empire has to offer -- and win.
+			</message>
+			<message delay="3" color="Rebel">
+				It's very simple: fly around this course as quickly as you can.
+			</message>
+			<message delay="4" color="Rebel">
+				You get points for flying through the gates, and a penalty for any that you miss.
+			</message>
+
+			
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				Well done, you managed to clear this level.
+				<text>Good job on completing this level of the course in the available time.</text>
+			</message>
+
+	</mission>
+</sidecar>

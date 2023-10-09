@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="T4M04AW">
+		<messages>
+			<message delay="1" color="Rebel">
+				The corvette should arrive any-- ah, here it is.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="LAUHU" condition="Arrived" />
+				</triggers>
+				This is the Lauhu: starting our docking operation now.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RHO" condition="Arrived" />
+				</triggers>
+				Look alive - Imperial fighters on an intercept vector!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="FIRELANCE" condition="Arrived" />
+				</triggers>
+				We've got trouble... what's that ship doing?
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ALPHA" condition="Arrived" />
+				</triggers>
+				It's launching Bombers...
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="GAMMA" condition="Arrived" />
+				</triggers>
+				And some Interceptors too, just wonderful.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="FIRELANCE_2" condition="Arrived" />
+				</triggers>
+				Look who rejoined the party.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="FIRELANCE_3" condition="Arrived" />
+				</triggers>
+				They should've named that ship the Boomerang...
+			</message>
+			
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="LAUHU" condition="ZeroShields" />
+				</triggers>
+				This is the Lauhu, we've lost our shields!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="LAUHU" condition="FiftyHull" />
+				</triggers>
+				We can't take much more of this!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="LAUHU" condition="Docked" />
+				</triggers>
+				Okay, the transfer is done, we're getting out of here.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="LAUHU" condition="Docked" />
+				</triggers>
+				It will take a few moments for the Anvil to make its jump.
+			</message>
+			<message delay="3" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="LAUHU" condition="Docked" />
+				</triggers>
+				Copy that.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="LAUHU" condition="Destroyed" />
+				</triggers>
+				The Lauhu has been destroyed.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="LAUHU" condition="Destroyed" />
+				</triggers>
+				Without it, there is no hope of repairing the Anvil.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ANVIL" condition="Destroyed" />
+				</triggers>
+				We lost the Anvil.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ANVIL" condition="Destroyed" />
+				</triggers>
+				This is a crushing blow to our forces in this sector.
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				The Anvil and the Lauhu have successfully escaped, good job.
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				Head to the rendezvous point when you're ready.
+			</message>	
+			
+			<?xwvm clearGoalMessages?>
+			<message delay="3" color="Rebel" goal="primaryFail">
+				Abort mission and return to base for debriefing.
+			</message>
+
+		</messages>
+	</mission>
+</sidecar>
