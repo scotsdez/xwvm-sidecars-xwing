@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="T4M11YW">
+		<messages>
+			<message delay="0" color="Rebel">
+				Stay sharp, Ghorin's delivery will be arriving any moment.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="HALIFAX" condition="Arrived" />
+				</triggers>
+				Look who just showed up!
+			</message>
+			<message delay="2" color="Neutral">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="HALIFAX" condition="Arrived" />
+				</triggers>
+				You're poking your noses where they aren't welcome, Rebels.
+			</message>
+			<message delay="3" color="Neutral">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="HALIFAX" condition="Arrived" />
+				</triggers>
+				Ghorin will hear of this.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="HALIFAX" condition="Disabled" />
+				</triggers>
+				We've disabled the Halifax!
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="STORM" condition="Arrived" />
+				</triggers>
+				This is Storm: we're heading for the Halifax.
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="STORM" condition="Attacked" />
+				</triggers>
+				Storm to Red Leader, we're under attack!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="STORM" condition="Docked" />
+				</triggers>
+				This is Storm unit, we got what we came for!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MARIA" condition="Arrived" />
+				</triggers>
+				The Maria has arrived to recover the captured fighters.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="ALPHA" condition="Destroyed" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="BETA" condition="Destroyed" />
+				</triggers>
+				Too many Y-Wings have been destroyed.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="2" condition="Disabled" />
+				</triggers>
+				All of Ghorin's Y-Wings have been disabled for capture.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="1" condition="Destroyed" />
+				</triggers>
+				The capture teams have been destroyed!
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				We captured the Y-Wing and Ghorin's gold!
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				Great work, Red group.
+			</message>
+			<message delay="3" color="Rebel" goal="primarySuccess">
+				Hyperspace to the programmed coordinates for rendezvous.
+			</message>
+
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				Ghorin's shipment wasn’t captured.
+			</message>
+			<message delay="2" color="Rebel" goal="primaryFail">
+				Our plan to frame him has failed. 
+			</message>
+			<message delay="3" color="Rebel" goal="primaryFail">
+				Abort mission and return to base.
+			</message>
+
+		</messages>
+		<flightGroup target="LIGHTNING" globalGroup="1" />
+		<flightGroup target="THUNDER" globalGroup="1" />
+		<flightGroup target="TYPHOON" globalGroup="1" />
+		<flightGroup target="ALPHA" globalGroup="2" />
+		<flightGroup target="BETA" globalGroup="2" />
+		<flightGroup target="GAMMA" globalGroup="2" />
+	</mission>
+</sidecar>

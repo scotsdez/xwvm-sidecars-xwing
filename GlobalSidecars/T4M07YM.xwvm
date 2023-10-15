@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="T4M07YM">
+		<messages>
+			<message delay="1" color="Rebel">
+				We're counting on you to disable any ships carrying food.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="PROBE" condition="Destroyed" />
+				</triggers>
+				Be advised, we've lost telemetry from our probe in the sector.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="GORDOON" condition="Inspected" />
+				</triggers>
+				No food on the freighters, we can ignore them.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="KAPPA 6" condition="Inspected" />
+				</triggers>
+				Great, you've identified a ship carrying food.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="KAPPA 6" condition="Inspected" />
+				</triggers>
+				Don't let it get away, but don't destroy it!
+			</message>
+			<message delay="3" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="KAPPA 6" condition="Inspected" />
+				</triggers>
+				We badly need those supplies.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="GOLD" condition="Arrived" />
+				</triggers>
+				This is Gold Leader, we're here to help.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="GOLD" condition="Arrived" />
+				</triggers>
+				This is the Raider, preparing to board the target.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RAIDER" condition="Docked" />
+				</triggers>
+				We've got the grain, let's go!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RAIDER" condition="Attacked" />
+				</triggers>
+				We're taking fire, can you cover us?
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MU" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="GOLD" condition="Survived" />
+				</triggers>
+				Those gunboats look like trouble!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ENFORCER" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="GOLD" condition="Survived" />
+				</triggers>
+				This day just keeps getting better...
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RAIDER" condition="FiftyHull" />
+				</triggers>
+				Raider is in critical condition, you must protect it!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLACKEN" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="GOLD" condition="Survived" />
+				</triggers>
+				I think we're in a bit of trouble here...
+			</message>
+			
+			
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				The grain capture operation was a success, good work!
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				We'll live to fight another day, thanks to you.
+			</message>
+			<message delay="3" color="Rebel" goal="primarySuccess">
+				Return to base for debriefing.
+			</message>	
+			
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				We couldn't capture the grain supply being transported.
+			</message>
+			<message delay="2" color="Rebel" goal="primaryFail">
+				Without it, who knows how much longer we can hold out...
+			</message>
+			<message delay="3" color="Rebel" goal="primaryFail">
+				Abort mission and return to base immediately.
+			</message>
+
+		</messages>
+	</mission>
+</sidecar>

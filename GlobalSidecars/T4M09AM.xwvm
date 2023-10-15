@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="T4M09AM">
+		<messages>
+			<message delay="0" color="Rebel">
+				Red flight, keep an eye out for Ghorin's freighters.
+			</message>
+			<message delay="1" color="Rebel">
+				The first should arrive momentarily.
+			</message>
+			
+			<message delay="1" color="Neutral">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="TRANSMOR 3" condition="Arrived" />
+				</triggers>
+				Transmor 3, calling Alliance vessels.
+			</message>
+			<message delay="2" color="Neutral">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="TRANSMOR 3" condition="Arrived" />
+				</triggers>
+				We've got the grain shipment.
+			</message>
+			<message delay="3" color="Neutral">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="TRANSMOR 3" condition="Arrived" />
+				</triggers>
+				Awaiting your craft to initiate transfer.
+			</message>
+			<message delay="1" color="Neutral">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="TRANSMOR 3" condition="Inspected" />
+				</triggers>
+				I assure you that your shipment is here, as promised.
+			</message>
+			<message delay="2" color="Neutral">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="TRANSMOR 3" condition="Inspected" />
+				</triggers>
+				Red Leader was only following standard protocol, Transmor.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="KHAN 3" condition="Arrived" />
+				</triggers>
+				This is Khan 3, hailing Transmor 3.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="KHAN 3" condition="Arrived" />
+				</triggers>
+				Stand by for docking and cargo transfer.
+			</message>
+			<message delay="3" color="Neutral">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="KHAN 3" condition="Arrived" />
+				</triggers>
+				Acknowledged, Khan 3.
+			</message>
+			
+			<message delay="1" color="Neutral">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MU" condition="Arrived" />
+				</triggers>
+				Imperial fighters just dropped out of hyperspace!
+			</message>
+			<message delay="2" color="Neutral">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MU" condition="Arrived" />
+				</triggers>
+				Damn you, rebels, you set us up!
+			</message>
+			<message delay="3" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MU" condition="Arrived" />
+				</triggers>
+				I can assure you that we didn't...
+			</message>
+			<message delay="4" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MU" condition="Arrived" />
+				</triggers>
+				... and in any case, we can discuss this later!
+			</message>
+			<message delay="5" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MU" condition="Arrived" />
+				</triggers>
+				Red group will intercept the Imperials as we make the transfer.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="EPSILON" condition="Arrived" />
+				</triggers>
+				We've got trouble, boss. 
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="EPSILON" condition="Arrived" />
+				</triggers>
+				Looks like those transports are going for the freighters.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="KHAN 3" condition="Docked" />
+				</triggers>
+				The first shipment of grain is on board, heading for home.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="KHAN 2" condition="Arrived" />
+				</triggers>
+				The second freighter has arrived to take the next shipment. 
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="KHAN 2" condition="Docked" />
+				</triggers>
+				Food stocks loaded into the second freighter, just one to go.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="LAMBDA" condition="Arrived" />
+					<trigger amount="FiftyPercent" type="FlightGroup" variable="RED" condition="Survived" />
+				</triggers>
+				I was hoping they'd run out of transports by now!
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="KHAN 1" condition="Arrived" />
+				</triggers>
+				The last freighter will begin docking now.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="KHAN 1" condition="Docked" />
+				</triggers>
+				The last transfer is complete.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="KHAN 1" condition="Docked" />
+				</triggers>
+				Thanks Transmor, it's been a pleasure doing business with you.
+			</message>
+			<message delay="3" color="Neutral">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="KHAN 1" condition="Docked" />
+				</triggers>
+				[Indifferent grunt]
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="KHAN 3" condition="Attacked" />
+				</triggers>
+				Khan 3 is under attack, you must protect it, Red Leader!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="KHAN 2" condition="Attacked" />
+				</triggers>
+				Khan 2 is being attacked and needs assistance!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="KHAN 1" condition="Attacked" />
+				</triggers>
+				The last freighter is being attacked!
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				The transfer of grain from Ghorin's ships has been a success.
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				Assuming it passes testing, our supply issues should improve.
+			</message>
+			<message delay="3" color="Rebel" goal="primarySuccess">
+				Mission complete, return to base.
+			</message>
+
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				The grain transfer was a failure.
+			</message>
+			<message delay="2" color="Rebel" goal="primaryFail">
+				We were relying on those supplies to feed our forces.
+			</message>
+			<message delay="3" color="Rebel" goal="primaryFail">
+				Our struggle just grew much more desperate.
+			</message>
+			<message delay="4" color="Rebel" goal="primaryFail">
+				Abort mission and return to base.
+			</message>
+
+		</messages>
+	</mission>
+</sidecar>

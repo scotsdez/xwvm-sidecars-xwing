@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="T4M05XW">
+		<messages>			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="HART" condition="Arrived" />
+				</triggers>
+				This is the Hart, calling the Anvil.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="HART" condition="Arrived" />
+				</triggers>
+				We'll get in position for topside docking.
+			</message>
+			<message delay="3" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="HART" condition="Arrived" />
+				</triggers>
+				Roger that, Hart, we're initiating evac protocol EX-23.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="TT 4449_2" condition="Arrived" />
+				</triggers>
+				This is TT 4449, on approach to the hangar.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MU" condition="Arrived" />
+				</triggers>
+				Red Leader, picking up Imperial fighters entering the system!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="TT 4472_2" condition="Arrived" />
+				</triggers>
+				TT 4472, beginning rendezvous.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="TT 4475_2" condition="Arrived" />
+				</triggers>
+				TT 4475 to the Anvil: we're coming in.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="HART" condition="Docked" />
+				</triggers>
+				This is the Hart: the Anvil crew is safely aboard.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="HART" condition="Docked" />
+				</triggers>
+				Command, this is the Hart. We've finished evacuating the Anvil.
+			</message>
+			<message delay="3" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="HART" condition="Docked" />
+				</triggers>
+				Copy that. Red Group, you are clear to scuttle the Anvil.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="VIPER 7" condition="Arrived" />
+				</triggers>
+				Looks like Viper squadron found us!
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="VIPER 7" condition="Arrived" />
+				</triggers>
+				We see them, TT 4472.
+			</message>
+			<message delay="3" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="VIPER 7" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ANVIL" condition="Survived" />
+				</triggers>
+				Don't let them interfere with the evac, or capture the Anvil.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="GOLD" condition="Arrived" />
+				</triggers>
+				This is Gold leader, we'll give you cover, Hart.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ANVIL" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="HART" condition="Survived" />
+				</triggers>
+				Farewell, Anvil, and thank you.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="VIPER 7" condition="Destroyed" />
+				</triggers>
+				Viper squadron? More like hamster squadron!
+				<text>Viper squadron? I've fought more dangerous tookas!</text>
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="KAPPA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="HART" condition="Survived" />
+				</triggers>
+				Kappa looks like they're going after us, stop them!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="VIPER" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="HART" condition="Survived" />
+				</triggers>
+				Here come more Vipers, and right in our way, too!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="TAU" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="GOLD" condition="Survived" />
+				</triggers>
+				This is Gold Leader, I'm picking up more fighters coming in.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="TAU" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="GOLD" condition="Survived" />
+				</triggers>
+				They might be going for the Hart.
+			</message>
+			
+			
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				The Anvil's crew is safe, Red leader, great work.
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				We also gave Viper Squadron a pasting they won't soon forget!
+			</message>	
+			<message delay="3" color="Rebel" goal="primarySuccess">
+				See you at the debriefing.
+			</message>	
+			
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				This is a dark day for the Alliance.
+			</message>
+			<message delay="2" color="Rebel" goal="primaryFail">
+				The loss of the Anvil's crew couldn’t have come at a worse time.
+			</message>
+			<message delay="3" color="Rebel" goal="primaryFail">
+				The Empire is decimating our forces after our victory at Yavin.
+			</message>
+			<message delay="4" color="Rebel" goal="primaryFail">
+				All craft, return to the Defiance for debriefing.
+			</message>
+
+		</messages>
+	</mission>
+</sidecar>

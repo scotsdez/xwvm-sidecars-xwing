@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="T4M10AW">
+		<messages>
+			<message delay="0" color="Rebel">
+				Destroy any security patrol craft, and then ID the containers.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="KAPPA" condition="Inspected" />
+				</triggers>
+				What are those shuttles doing here?
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="FiftyPercent" type="GlobalGroup" variable="2" condition="Inspected" />
+				</triggers>
+				Half of the containers have been inspected.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="PSI 1" condition="Arrived" />
+				</triggers>
+				What did that freighter just drop off?
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="PSI 1" condition="Inspected" />
+				</triggers>
+				You've located the grain, good work.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BADI DEA" condition="Arrived" />
+				</triggers>
+				A new contact is emerging from hyperspace!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="1" condition="Inspected" />
+				</triggers>
+				The patrol fighters have been eliminated.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="SARSUMA" condition="Arrived" />
+				</triggers>
+				Sarsuma to Red-- what the-?
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="SARSUMA" condition="Attacked" />
+				</triggers>
+				We're under attack! Full power to engines, we need to-- [static]
+			</message>
+			<message delay="0" color="Imperial">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="SARSUMA" condition="Destroyed" />
+				</triggers>
+				Attention, Rebel vessel. This is Admiral Harkov.
+			</message>
+			<message delay="1" color="Imperial">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="SARSUMA" condition="Destroyed" />
+				</triggers>
+				Power down your craft and surrender...
+			</message>
+			<message delay="2" color="Imperial">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="SARSUMA" condition="Destroyed" />
+				</triggers>
+				...or suffer the same fate as your comrades.
+			</message>
+			<message delay="3" color="Imperial">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="SARSUMA" condition="Destroyed" />
+				</triggers>
+				This is your only warning.
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				Abort mission, return to base immediately!
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				It's too late for the Sarsuma.
+			</message>
+			<message delay="3" color="Rebel" goal="primarySuccess">
+				We need you back alive!
+			</message>
+			<message delay="4" color="Rebel" goal="primarySuccess">
+				That's a direct order!
+			</message>
+
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				The mission is a failure.
+			</message>
+			<message delay="2" color="Rebel" goal="primaryFail">
+				We needed to ID the container carrying grain.
+			</message>
+			<message delay="3" color="Rebel" goal="primaryFail">
+				Report back to base immediately for debriefing.
+			</message>
+
+		</messages>
+		<flightGroup target="ALPHA" globalGroup="1" />
+		<flightGroup target="ETA" globalGroup="1" />
+		<flightGroup target="CHI" globalGroup="2" />
+		<flightGroup target="XI" globalGroup="2" />
+		<flightGroup target="PI" globalGroup="2" />
+	</mission>
+</sidecar>

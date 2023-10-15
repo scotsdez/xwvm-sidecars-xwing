@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="T4M06XMB">
+		<messages>
+			<message delay="0" color="Rebel">
+				I see the container, Red Leader.
+			</message>
+			<message delay="1" color="Rebel">
+				And a welcoming party on its way too, by the looks of it.
+			</message>
+			<message delay="2" color="Rebel">
+				Seems to be a mix of fighters and bombers.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ASSASSIN 1" condition="Arrived" />
+				</triggers>
+				A corvette just jumped in near the container!
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ASSASSIN 1" condition="Arrived" />
+				</triggers>
+				What's it doing?
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ZETA" condition="Arrived" />
+				</triggers>
+				It's launched a bomber, and it's going for the container!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ALPHA" condition="Arrived" />
+				</triggers>
+				It's launching bombers!
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="D3RM3" condition="Attacked" />
+				</triggers>
+				The container's taking damage!
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="D3RM3" condition="Attacked" />
+				</triggers>
+				We can't afford to lose that food!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="TRIPS" condition="Arrived" />
+				</triggers>
+				This is the Trips, ready to recover the grain supplies.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MU" condition="Arrived" />
+				</triggers>
+				Some gunboats just joined this party!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="TRIPS" condition="Attacked" />
+				</triggers>
+				We're taking fire!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="TRIPS" condition="ZeroShields" />
+				</triggers>
+				We've lost our shields!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="TRIPS" condition="Docked" />
+				</triggers>
+				Trips to Red Group, we've got supplies, heading for home.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="WATHIS" condition="Destroyed" />
+				</triggers>
+				Can we please stick to the mission at hand, Red Leader?
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="THETA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RED" condition="Survived" />
+				</triggers>
+				I'm not sure who these people are...
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="THETA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RED" condition="Survived" />
+				</triggers>
+				... but they seem to be somewhat against the Empire.
+			</message>
+			<message delay="3" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="THETA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RED" condition="Survived" />
+				</triggers>
+				I suggest we leave them to it.
+			</message>
+			<message delay="4" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="THETA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RED" condition="Survived" />
+				</triggers>
+				Besides, we're not in any position to get involved right now.
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				The food supplies have been recovered, great job, Red Group.
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				There's a lot of relieved faces back here at base - thank you.
+			</message>
+			<message delay="3" color="Rebel" goal="primarySuccess">
+				Return to base when you're ready.
+			</message>	
+			
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				We desperately needed that food, Red Leader.
+			</message>
+			<message delay="2" color="Rebel" goal="primaryFail">
+				Without basic supplies, we can't keep fighting the Empire.
+			</message>
+			<message delay="3" color="Rebel" goal="primaryFail">
+				Return to base immediately.
+			</message>
+
+		</messages>
+	</mission>
+</sidecar>

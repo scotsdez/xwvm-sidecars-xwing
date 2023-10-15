@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="T4M08XMB">
+		<messages>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Arrived" />
+				</triggers>
+				This is Blue Leader, the satellite and mines are all yours.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Arrived" />
+				</triggers>
+				We'll take on the minelayers.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MU" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Survived" />
+				</triggers>
+				They've sent some reinforcements!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="BLUE" condition="Destroyed" />
+				</triggers>
+				Blue Squadron has been destroyed, you're on your own now!
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="1" condition="Destroyed" />
+				</triggers>
+				Great shooting!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="NAV BUOY" condition="Destroyed" />
+				</triggers>
+				The communications satellite has been destroyed.
+			</message>
+			
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="CraftCategory" variable="Mine" condition="Destroyed" />
+				</triggers>
+				The minefield has been eliminated.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="IMAC" condition="Destroyed" />
+				</triggers>
+				Scratch one Imperial freighter!
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				Nicely done, the primary targets have been destroyed.
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				Return to base when you're ready.
+			</message>
+
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				The Imperial listening post was left intact.
+			</message>
+			<message delay="2" color="Rebel" goal="primaryFail">
+				This jeopardises attempts to obtain supplies in this sector.
+			</message>
+			<message delay="3" color="Rebel" goal="primaryFail">
+				Fall back to base for debriefing.
+			</message>
+
+		</messages>
+		<flightGroup target="223 4" globalGroup="1" />
+		<flightGroup target="223 5" globalGroup="1" />
+		<flightGroup target="223 6" globalGroup="1" />
+	</mission>
+</sidecar>

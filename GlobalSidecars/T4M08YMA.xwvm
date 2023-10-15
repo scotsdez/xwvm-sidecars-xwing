@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="T4M08YMA">
+		<messages>
+			<message delay="0" color="Rebel">
+				Okay, you’ve got less than 7 minutes until the convoy arrives.
+			</message>
+			<message delay="1" color="Rebel">
+				Destroy all of the mines as quickly as possible...
+			</message>
+			<message delay="2" color="Rebel">
+				...before our ships get cut to pieces!
+			</message>
+			<message delay="3" color="Rebel">
+				Make sure you destroy the Imperial probe, too.
+			</message>
+			<message delay="4" color="Rebel">
+				We can't have them learning of our activities in this sector.
+			</message>
+			
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="FiftyPercent" type="CraftCategory" variable="Mine" condition="Destroyed" />
+				</triggers>
+				You've taken out half of the mines, keep going.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="CraftCategory" variable="Mine" condition="Destroyed" />
+				</triggers>
+				That's all of the mines destroyed.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="PROBE" condition="Destroyed" />
+				</triggers>
+				The Imperial probe has been destroyed.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="Plee'h 1" condition="Arrived" />
+				</triggers>
+				This is Plee'h 1, it's good to see you.
+			</message>
+			<message delay="3" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="Plee'h 1" condition="Arrived" />
+				</triggers>
+				Red Leader, escort Plee'h 1 to the jump point safely.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="Plee'h 1" condition="Attacked" />
+				</triggers>
+				We're taking damage!
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				Great job, you cleared the minefield!
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				Now our convoy can pass through this sector safely.
+			</message>
+
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				The freighter has been lost with all hands.
+			</message>
+			<message delay="2" color="Rebel" goal="primaryFail">
+				The supply convoy was critical for an upcoming operation...
+			</message>
+			<message delay="3" color="Rebel" goal="primaryFail">
+				...which is now in serious jeopardy.
+			</message>
+			<message delay="4" color="Rebel" goal="primaryFail">
+				Abort mission immediately.
+			</message>
+
+		</messages>
+	</mission>
+</sidecar>

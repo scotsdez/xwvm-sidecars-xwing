@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="T4M12XMB">
+		<messages>
+			<message delay="0" color="Rebel">
+				S-foils locked in attack position.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Arrived" />
+				</triggers>
+				Blue Leader to Red group, we appreciate the escort.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Arrived" />
+				</triggers>
+				I count seven corvettes directly ahead.
+			</message>
+			<message delay="3" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Arrived" />
+				</triggers>
+				Let's make this quick and clean.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RHO" condition="Arrived" />
+				</triggers>
+				Gunboats just dropped in and are targeting the Y-Wings.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="TAU" condition="Arrived" />
+				</triggers>
+				Some reinforcements just arrived!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="REMOH" condition="Arrived" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="RED" condition="Survived" />
+				</triggers>
+				This looks like bad news.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="IOTA" condition="Arrived" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="RED" condition="Survived" />
+				</triggers>
+				We've got TIE Advanced inbound!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="CraftType" variable="CorellianCorvette" condition="Destroyed" />
+				</triggers>
+				The first of the corvettes has been eliminated!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="TwentyFivePercent" type="CraftType" variable="CorellianCorvette" condition="Destroyed" />
+				</triggers>
+				You're a quarter of the way there, keep going!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="FiftyPercent" type="CraftType" variable="CorellianCorvette" condition="Destroyed" />
+				</triggers>
+				More than half of the corvettes have been taken out.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="SeventyFivePercent" type="CraftType" variable="CorellianCorvette" condition="Destroyed" />
+				</triggers>
+				There's just one corvette left!
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				Fantastic shooting, all of the corvettes have been destroyed.
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				Now head home for debriefing.
+			</message>
+
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				Not all of the convoy was destroyed.
+			</message>
+			<message delay="2" color="Rebel" goal="primaryFail">
+				We needed to eliminate all of the corvettes.
+			</message>
+			<message delay="3" color="Rebel" goal="primaryFail">
+				Now the garrison can hold out until reinforcements arrive.
+			</message>
+			<message delay="4" color="Rebel" goal="primaryFail">
+				Abort mission and return to base.
+			</message>
+
+		</messages>
+	</mission>
+</sidecar>

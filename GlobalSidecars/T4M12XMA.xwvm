@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="T4M12XMA">
+		<messages>
+			<message delay="0" color="Rebel">
+				All right, let's take this storage area out of commission.
+			</message>
+			<message delay="1" color="Rebel">
+				Focus on the freighters first, before they escape!
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Arrived" />
+				</triggers>
+				Blue Leader to Red group, good to have you with us.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Arrived" />
+				</triggers>
+				Can you help us take out those freighters first?
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="FIGII" condition="Destroyed" />
+				</triggers>
+				We stopped the freighters from escaping, nice job.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="CATHLEEN" condition="Arrived" />
+				</triggers>
+				This is the Cathleen, we’ll take on the Sentinel.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="CraftCategory" variable="Mine" condition="Destroyed" />
+				</triggers>
+				That's all of the mines destroyed.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MOTTI" condition="Arrived" />
+				</triggers>
+				Another freighter arrived, don't let it get away!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="IOTA" condition="Destroyed" />
+				</triggers>
+				You took out the TIE Advanced, impressive!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="OMEGA" condition="Destroyed" />
+				</triggers>
+				The Imperial shuttles have been eradicated.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="1" condition="Destroyed" />
+				</triggers>
+				All of the containers have been destroyed.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="COMM SAT" condition="Destroyed" />
+				</triggers>
+				The satellite has been taken out.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="SENTINEL" condition="Destroyed" />
+				</triggers>
+				The Sentinel is down, score one for the Alliance!
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				Well done, the storage area has been cleared.
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				This will cause supply problems for the Empire in this sector!
+			</message>
+			<message delay="3" color="Rebel" goal="primarySuccess">
+				The Empire should believe that Ghorin has betrayed them.
+			</message>
+
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				Some of the freighters got away, they'll report this for sure.
+			</message>
+			<message delay="2" color="Rebel" goal="primaryFail">
+				Ghorin's position as loyal to the Empire will be cemented. 
+			</message>
+			<message delay="3" color="Rebel" goal="primaryFail">
+				Abort the operation and return to base.
+			</message>
+
+		</messages>
+		<flightGroup target="PSI" globalGroup="1" />
+		<flightGroup target="PHI" globalGroup="1" />
+		<flightGroup target="PI" globalGroup="1" />
+		<flightGroup target="CHI" globalGroup="1" />
+	</mission>
+</sidecar>
