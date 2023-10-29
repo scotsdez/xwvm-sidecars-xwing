@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="T4M16AWA">
+		<messages>			
+			<message delay="1" color="Rebel">
+				All right, the convoy will be arriving shortly.
+			</message>
+			<message delay="2" color="Rebel">
+				Let's keep an eye out for any trouble.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MU" condition="Arrived" />
+				</triggers>
+				I'm reading 4 fighters on an intercept vector!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="GlobalGroup" variable="1" condition="Attacked" />
+				</triggers>
+				The convoy is under attack, you must protect it!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="FiftyPercent" type="FlightGroup" variable="MU" condition="Arrived" />
+				</triggers>
+				These guys certainly are persistent.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RED WIND" condition="Arrived" />
+				</triggers>
+				That Imperial frigate looks familiar...
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ALPHA" condition="Arrived" />
+				</triggers>
+				Those Bombers are going straight for the convoy!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="1" condition="CompletedMission" />
+				</triggers>
+				The first wave of the convoy has made it to hyperspace safely.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="2" condition="CompletedMission" />
+				</triggers>
+				The convoy's second wave has safely escaped.
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				All convoy ships are safely accounted for, excellent job.
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				This convoy will be essential for establishing our next base.
+			</message>
+			<message delay="3" color="Rebel" goal="primarySuccess">
+				Recommend you return to the hangar as soon as possible.
+			</message>
+
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				The mission is a failure: one of our supply ships has been lost.
+			</message>
+			<message delay="2" color="Rebel" goal="primaryFail">
+				We needed everything in that convoy to set up our base.
+			</message>
+			<message delay="3" color="Rebel" goal="primaryFail">
+				Report for debriefing immediately on your return.
+			</message>
+
+		</messages>
+		<flightGroup target="CIELO" globalGroup="1" />
+		<flightGroup target="WASP 1" globalGroup="1" />
+		<flightGroup target="WASP 2" globalGroup="1" />
+		<flightGroup target="NAMU" globalGroup="2" />
+		<flightGroup target="ORCA 1" globalGroup="2" />
+		<flightGroup target="ORCA 2" globalGroup="2" />
+	</mission>
+</sidecar>

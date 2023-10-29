@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="T4M14AM">
+		<messages>			
+			<message delay="1" color="Rebel">
+				Watch out, there's already a TIE Advanced going for you!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="SIGMA" condition="Arrived" />
+				</triggers>
+				Red flight, two groups of transports just dropped in.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="SIGMA" condition="Arrived" />
+				</triggers>
+				Make sure you ID them all to check if they're carrying the grain.
+			</message>
+			<message delay="3" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="SIGMA" condition="Arrived" />
+				</triggers>
+				Do not engage under any circumstances.
+			</message>
+			<message delay="4" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="SIGMA" condition="Arrived" />
+				</triggers>
+				We want the cargo to arrive intact.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="SIGMA" condition="Destroyed" />
+				</triggers>
+				You were specifically instructed not to destroy the transports!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ZETA" condition="Arrived" />
+					<trigger amount="FiftyPercent" type="FlightGroup" variable="RED" condition="Survived" />
+				</triggers>
+				We've got Bombers inbound!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BETA" condition="Arrived" />
+					<trigger amount="FiftyPercent" type="FlightGroup" variable="RED" condition="Survived" />
+				</triggers>
+				More fighters incoming... that hangar must be bigger on the inside!
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				Excellent job, you verified that the Empire got Ghorin's special delivery!
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				Now we can be sure that the Empire will turn on him.
+			</message>
+			<message delay="3" color="Rebel" goal="primarySuccess">
+				Return to the hangar immediately.
+			</message>
+			<message delay="4" color="Rebel" goal="primarySuccess">
+				We don't want to arouse suspicion by staying too long.
+			</message>
+
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				We failed to verify the grain delivery.
+			</message>
+			<message delay="2" color="Rebel" goal="primaryFail">
+				Now we can't anticipate the Empire or Ghorin's next moves.
+			</message>
+			<message delay="3" color="Rebel" goal="primaryFail">
+				Abort mission and return to base.
+			</message>
+
+		</messages>
+	</mission>
+</sidecar>

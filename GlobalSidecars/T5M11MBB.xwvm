@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="T5M11MBB">
+		<messages>			
+			<message delay="1" color="Rebel">
+				No sign of the corvettes, they must not have arrived yet.
+			</message>
+			<message delay="2" color="Rebel">
+				I see the containers, though. And gunboats heading our way.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ASSASSIN 56" condition="Arrived" />
+				</triggers>
+				Three corvettes just jumped into the system.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ASSASSIN 56" condition="Arrived" />
+				</triggers>
+				All three are valuable targets, don't let them get away!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="1" condition="Destroyed" />
+				</triggers>
+				All of the base containers have been destroyed.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="2" condition="Destroyed" />
+				</triggers>
+				The target corvettes have been eliminated.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="NIGHTRIDER" condition="Arrived" />
+				</triggers>
+				Picking up new hyperspace signals near your area...
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="NIGHTRIDER" condition="Arrived" />
+				</triggers>
+				Probably here to exchange cargo at the base.
+			</message>
+			<message delay="3" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="NIGHTRIDER" condition="Arrived" />
+				</triggers>
+				Engage at your discretion.
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				The outpost has been eliminated, good job.
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				Mission complete, return to base.
+			</message>
+
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				You failed to destroy the entire Imperial base.
+			</message>
+			<message delay="2" color="Rebel" goal="primaryFail">
+				This could jeopardize our current plans.
+			</message>
+			<message delay="3" color="Rebel" goal="primaryFail">
+				All fighters, abort immediately and return to base.
+			</message>
+
+		</messages>
+		<flightGroup target="PHI 1" globalGroup="1" />
+		<flightGroup target="PHI 2" globalGroup="1" />
+		<flightGroup target="PHI 3" globalGroup="1" />
+		<flightGroup target="ASSASSIN 55" globalGroup="2" />
+		<flightGroup target="ASSASSIN 56" globalGroup="2" />
+		<flightGroup target="ASSASSIN 57" globalGroup="2" />
+	</mission>
+</sidecar>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="T4M19YM">
+		<messages>			
+			<message delay="1" color="Rebel">
+				Eta leader here: we've got your back.
+			</message>
+			<message delay="2" color="Rebel">
+				Just remember that we're on your side!
+			</message>
+			<message delay="3" color="Rebel">
+				Red 1, you'll need to inspect the corvettes.
+			</message>
+			<message delay="4" color="Rebel">
+				Find the one carrying the shield technology.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="BLADE 5" condition="Inspected" />
+				</triggers>
+				You've located the corvette with the new shield research.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="BLADE 5" condition="Inspected" />
+				</triggers>
+				Disable it, so we can bring in the capture team.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="STORM" condition="Arrived" />
+				</triggers>
+				Storm unit has arrived to board the target.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="BLADE 5" condition="Captured" />
+				</triggers>
+				We have control of the target, protect it until it escapes.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="1" condition="Destroyed" />
+				</triggers>
+				You've destroyed all of the other corvettes, very nice work.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="STORM" condition="Attacked" />
+				</triggers>
+				Storm unit is under attack, you must protect it!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="STORM" condition="ZeroShields" />
+				</triggers>
+				Storm unit is taking a beating, they need some help!
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="STORM" condition="Destroyed" />
+				</triggers>
+				Oh no, Storm unit has been destroyed.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="STORM" condition="Destroyed" />
+				</triggers>
+				We needed our capture team for this plan to work.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLADE 5" condition="Destroyed" />
+				</triggers>
+				The corvette, and its shield technology, have been destroyed.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLADE 5" condition="Destroyed" />
+				</triggers>
+				We needed it intact for our plan to succeed.
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				We captured the corvette carrying the new shield technology.
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				Now we can proceed to the next phase of our plan.
+			</message>
+			<message delay="3" color="Rebel" goal="primarySuccess">
+				Return to base for debriefing and planning of the next operation.
+			</message>
+
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				Abort mission and return to base.
+			</message>
+
+		</messages>
+		<flightGroup target="BLADE 1" globalGroup="1" />
+		<flightGroup target="BLADE 2" globalGroup="1" />
+		<flightGroup target="BLADE 3" globalGroup="1" />
+		<flightGroup target="BLADE 4" globalGroup="1" />
+		<flightGroup target="BLADE 6" globalGroup="1" />
+	</mission>
+</sidecar>

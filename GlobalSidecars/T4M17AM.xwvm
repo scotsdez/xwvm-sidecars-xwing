@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="T4M17AM">
+		<messages>			
+			<message delay="1" color="Rebel">
+				We've already got fighters and bombers incoming!
+			</message>
+			<message delay="2" color="Rebel">
+				I guess it keeps things interesting.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="STRIKER" condition="Arrived" />
+				</triggers>
+				The first of the corvette groups has arrived.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="STRIKER" condition="Arrived" />
+				</triggers>
+				Cover them, so they get within firing range of the Red Wind.
+			</message>
+			<message delay="3" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="STRIKER" condition="Arrived" />
+				</triggers>
+				That minefield will shred the corvettes, though!
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="CraftCategory" variable="Mine" condition="Destroyed" />
+				</triggers>
+				That's the minefield taken care of.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="HAMMER" condition="Arrived" />
+				</triggers>
+				Corvettes Hammer have arrived to begin their attack run.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ARROW" condition="Arrived" />
+				</triggers>
+				The third corvette group, Arrow, has entered the area.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RAMIT" condition="Arrived" />
+				</triggers>
+				What's that freighter doing?
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RED WIND" condition="ZeroShields" />
+				</triggers>
+				The Red Wind's shields are down. All units, press the attack!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RED WIND" condition="FiftyHull" />
+				</triggers>
+				The Red Wind's hull is in critical condition, keep going!
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="SIGMA" condition="Destroyed" />
+				</triggers>
+				You took out a resupply shuttle, good job.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="OMICRON" condition="Destroyed" />
+				</triggers>
+				That'll hinder their resupply operation!
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				The Red Wind has been destroyed, fantastic work!
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				This long overdue payback is sure to boost morale!
+			</message>
+			<message delay="3" color="Rebel" goal="primarySuccess">
+				Well done, as always. Return to base.
+			</message>
+
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				The mission is a failure, the Red Wind escaped!
+			</message>
+			<message delay="2" color="Rebel" goal="primaryFail">
+				It'll continue harassing our operations in this sector.
+			</message>
+			<message delay="3" color="Rebel" goal="primaryFail">
+				Abort mission immediately and return to base.
+			</message>
+
+		</messages>
+
+	</mission>
+</sidecar>

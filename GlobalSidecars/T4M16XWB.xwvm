@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="T4M16XWB">
+		<messages>			
+			<message delay="1" color="Rebel">
+				We're kriffed: multiple fighters and bombers already inbound!
+			</message>
+			<message delay="2" color="Rebel">
+				We'd better call this in.
+			</message>
+			<message delay="3" color="Rebel">
+				Red flight to Maria: we've got a lot of activity over here!
+			</message>
+			<message delay="4" color="Rebel">
+				Roger that, Red flight.
+			</message>
+			<message delay="5" color="Rebel">
+				Gold group is being diverted to you and will arrive shortly.
+			</message>
+			<message delay="6" color="Rebel">
+				The task force will follow, but you need to hold out until then.
+			</message>
+			<message delay="7" color="Rebel">
+				Good luck.
+			</message>
+			<message delay="8" color="Rebel">
+				...Karabast.
+			</message>
+			<message delay="9" color="Rebel">
+				Keep it together!
+			</message>
+			<message delay="10" color="Rebel">
+				Pick your targets carefully and let them have it!
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="GOLD" condition="Arrived" />
+				</triggers>
+				This is Gold Leader, did we miss anything?
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="GOLD" condition="Arrived" />
+				</triggers>
+				We'll take on some of these fighters.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="YAVIN EXPRESS" condition="Attacked" />
+				</triggers>
+				The corvettes are under attack!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="CARGO-GO" condition="Attacked" />
+				</triggers>
+				The freighters are taking damage!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="LAMBDA" condition="Attacked" />
+				</triggers>
+				The shuttles are under fire!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="WHITEHAWK" condition="Arrived" />
+				</triggers>
+				The task force has arrived to help in the battle.
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				The Leafar shipping convoy has successfully escaped.
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				Great work, Red group.
+			</message>
+			<message delay="3" color="Rebel" goal="primarySuccess">
+				This incident might convince the Leafar to support the Alliance.
+			</message>
+			<message delay="4" color="Rebel" goal="primarySuccess">
+				The task force will relieve you, head back to the Defiance.
+			</message>
+
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				We were unable to protect the Leafar shipping convoy.
+			</message>
+			<message delay="2" color="Rebel" goal="primaryFail">
+				With so many losses, it's unlikely they will join the Alliance.
+			</message>
+			<message delay="3" color="Rebel" goal="primaryFail">
+				Abort mission and return to base immediately.
+			</message>
+
+		</messages>
+
+	</mission>
+</sidecar>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="T5M07MX">
+		<messages>			
+			<message delay="1" color="Neutral">
+				This is Starlifter, we are glad to see you!
+			</message>
+			<message delay="2" color="Neutral">
+				Upsilon is also helping attack corvettes, yes.
+			</message>
+			
+			<message delay="1" color="Neutral">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="THRASHER" condition="Destroyed" />
+				</triggers>
+				The corvettes have been destroyed now.
+			</message>
+
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="AVENGER" condition="Arrived" />
+				</triggers>
+				Red Leader, looks like we have company!
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="AVENGER" condition="Arrived" />
+				</triggers>
+				Gold Leader to Red group, we'll cover you.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ALPHA" condition="Arrived" />
+				</triggers>
+				Alpha is going for the freighters!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ETA 1" condition="Arrived" />
+				</triggers>
+				This doesn't look good.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Arrived" />
+				</triggers>
+				Blue Leader here, we heard you needed some heavy firepower!
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Arrived" />
+				</triggers>
+				We'll get to work on these frigates!
+			</message>
+		
+
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="STARLIFTER" condition="ZeroShields" />
+				</triggers>
+				The shields are down on one of the freighters!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="STARLIFTER" condition="Destroyed" />
+				</triggers>
+				We lost one of the freighters!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="TwentyFivePercent" type="FlightGroup" variable="STARLIFTER" condition="Destroyed" />
+				</triggers>
+				A second freighter has been destroyed!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="FiftyPercent" type="FlightGroup" variable="STARLIFTER" condition="Destroyed" />
+				</triggers>
+				Three freighters are gone, we can't afford to lose any more!
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="HUNTER" condition="Arrived" />
+				</triggers>
+				Another frigate just dropped in!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="GAMMA" condition="Arrived" />
+				</triggers>
+				Habassan reinforcements are engaging the frigates.
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				The convoy has escaped, great work!
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				The Habassans have expressed gratitude for your heroic efforts.
+			</message>
+			<message delay="3" color="Rebel" goal="primarySuccess">
+				Report to the hangar for debriefing.
+			</message>
+
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				The Empire has wiped out the Habassan convoy.
+			</message>
+			<message delay="2" color="Rebel" goal="primaryFail">
+				This loss will surely push them into submission to the Empire.
+			</message>
+			<message delay="3" color="Rebel" goal="primaryFail">
+				All fighters- abort mission and return to base.
+			</message>
+
+		</messages>
+	</mission>
+</sidecar>

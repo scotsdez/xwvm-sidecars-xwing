@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="T5M01WX">
+		<messages>			
+			<message delay="1" color="Rebel">
+				This is Gold Leader: good to see you.
+			</message>
+			<message delay="2" color="Rebel">
+				It's been all quiet here, nothing to report.
+			</message>
+			<message delay="3" color="Rebel">
+				Try not to get too bored while we're gone.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MU" condition="Arrived" />
+				</triggers>
+				Looks like trouble just arrived.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MU" condition="Arrived" />
+				</triggers>
+				Just for once, I'd like a quiet mission...
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RHO" condition="Arrived" />
+				</triggers>
+				Another pair of gunboats just dropped in!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="PURPLE CLAW" condition="Arrived" />
+				</triggers>
+				We've got some corvettes going for the base!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RED TOOTH" condition="Arrived" />
+				</triggers>
+				Two more corvettes just joined the party!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="LAMBDA" condition="Arrived" />
+				</triggers>
+				An unidentified shuttle just jumped in near the base.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="LAMBDA" condition="Arrived" />
+				</triggers>
+				It doesn't appear to be hostile at this time.
+			</message>
+			<message delay="3" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="LAMBDA" condition="Arrived" />
+				</triggers>
+				Red Leader, inspect the shuttle, if you can.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="LAMBDA" condition="Inspected" />
+				</triggers>
+				The shuttle doesn't seem to belong to any of our allies. 
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="LAMBDA" condition="Inspected" />
+				</triggers>
+				Rebel Intelligence will investigate further. 
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Attacked" />
+				</triggers>
+				The B-Wings are being attacked, you need to save them!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="NIVEN" condition="Attacked" />
+				</triggers>
+				This is the Niven, we're under attack!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="CraftType" variable="Container" condition="Attacked" />
+				</triggers>
+				The base is of vital importance, it must be defended!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="GOLD_2" condition="Arrived" />
+				</triggers>
+				This is Gold Leader, we're back.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="GOLD_2" condition="Arrived" />
+				</triggers>
+				What did we miss?
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="1" condition="Destroyed" />
+				</triggers>
+				All Imperial corvettes have been destroyed, excellent work!
+			</message>
+			
+			
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				You defended the B-Wings and the assembly area, well done.
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				Gold group will relieve you and remain on patrol.
+			</message>
+			<message delay="3" color="Rebel" goal="primarySuccess">
+				Return to base for debriefing.
+			</message>
+
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				The Empire destroyed some of the B-Wing assembly area.
+			</message>
+			<message delay="2" color="Rebel" goal="primaryFail">
+				These fighters were of great importance to our fleet.
+			</message>
+			<message delay="3" color="Rebel" goal="primaryFail">
+				Report back for debriefing and flight recorder analysis.
+			</message>
+
+		</messages>
+		<flightGroup target="PURPLE CLAW" globalGroup="1" />
+		<flightGroup target="RED TOOTH" globalGroup="1" />
+	</mission>
+</sidecar>

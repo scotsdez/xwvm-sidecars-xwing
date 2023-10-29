@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="T4M18YM">
+		<messages>			
+			<message delay="1" color="Rebel">
+				I'm reading three gunboats ahead, all powered down.
+			</message>
+			<message delay="2" color="Rebel">
+				There's a minefield, corvettes, and TIE Bombers into the mix.
+			</message>
+			<message delay="3" color="Rebel">
+				...just our sort of challenge!
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="CraftCategory" variable="Mine" condition="Destroyed" />
+				</triggers>
+				The minefield protecting the facility has been wiped out.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="2" condition="Destroyed" />
+				</triggers>
+				The patrolling corvettes have been eliminated, good work.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="TAU" condition="Disabled" />
+				</triggers>
+				All of the target gunboats have been disabled for capture.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="LEARY" condition="Arrived" />
+				</triggers>
+				Shuttle group Leary has arrived to capture the gunboats.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="TAU" condition="Captured" />
+				</triggers>
+				Our pilots now have control of all of the target gunboats.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="TAU" condition="Captured" />
+				</triggers>
+				Escort them safely to the Cathleen, with shuttle group Leary.
+			</message>
+			<message delay="3" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="TAU" condition="Captured" />
+				</triggers>
+				The facility can be destroyed at your discretion.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLAZEN" condition="Arrived" />
+				</triggers>
+				Imperial reinforcements! Defend our capture forces!
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="TAU" condition="Destroyed" />
+				</triggers>
+				One of the target gunboats was destroyed. Abort mission.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="TAU" condition="Destroyed" />
+				</triggers>
+				We needed at least three gunboats assigned to this base.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="LEARY" condition="Destroyed" />
+				</triggers>
+				We lost one of the capture crews, abort mission.
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				We've captured the Imperial gunboats, well done!
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				This lays the foundation for our next operation.
+			</message>
+			<message delay="3" color="Rebel" goal="primarySuccess">
+				Return to base as soon as possible.
+			</message>
+
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				The mission is a failure, return to base.
+			</message>
+
+		</messages>
+		<flightGroup target="CHI 1" globalGroup="1" />
+		<flightGroup target="CHI 2" globalGroup="1" />
+		<flightGroup target="CHI 3" globalGroup="1" />
+		<flightGroup target="ASSASSIN 10" globalGroup="2" />
+		<flightGroup target="ASSASSIN 5" globalGroup="2" />
+		<flightGroup target="ASSASSIN 7" globalGroup="2" />
+	</mission>
+</sidecar>

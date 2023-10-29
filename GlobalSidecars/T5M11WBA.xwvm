@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="T5M11WBA">
+		<messages>			
+			<message delay="0" color="Rebel">
+				Right, the base is directly ahead.
+			</message>
+			<message delay="1" color="Rebel">
+				Let's make this quick, we've got TIEs bearing down on us!
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="T-90" condition="Docked" />
+				</triggers>
+				What's that tug doing?
+			</message>
+			<message delay="3" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="T-90" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="OLRAC ETNOM" condition="Survived" />
+				</triggers>
+				That corvette looks like it's on the move!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="DARK EYE" condition="Arrived" />
+				</triggers>
+				This can't be good... we have company!
+			</message>
+			<message delay="2" color="Neutral">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MELISSE" condition="Arrived" />
+				</triggers>
+				This is the Melisse. We are launching fighters to help now.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="DARK EYE" condition="Destroyed" />
+				</triggers>
+				Fantastic, the Empire won't forget that loss in a hurry!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RED" condition="CompletedBonusGoals" />
+				</triggers>
+				Excellent, Rebel Intelligence will appreciate this information.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="CraftCategory" variable="Mine" condition="Destroyed" />
+				</triggers>
+				The minefield has been eliminated.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers operator="or">
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="CUTLASS" condition="CompletedMission" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="OLRAC ETNOM" condition="CompletedMission" />
+				</triggers>
+				The mission is a failure, one of the corvettes escaped!
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				The Imperial base has been completely destroyed, well done.
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				Return to base when you're ready.
+			</message>
+
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				All fighters, abort immediately and return to base.
+			</message>
+
+		</messages>
+		<flightGroup target="OLRAC ETNOM" globalGroup="1">
+			<objective type="Identified" priority="bonus" score="100" />
+		</flightGroup>
+		<flightGroup target="CUTLASS" globalGroup="1">
+			<objective type="Identified" priority="bonus" score="100" />
+		</flightGroup>
+		<flightGroup target="PSI" globalGroup="2">
+			<objective type="Identified" priority="bonus" score="100" />
+		</flightGroup>
+		<flightGroup target="CHI" globalGroup="2">
+			<objective type="Identified" priority="bonus" score="100" />
+		</flightGroup>
+		<flightGroup target="XI" globalGroup="2">
+			<objective type="Identified" priority="bonus" score="100" />
+		</flightGroup>
+		<flightGroup target="PI" globalGroup="2">
+			<objective type="Identified" priority="bonus" score="100" />
+		</flightGroup>
+	</mission>
+</sidecar>

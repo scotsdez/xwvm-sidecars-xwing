@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="T5M10WB">
+		<messages>						
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="GOLD" condition="Arrived" />
+				</triggers>
+				This is Gold Leader: we'll cover you, Red Leader.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="NORVECH" condition="Inspected" />
+				</triggers>
+				Neither of these freighters have the probes on board.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="SPIDER" condition="Arrived" />
+				</triggers>
+				Imperial reinforcements have arrived!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="LIBOM" condition="Arrived" />
+				</triggers>
+				Get a positive ID on that freighter that just arrived.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="STORM UNIT" condition="Arrived" />
+				</triggers>
+				Storm Unit reporting, we're setting up for boarding.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BOLTTHROWER" condition="Arrived" />
+				</triggers>
+				More Imperial reinforcements just dropped in.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="SCORPION" condition="Arrived" />
+				</triggers>
+				That new corvette is going for the freighter.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="SCORPION" condition="Arrived" />
+				</triggers>
+				Stop it before it can begin boarding!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BETA" condition="Arrived" />
+				</triggers>
+				Some bombers just launched!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="GAMMA" condition="Arrived" />
+				</triggers>
+				The Imperials just launched more bombers!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="STORM UNIT" condition="Attacked" />
+				</triggers>
+				This is Storm Unit, we're taking fire and need assistance!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="STORM UNIT" condition="FiftyHull" />
+				</triggers>
+				We can't take much more of this!
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="1" condition="Destroyed" />
+				</triggers>
+				The transfer area has been destroyed.
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				Excellent, we've captured the probes.
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				Now we can modify them for the next phase.
+			</message>
+			<message delay="3" color="Rebel" goal="primarySuccess">
+				All craft, return to base.
+			</message>
+
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				We couldn't capture the probes we needed.
+			</message>
+			<message delay="2" color="Rebel" goal="primaryFail">
+				All fighters, abort immediately and return to base.
+			</message>
+
+		</messages>
+		<flightGroup target="CHI 1" globalGroup="1" />
+		<flightGroup target="CHI 2" globalGroup="1" />
+		<flightGroup target="CHI 3" globalGroup="1" />
+	</mission>
+</sidecar>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="T5M02WX">
+		<messages>			
+			<message delay="1" color="Rebel">
+				Gold Leader to Red Leader, it's all yours.
+			</message>
+			<message delay="2" color="Rebel">
+				We've got orders to get the Purnel to safety.
+			</message>
+			<message delay="3" color="Rebel">
+				Good luck.
+			</message>
+			
+			<message delay="1" color="Imperial">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RELENTLESS" condition="Arrived" />
+				</triggers>
+				This is the Relentless, Admiral Guerrero in command.
+			</message>
+			<message delay="2" color="Imperial">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RELENTLESS" condition="Arrived" />
+				</triggers>
+				All Rebel craft, stand down immediately, or we will open fire.
+			</message>
+			<message delay="3" color="Imperial">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RELENTLESS" condition="Arrived" />
+				</triggers>
+				This is your first, and only, warning.
+			</message>
+			<message delay="4" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RELENTLESS" condition="Arrived" />
+				</triggers>
+				Not much chance of that, I think.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ALPHA" condition="Arrived" />
+				</triggers>
+				TIE Fighters inbound!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BETA" condition="Arrived" />
+				</triggers>
+				They've launched bombers!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="DELTA" condition="Arrived" />
+				</triggers>
+				TIE Bomber Delta doesn’t look like it's messing around!
+			</message>
+			<message delay="1" color="Neutral">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="HABATOK 2" condition="Arrived" />
+				</triggers>
+				This is the Habatok, we are assisting you now.
+			</message>
+
+			<message delay="1" color="Neutral">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="HABATOK 2" condition="Docked" />
+				</triggers>
+				Habatok to Alliance, we have finishing boarding and go now.
+			</message>
+			<message delay="1" color="Neutral">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="HABATOK 2" condition="Attacked" />
+				</triggers>
+				We are under attack, we are needing assistance!
+			</message>
+			<message delay="1" color="Neutral">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="HABATOK 2" condition="ZeroShields" />
+				</triggers>
+				Our shields are gone now, we are needing cover now!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Attacked" />
+				</triggers>
+				The B-Wings are under attack, you must defend them!
+			</message>
+
+			
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				Great work, the B-Wings have been recovered, and our staff our safe.
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				These fighters will be essential to our war effort.
+			</message>
+			<message delay="3" color="Rebel" goal="primarySuccess">
+				As will any agreement we can arrange with the Habassa.
+			</message>
+			<message delay="4" color="Rebel" goal="primarySuccess">
+				Return to base.
+			</message>
+
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				We failed to evacuate all of our personnel.
+			</message>
+			<message delay="2" color="Rebel" goal="primaryFail">
+				Those fighters were essential to our survival.
+			</message>
+			<message delay="3" color="Rebel" goal="primaryFail">
+				All units, return to base.
+			</message>
+
+		</messages>
+	</mission>
+</sidecar>

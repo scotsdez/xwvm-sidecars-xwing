@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="T4M20XM">
+		<messages>			
+			<message delay="3" color="Rebel">
+				I don't like waiting around like this.
+			</message>
+			<message delay="5" color="Rebel">
+				Don’t worry, the Ram's Head will arrive soon...
+			</message>
+			<message delay="6" color="Rebel">
+				...we'll be out of here before you know it.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RAM'S HEAD" condition="Arrived" />
+				</triggers>
+				Ram's Head to Libra, good to see you.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RAM'S HEAD" condition="Arrived" />
+				</triggers>
+				You too, Ram's Head, let's get started.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="DARKNESS" condition="Arrived" />
+				</triggers>
+				Look out, a frigate just dropped in!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ALPHA" condition="Arrived" />
+				</triggers>
+				It's launching fighters!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="ALPHA" condition="Destroyed" />
+					<trigger amount="FiftyPercent" type="FlightGroup" variable="RED" condition="Survived" />
+				</triggers>
+				Not so advanced now, are you?
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="GAMMA" condition="Arrived" />
+				</triggers>
+				TIE Bomber group Gamma is going for the Ram's Head!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ETA" condition="Arrived" />
+				</triggers>
+				More bombers launching!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ASSASSIN 8" condition="Arrived" />
+				</triggers>
+				An Imperial corvette just dropped into the system...
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ASSASSIN 8" condition="Arrived" />
+				</triggers>
+				...it's making a run for the Libra!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RAM'S HEAD" condition="Docked" />
+				</triggers>
+				The transfer's done, heading for the rendezvous.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ASSASSIN 8" condition="Destroyed" />
+				</triggers>
+				Yes! That'll give the Empire a bloody nose!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="OMICRON" condition="Arrived" />
+				</triggers>
+				What's that transport doing?
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="GOLD" condition="Arrived" />
+				</triggers>
+				Red Leader, this is Gold Leader.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="GOLD" condition="Arrived" />
+				</triggers>
+				We're here to help take down the Imperial ships.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="DARKNESS" condition="Destroyed" />
+				</triggers>
+				The Imperial frigate has been taken out, excellent!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RAM'S HEAD" condition="Attacked" />
+				</triggers>
+				The Ram's Head is under attack, you must protect it!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RAM'S HEAD" condition="ZeroShields" />
+				</triggers>
+				Shields on the Ram's Head are out, we can't afford to lose it!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="LIBRA" condition="Attacked" />
+				</triggers>
+				This is the Libra, we're taking damage!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="LIBRA" condition="FiftyHull" />
+				</triggers>
+				Libra to all fighters, we can't take much more of this!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="CHALLENGE" condition="Arrived" />
+				</triggers>
+				Just when I thought this couldn't get any worse...
+			</message>
+			
+			
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				The Ram's Head is safe, well done.
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				We can proceed with the plan now, thanks to your hard work.
+			</message>
+			<message delay="3" color="Rebel" goal="primarySuccess">
+				See you back at base for the debriefing.
+			</message>
+
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				We failed to prep and protect the Ram's Head.
+			</message>
+			<message delay="2" color="Rebel" goal="primaryFail">
+				It was critical to our entire plan.
+			</message>
+			<message delay="3" color="Rebel" goal="primaryFail">
+				Abort mission and return to base immediately.
+			</message>
+
+		</messages>
+	</mission>
+</sidecar>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="T4M15AW">
+		<messages>			
+			<message delay="1" color="Rebel">
+				I don't think we could have timed this better, Red Leader.
+			</message>
+			<message delay="2" color="Rebel">
+				I'm reading a departing shuttle - that'll be the staff rotation.
+			</message>
+			<message delay="3" color="Rebel">
+				Only 2 of the TIE Advanced seem to be active.
+			</message>
+			<message delay="4" color="Rebel">
+				And the new shift personnel have just arrived.
+			</message>
+			<message delay="5" color="Rebel">
+				We'll need to make sure we take out shuttle Epsilon.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="OMICRON 2" condition="Arrived" />
+				</triggers>
+				A transport is making a run at the freighter, stop it!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="EPSILON" condition="Destroyed" />
+				</triggers>
+				The shuttle carrying the new pilots has been destroyed.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="SIGMA" condition="Destroyed" />
+				</triggers>
+				The departing pilots have been eliminated, good work.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="PSI" condition="Attacked" />
+				</triggers>
+				Make sure those containers remain intact for us to capture!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ASHANTI" condition="Arrived" />
+				</triggers>
+				This is the Ashanti, we're moving into position for docking.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ASHANTI" condition="Docked" />
+				</triggers>
+				We got what we came for!
+			</message>
+			<message delay="0" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="ASHANTI" condition="Attacked" />
+				</triggers>
+				Ashanti to Red group, we're under fire!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="CHI" condition="Destroyed" />
+				</triggers>
+				The Ashanti will arrive shortly.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="DRONE SHED" condition="Destroyed" />
+				</triggers>
+				Your thoroughness is to be admired!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="EAGLE" condition="Arrived" />
+				</triggers>
+				Two corvettes just jumped in and are heading straight for us!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="CraftCategory" variable="Mine" condition="Destroyed" />
+				</triggers>
+				The entire minefield has been destroyed.
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				We successfully captured some advanced TIEs, great work.
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				We'll scrutinise these with great interest.
+			</message>
+			<message delay="3" color="Rebel" goal="primarySuccess">
+				You can return when ready.
+			</message>
+
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				We weren't able to capture the advanced TIEs.
+			</message>
+			<message delay="2" color="Rebel" goal="primaryFail">
+				Without intel on these new TIEs, we'll lose the war.
+			</message>
+			<message delay="3" color="Rebel" goal="primaryFail">
+				Return to base for debriefing.
+			</message>
+
+		</messages>
+	</mission>
+</sidecar>

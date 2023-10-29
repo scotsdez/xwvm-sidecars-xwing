@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="T5M03WA">
+		<messages>						
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Arrived" />
+				</triggers>
+				This is Blue Leader, calling the Maria.
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Arrived" />
+				</triggers>
+				Starting approach to the hangar.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="JUVAINI" condition="Arrived" />
+				</triggers>
+				Attention, an Imperial frigate has just jumped into this sector!
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="JUVAINI" condition="Arrived" />
+				</triggers>
+				Intercept attacking craft. You must protect the transfer!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BETA" condition="Arrived" />
+				</triggers>
+				Bomber group Beta is going for the B-Wings too!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="GOLD" condition="Arrived" />
+				</triggers>
+				Gold group, joining defense operations.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="METTERNICH" condition="Arrived" />
+				</triggers>
+				A second frigate just arrived!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="GAMMA" condition="Arrived" />
+				</triggers>
+				The Interceptors are going for the B-Wings!
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="DELTA" condition="Arrived" />
+				</triggers>
+				The Bombers are locking on to the Maria.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="TAU" condition="Arrived" />
+				</triggers>
+				Watch out for those gunboats!
+			</message>
+
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MARIA" condition="ZeroShields" />
+				</triggers>
+				The Maria's shields are down, take out those Bombers!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Destroyed" />
+				</triggers>
+				We lost one of the B-Wings!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="CompletedMission" />
+				</triggers>
+				The first B-Wing has entered the hangar safely.
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="MARIA" condition="Destroyed" />
+				</triggers>
+				We lost the Maria!
+			</message>
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="SeventyFivePercent" type="FlightGroup" variable="BLUE" condition="Destroyed" />
+				</triggers>
+				The Empire destroyed our B-Wings!
+			</message>
+			
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				The Maria has escaped safely with the B-Wings on board.
+			</message>
+			<message delay="2" color="Rebel" goal="primarySuccess">
+				Great job, Red group. Return to base for debriefing.
+			</message>
+			<message delay="3" color="Rebel" goal="primarySuccess">
+				You should take time to practice with the new B-Wings.
+			</message>
+
+			<?xwvm clearGoalMessages?>
+			<message delay="1" color="Rebel" goal="primaryFail">
+				Abort mission and return to base immediately.
+			</message>
+
+		</messages>
+	</mission>
+</sidecar>
