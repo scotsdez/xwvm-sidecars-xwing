@@ -1,0 +1,25 @@
+XWVM - X-Wing Campaign Sidecars
+===============================
+
+Installation Instructions
+-------------------------
+
+To install the sidecars in XWVM, the process is straightforward:
+
+* Navigate to the XWVM user data directory. On Windows, this will generally be in the form of: C:\Users\<Username>\AppData\Roaming\XWVM .
+* Extract the sidecar files into the GlobalSidecars directory. i.e. after extraction, files should be located at C:\Users\<Username>\AppData\Roaming\XWVM\GlobalSidecars\ACKBAR.xwvm , and so on.
+* Start XWVM, and play a mission (historical or TOD), e.g. X-Wing Historical Mission 1 (Dev's Sidestep). As you play the mission, dialogue messages should appear in the message log (and as subtitles, depending on your player settings).
+
+Troubleshooting
+---------------
+
+If the sidecars are not appearing when playing missions, check the following:
+
+* XWVM version - you should be playing the latest alpha version for the sidecars to work correctly. Check the XWVM Discord to verify the latest version available.
+* Confirm the installation directory is as listed above. You should also observe similar directories alongside GlobalSidecars, such as droids, pilots, etc.
+* Check your in-game settings under Audio and Language to confirm if subtitles are enabled.
+
+Questions and feedback
+----------------------
+
+If you have any questions, issues or feedback, please provide this in the #alpha-sidecars-feedback channel in the XWVM Discord.

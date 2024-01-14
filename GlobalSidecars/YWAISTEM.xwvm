@@ -3,7 +3,7 @@
 	<mission target="YWAISTEM">
 		<messages>
 			<message delay="1" color="Rebel">
-				Okay, you’re on your own this time.
+				Okay, you're on your own this time.
 			</message>
 			<message delay="2" color="Rebel">
 				Destroy all of the prototype starfighters.
@@ -28,19 +28,19 @@
 				<triggers>
 					<trigger amount="AtLeastOne" type="FlightGroup" variable="BOFOR" condition="Destroyed" />
 				</triggers>
-				You didn’t need to destroy the freighter, but good work!
+				You didn't need to destroy the freighter, but good work!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
 					<trigger amount="AtLeastOne" type="FlightGroup" variable="RED WIND" condition="Arrived" />
 				</triggers>
-				An Imperial cruiser has just arrived.
+				An Imperial frigate has just arrived.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
 					<trigger amount="AtLeastOne" type="FlightGroup" variable="RED WIND" condition="Arrived" />
 				</triggers>
-				Don’t hang around, it will launch active fighters!
+				Don't hang around, it will launch active fighters!
 			</message>
 			
 			<?xwvm clearGoalMessages?>

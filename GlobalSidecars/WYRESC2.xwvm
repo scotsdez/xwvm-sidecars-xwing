@@ -3,13 +3,13 @@
 	<mission target="WYRESC2">
 		<messages>
 			<message delay="1" color="Rebel">
-				Looks like we’re too late!
+				Looks like we're too late!
 			</message>
 			<message delay="2" color="Rebel">
 				An Imperial transport is already docking with the freighter.
 			</message>
 			<message delay="3" color="Rebel">
-				I’ll give you some cover while you destroy the transport.
+				I'll give you some cover while you destroy the transport.
 			</message>
 			<message delay="4" color="Rebel">
 				Try not to hit the freighter!
@@ -18,7 +18,7 @@
 				<triggers>
 					<trigger amount="AtLeastOne" type="FlightGroup" variable="OMICRON 1" condition="Destroyed" />
 				</triggers>
-				Nice shooting, that’s the transport destroyed!
+				Nice shooting, that's the transport destroyed!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
@@ -52,13 +52,13 @@
 				<triggers>
 					<trigger amount="AtLeastOne" type="FlightGroup" variable="FURIOUS" condition="Arrived" />
 				</triggers>
-				An Imperial cruiser just dropped out of hyperspace...
+				An Imperial frigate just dropped out of hyperspace...
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
 					<trigger amount="AtLeastOne" type="FlightGroup" variable="FURIOUS" condition="Arrived" />
 				</triggers>
-				...that can’t be good.
+				...that can't be good.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
@@ -70,7 +70,7 @@
 				<triggers>
 					<trigger amount="AtLeastOne" type="FlightGroup" variable="OMICRON 2" condition="Arrived" />
 				</triggers>
-				More transports have arrived. We’ll need to destroy them all.
+				More transports have arrived, destroy them all.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
@@ -82,7 +82,7 @@
 				<triggers>
 					<trigger amount="AtLeastOne" type="FlightGroup" variable="MERCY" condition="Attacked" />
 				</triggers>
-				This is shuttle Mercy, we’re under attack!
+				This is shuttle Mercy, we're under attack!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>

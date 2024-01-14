@@ -10,7 +10,7 @@
 				<triggers>
 					<trigger amount="AtLeastOne" type="FlightGroup" variable="KAPPA 5" condition="Inspected" />
 				</triggers>
-				Disable that shuttle, it's carrying the Sullustan leader!
+				Confirmed: that shuttle is carrying the Sullustan leader!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
