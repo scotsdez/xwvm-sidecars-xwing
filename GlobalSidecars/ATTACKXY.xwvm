@@ -3,7 +3,7 @@
 	<mission target="ATTACKXY">
 		<messages>
 			<message delay="0" color="Rebel">
-				Red 2 to Red leader: I see the convoy directly ahead.
+				Red 2 to Red Leader: I see the convoy directly ahead.
 			</message>
 			<message delay="1" color="Rebel">
 				Better watch for fire from the Ranger.
@@ -13,7 +13,7 @@
 				<triggers>
 					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Arrived" />
 				</triggers>
-				This is Blue leader, we're setting up for our attack run.
+				This is Blue Leader, we're setting up for our attack run.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>

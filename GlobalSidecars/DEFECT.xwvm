@@ -41,13 +41,19 @@
 				<triggers>
 					<trigger amount="AtLeastOne" type="FlightGroup" variable="MURTCEPS" condition="Destroyed" />
 				</triggers>
-				Way to go, I didn't think we'd be able to get that one in time!
+				Way to go, I didn't think we'd get that one in time!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
 					<trigger amount="AtLeastOne" type="FlightGroup" variable="GORGON" condition="Arrived" />
 				</triggers>
-				Looks like the Imperials sent reinforcements... how nice.
+				Looks like the Imperials sent reinforcements!
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="GORGON" condition="Arrived" />
+				</triggers>
+				Let's finish here quickly!
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>

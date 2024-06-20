@@ -12,7 +12,7 @@
 				Copy that, Admiral. Red 2, stay alert.
 			</message>
 			<message delay="3" color="Rebel">
-				This is Gold 3: assuming escort of the High Command’s shuttles.
+				This is Gold 3: assuming escort of the High Command's shuttles.
 			</message>
 			<message color="Rebel">
 				<triggers>
@@ -24,7 +24,7 @@
 				<triggers>
 					<trigger amount="AtLeastOne" type="FlightGroup" variable="MAHAN" condition="Destroyed" />
 				</triggers>
-				This is the Mahan, we’re -- [static]
+				This is the Mahan, we're -- [static]
 			</message>
 			<message delay="1" color="Imperial">
 				<triggers>
@@ -54,7 +54,7 @@
 				<triggers>
 					<trigger amount="AtLeastOne" type="FlightGroup" variable="MAHAN" condition="Destroyed" />
 				</triggers>
-				That’ll be the day! Red 2, let’s engage those fighters.
+				That'll be the day! Red 2, let's engage those fighters.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
@@ -72,7 +72,7 @@
 				<triggers>
 					<trigger amount="AtLeastOne" type="FlightGroup" variable="ARROYO" condition="Attacked" />
 				</triggers>
-				This is Arroyo, we’re under attack!
+				This is Arroyo, we're under attack!
 			</message>
 			<message color="Rebel">
 				<triggers>
@@ -90,7 +90,7 @@
 				<triggers>
 					<trigger amount="AtLeastOne" type="FlightGroup" variable="GOLD 3" condition="Destroyed" />
 				</triggers>
-				This is Gold 3, I’m going down!
+				This is Gold 3, I'm going down!
 			</message>
 			<message color="Rebel">
 				<triggers>
@@ -102,17 +102,17 @@
 				<triggers>
 					<trigger amount="AtLeastOne" type="FlightGroup" variable="RHOON" condition="CompletedMission" />
 				</triggers>
-				This is Rhoon, we’re making our jump now. Thanks for the assist, Red group.
+				This is Rhoon, we're making our jump now. Thanks for the assist, Red group.
 			</message>
 			<message color="Rebel">
 				<triggers>
 					<trigger amount="AtLeastOne" type="FlightGroup" variable="SONNEL" condition="CompletedMission" />
 				</triggers>
-				Sonnel to X-Wing Red, we’re away.
+				Sonnel to X-Wing Red, we're away.
 			</message>
 			<?xwvm clearGoalMessages?>
 			<message color="#dfd" goal="primarySuccess">
-				Well done Red 2, the High Command has made it into hyperspace safely.
+				Well done, the High Command has made it into hyperspace safely.
 			</message>
 			<message delay="1" color="#dfd" goal="primarySuccess">
 				Should we bail, or mop up a few more fighters?

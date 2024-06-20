@@ -42,7 +42,7 @@
 			
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="GlobalGroup" variable="1" condition="Destroyed" />
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="1" condition="Destroyed" />
 				</triggers>
 				The shuttles have been eliminated.
 			</message>

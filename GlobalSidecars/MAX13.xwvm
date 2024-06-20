@@ -19,7 +19,7 @@
 				<triggers>
 					<trigger amount="AtLeastOne" type="FlightGroup" variable="ALPHA" condition="Arrived" />
 				</triggers>
-				Red leader, those ships don't look very friendly!
+				Red Leader, those ships don't look very friendly!
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
@@ -55,7 +55,7 @@
 				<triggers>
 					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Arrived" />
 				</triggers>
-				This is Blue leader, we'll escort the freighter from here...
+				This is Blue Leader, we'll escort the freighter from here...
 			</message>
 			<message delay="4" color="Rebel">
 				<triggers>
@@ -91,7 +91,7 @@
 			<message delay="1" color="Rebel">
 				<triggers>
 					<trigger amount="AtLeastOne" type="FlightGroup" variable="ARS OPUS" condition="Disabled" />
-					<trigger amount="HundredPercentFirstWave" type="FlightGroup" variable="RESCUE RIKER" condition="CompletedMission" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESCUE RIKER" condition="Reinforced" />
 				</triggers>
 				We'll try and get the freighter going again, if we can.
 			</message>
