@@ -22,7 +22,7 @@
 				<triggers>
 					<trigger amount="AtLeastOne" type="FlightGroup" variable="MALICE" condition="CompletedMission" />
 				</triggers>
-				Why don’t you show them how wrong they are?
+				Why don't you show them how wrong they are?
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
@@ -46,31 +46,34 @@
 				<triggers>
 					<trigger amount="AtLeastOne" type="FlightGroup" variable="MARIA" condition="ZeroShields" />
 				</triggers>
-				The shuttle’s shields have failed!
+				The shuttle's shields have failed!
 			</message>
 			<message color="Rebel">
 				<triggers>
 					<trigger amount="AtLeastOne" type="FlightGroup" variable="MARIA" condition="FiftyHull" />
 				</triggers>
-				The shuttle can’t take much more damage!
+				The shuttle can't take much more damage!
 			</message>
-			
 			
 			<?xwvm clearGoalMessages?>
 			<message color="Rebel" goal="primarySuccess">
 				Well done, the shuttle made the jump to safety.
 			</message>
 			<message delay="1" color="Rebel" goal="primarySuccess">
-				When you’re ready, hyperspace home.
+				When you're ready, hyperspace home.
 			</message>
 
 			<?xwvm clearGoalMessages?>
 			<message color="Rebel" goal="primaryFail">
-				You failed to protect the Admiral’s shuttle.
+				You failed to protect the Admiral's shuttle.
 			</message>
 			<message delay="1" color="Rebel" goal="primaryFail">
 				Report back for immediate debriefing.
 			</message>
 		</messages>
+		<flightGroup target="ALPHA" globalGroup="1" />
+		<flightGroup target="ALPHA 3" globalGroup="1" />
+		<flightGroup target="BETA" globalGroup="1" />
+		<flightGroup target="GAMMA" globalGroup="1" />
 	</mission>
 </sidecar>
