@@ -3,7 +3,7 @@
 	<mission target="T4M08YMA">
 		<messages>
 			<message delay="0" color="Rebel">
-				Okay, you’ve got less than 7 minutes until the convoy arrives.
+				Okay, you've got less than 7 minutes until the convoy arrives.
 			</message>
 			<message delay="1" color="Rebel">
 				Destroy all of the mines as quickly as possible...
@@ -12,9 +12,15 @@
 				...before our ships get cut to pieces!
 			</message>
 			<message delay="3" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="PROBE" condition="Arrived" />
+				</triggers>
 				Make sure you destroy the Imperial probe, too.
 			</message>
 			<message delay="4" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="PROBE" condition="Arrived" />
+				</triggers>
 				We can't have them learning of our activities in this sector.
 			</message>
 			
