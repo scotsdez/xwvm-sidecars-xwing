@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sidecar>
+	<mission target="AWAISTEM" validGameVariants="xwing93">
+		<messages>
+			<message delay="1" color="Rebel">
+				You're cleared to fire at will.
+			</message>
+			<message delay="2" color="Rebel">
+				Most ships in the area are unmanned.
+			</message>
+			<message delay="3" color="Rebel">
+				Focus on destroying the targets as quickly as possible.
+			</message>
+			
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="VIRULENCE" condition="Arrived" />
+				</triggers>
+				Imperial reinforcements have arrived!
+			</message>
+			<message delay="2" color="Rebel">
+				<triggers>
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="VIRULENCE" condition="Arrived" />
+				</triggers>
+				Finish your mission and return to base as quickly as possible!
+			</message>
+
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="FiftyPercent" type="GlobalGroup" variable="1" condition="Destroyed" />
+				</triggers>
+				Good progress, half of the targets have been destroyed.
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="SeventyFivePercent" type="GlobalGroup" variable="1" condition="Destroyed" />
+				</triggers>
+				Keep it up!
+			</message>
+			<message color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="2" condition="Destroyed" />
+				</triggers>
+				Way to go, you completely decimated the Imperial reinforcements!
+			</message>
+
+			<?xwvm clearGoalMessages?>
+			<message color="Rebel" goal="primarySuccess">
+				Excellent work, you've destroyed the repair depot.
+			</message>
+			<message delay="1" color="Rebel" goal="primarySuccess">
+				Mission complete, hyperspace home.
+			</message>
+			
+		</messages>
+		<flightGroup target="##1" globalGroup="1" />
+		<flightGroup target="##4" globalGroup="1" />
+		<flightGroup target="##5" globalGroup="1" />
+		<flightGroup target="##6" globalGroup="1" />
+		<flightGroup target="##7" globalGroup="1" />
+		<flightGroup target="##8" globalGroup="1" />
+		<flightGroup target="##9" globalGroup="1" />
+		<flightGroup target="##10" globalGroup="1" />
+		<flightGroup target="##11" globalGroup="1" />
+		<flightGroup target="##12" globalGroup="1" />
+		<flightGroup target="##13" globalGroup="2" />
+		<flightGroup target="##14" globalGroup="2" />
+	</mission>
+</sidecar>
