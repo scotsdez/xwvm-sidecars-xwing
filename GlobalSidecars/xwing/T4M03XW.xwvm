@@ -11,25 +11,25 @@
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MAXIMUS" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Destroyed" />
 				</triggers>
 				The Maximus! It's... gone.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MAXIMUS" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Destroyed" />
 				</triggers>
 				Red Group, listen carefully.
 			</message>
 			<message delay="3" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MAXIMUS" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Destroyed" />
 				</triggers>
 				Your top priority is to protect our staff on board those ships.
 			</message>
 			<message delay="4" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MAXIMUS" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Destroyed" />
 				</triggers>
 				Don't let them be destroyed, or taken as prisoners.
 			</message>
@@ -37,44 +37,44 @@
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="KHAAZA'K" condition="ZeroShields" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="ZeroShields" />
 				</triggers>
 				This is Captain Razek, aboard the Shuttle Khaaza'k.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="KHAAZA'K" condition="ZeroShields" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="ZeroShields" />
 				</triggers>
 				We're under attack and have lost shields!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="T'UR" condition="ZeroShields" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="ZeroShields" />
 				</triggers>
 				This is the T'Ur, we're under attack!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="UZBE'K" condition="ZeroShields" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="5" condition="ZeroShields" />
 				</triggers>
 				Uzbe'k to Red group, we're taking heavy fire!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="TADJYYYK" condition="ZeroShields" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="ZeroShields" />
 				</triggers>
 				Tadjyyyk here, they've knocked out our shields!
 			</message>
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BETA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="10" condition="Arrived" />
 				</triggers>
 				More interceptors inbound!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="NIHIL" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="8" condition="Destroyed" />
 				</triggers>
 				Yes! Great work, Red Leader, you've avenged the Maximus!
 			</message>
@@ -108,14 +108,14 @@
 				The Rebellion can't afford these kinds of losses.
 			</message>
 		</messages>
-		<flightGroup target="ALPHA" globalGroup="1">
+		<flightGroup target="##9" globalGroup="1">
 			<objective type="Destroyed" priority="bonus" score="100" />
 		</flightgroup>
-		<flightGroup target="BETA" globalGroup="1" />
-		<flightGroup target="GAMMA" globalGroup="1" />
-		<flightGroup target="DELTA" globalGroup="1" />
-		<flightGroup target="ETA" globalGroup="1" />
-		<flightGroup target="THETA" globalGroup="1" />
-		<flightGroup target="ZETA" globalGroup="1" />
+		<flightGroup target="##10" globalGroup="1" />
+		<flightGroup target="##11" globalGroup="1" />
+		<flightGroup target="##12" globalGroup="1" />
+		<flightGroup target="##13" globalGroup="1" />
+		<flightGroup target="##14" globalGroup="1" />
+		<flightGroup target="##15" globalGroup="1" />
 	</mission>
 </sidecar>

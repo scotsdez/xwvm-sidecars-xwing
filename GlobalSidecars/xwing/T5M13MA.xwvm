@@ -7,61 +7,61 @@
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="INTERCEPTOR" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="Arrived" />
 				</triggers>
 				We’ve got company!
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="INTERCEPTOR" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="Destroyed" />
 				</triggers>
 				Magnificent, the frigate Interceptor has been eliminated!
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ALPHA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Arrived" />
 				</triggers>
 				They’re launching bombers! Red 2, let's move to intercept.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BETA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="Arrived" />
 				</triggers>
 				We’ve got TIE Interceptors on the way!
 			</message>
 			<message delay="3" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="DELTA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="5" condition="Arrived" />
 				</triggers>
 				This is the Radley, TIE Fighter Delta is headed our way!
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RADLEY" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="12" condition="Attacked" />
 				</triggers>
 				This is the Radley, we’re taking fire!
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RADLEY" condition="ZeroShields" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="12" condition="ZeroShields" />
 				</triggers>
 				Radley to Red group, our shields are down!
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RADLEY" condition="FiftyHull" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="12" condition="FiftyHull" />
 				</triggers>
 				Our hull is critical, we can’t hold on much longer!
 			</message>			
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="CATHLEEN" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="13" condition="Arrived" />
 				</triggers>
 				Cathleen to Alliance craft, we have arrived.
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="GOLD" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="14" condition="Arrived" />
 				</triggers>
 				We’re launching Gold squadron to attack the Imperial frigate.
 			</message>

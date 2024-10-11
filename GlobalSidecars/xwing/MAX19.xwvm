@@ -26,49 +26,49 @@
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RETSUB" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="7" condition="Arrived" />
 				</triggers>
 				I'm reading a contact entering the system...
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RETSUB" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="7" condition="Arrived" />
 				</triggers>
 				...it's Imperial, and a capital ship by the looks of it!
 			</message>
 			<message delay="3" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RETSUB" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="7" condition="Arrived" />
 				</triggers>
 				There goes our quiet patrol...
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ALPHA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="Arrived" />
 				</triggers>
 				It's launching bombers!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="FiftyPercent" type="FlightGroup" variable="ZL" condition="Destroyed" />
+					<trigger amount="FiftyPercent" type="FlightGroup" variable="1" condition="Destroyed" />
 				</triggers>
 				We've lost half of ZL!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="FiftyPercent" type="FlightGroup" variable="LT" condition="Destroyed" />
+					<trigger amount="FiftyPercent" type="FlightGroup" variable="2" condition="Destroyed" />
 				</triggers>
 				Half of LT is gone!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="FiftyPercent" type="FlightGroup" variable="XZ" condition="Destroyed" />
+					<trigger amount="FiftyPercent" type="FlightGroup" variable="3" condition="Destroyed" />
 				</triggers>
 				They've destroyed half of XZ!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ZEP" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="9" condition="Arrived" />
 				</triggers>
 				This is Zep, we'll... come back another time.
 			</message>

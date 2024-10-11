@@ -14,74 +14,74 @@
 			
 			<message delay="1" color="Imperial">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RELENTLESS" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="11" condition="Arrived" />
 				</triggers>
 				This is the Relentless, Admiral Guerrero in command.
 			</message>
 			<message delay="2" color="Imperial">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RELENTLESS" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="11" condition="Arrived" />
 				</triggers>
 				All Rebel craft, stand down immediately, or we will open fire.
 			</message>
 			<message delay="3" color="Imperial">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RELENTLESS" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="11" condition="Arrived" />
 				</triggers>
 				This is your first, and only, warning.
 			</message>
 			<message delay="4" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RELENTLESS" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="11" condition="Arrived" />
 				</triggers>
 				Not much chance of that, I think.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ALPHA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="12" condition="Arrived" />
 				</triggers>
 				TIE Fighters inbound!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BETA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="13" condition="Arrived" />
 				</triggers>
 				They've launched bombers!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="DELTA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="15" condition="Arrived" />
 				</triggers>
 				TIE Bomber Delta doesn’t look like it's messing around!
 			</message>
 			<message delay="1" color="Neutral">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="HABATOK 2" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="10" condition="Arrived" />
 				</triggers>
 				This is the Habatok, we are assisting you now.
 			</message>
 
 			<message delay="1" color="Neutral">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="HABATOK 2" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="10" condition="Docked" />
 				</triggers>
 				Habatok to Alliance, we have finishing boarding and go now.
 			</message>
 			<message delay="1" color="Neutral">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="HABATOK 2" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="10" condition="Attacked" />
 				</triggers>
 				We are under attack, we are needing assistance!
 			</message>
 			<message delay="1" color="Neutral">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="HABATOK 2" condition="ZeroShields" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="10" condition="ZeroShields" />
 				</triggers>
 				Our shields are gone now, we are needing cover now!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="Attacked" />
 				</triggers>
 				The B-Wings are under attack, you must defend them!
 			</message>

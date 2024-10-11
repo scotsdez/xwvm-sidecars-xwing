@@ -10,7 +10,7 @@
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="TALON" condition="Disabled" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="5" condition="Disabled" />
 				</triggers>
 				The corvette has been disabled.
 			</message>
@@ -28,31 +28,31 @@
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="LIBERATOR" condition="FiftyHull" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="FiftyHull" />
 				</triggers>
 				Liberator to all flight groups, we’ve taken heavy damage!
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="LIBERATOR" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="Destroyed" />
 				</triggers>
 				This is the Liberator, we’re going down, we’re -
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="STORM UNIT" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="12" condition="Arrived" />
 				</triggers>
 				Storm Unit to Red group, we’re heading for the Talon now.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="STORM UNIT" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="12" condition="Docked" />
 				</triggers>
 				This is Storm Unit, we got what we came for.
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="STORM UNIT" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="12" condition="Attacked" />
 				</triggers>
 				This is Storm Unit, we’re under attack, please assist!
 			</message>
@@ -74,9 +74,9 @@
 				Abort mission and report back for debriefing, immediately.
 			</message>
 		</messages>
-		<flightGroup target="DELTA" globalGroup="1" />
-		<flightGroup target="GAMMA" globalGroup="1" />
-		<flightGroup target="GOLD 1" globalGroup="2" />
-		<flightGroup target="GOLD 2" globalGroup="2" />
+		<flightGroup target="##9" globalGroup="1" />
+		<flightGroup target="##8" globalGroup="1" />
+		<flightGroup target="##10" globalGroup="2" />
+		<flightGroup target="##11" globalGroup="2" />
 	</mission>
 </sidecar>

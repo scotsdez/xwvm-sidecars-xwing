@@ -20,7 +20,7 @@
 			
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BIXBY" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="9" condition="Attacked" />
 				</triggers>
 				What are you doing? Stop firing on the Bixby, immediately!
 			</message>
@@ -39,49 +39,49 @@
 			
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MURTCEPS" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="8" condition="Destroyed" />
 				</triggers>
 				Way to go, I didn't think we'd get that one in time!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="GORGON" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="10" condition="Arrived" />
 				</triggers>
 				Looks like the Imperials sent reinforcements!
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="GORGON" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="10" condition="Arrived" />
 				</triggers>
 				Let's finish here quickly!
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BETA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="12" condition="Arrived" />
 				</triggers>
 				TIE Fighters, inbound!
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="DAGGER" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="Arrived" />
 				</triggers>
 				Dagger to Bixby: prepare to be boarded.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="DAGGER" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="Docked" />
 				</triggers>
 				This is Dagger, the operation was successful. Heading for home.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="GORGON" condition="Destroyed" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="10" condition="Destroyed" />
 				</triggers>
 				Wow, you took out a frigate on your first mission!
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="GORGON" condition="Destroyed" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="10" condition="Destroyed" />
 				</triggers>
 				I don't think we'll be calling you Rookie for long!
 			</message>
@@ -107,9 +107,9 @@
 				Return to base immediately.
 			</message>
 		</messages>
-		<flightGroup target="ORCIM" globalGroup="1" />
-		<flightGroup target="ESORP" globalGroup="1" />
-		<flightGroup target="ARREIS" globalGroup="1" />
-		<flightGroup target="NIGIRO" globalGroup="1" />
+		<flightGroup target="##4" globalGroup="1" />
+		<flightGroup target="##5" globalGroup="1" />
+		<flightGroup target="##6" globalGroup="1" />
+		<flightGroup target="##7" globalGroup="1" />
 	</mission>
 </sidecar>

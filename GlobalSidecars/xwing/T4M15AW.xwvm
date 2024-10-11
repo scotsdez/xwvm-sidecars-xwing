@@ -20,61 +20,61 @@
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="OMICRON 2" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="15" condition="Arrived" />
 				</triggers>
 				A transport is making a run at the freighter, stop it!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="EPSILON" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="10" condition="Destroyed" />
 				</triggers>
 				The shuttle carrying the new pilots has been destroyed.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="SIGMA" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="11" condition="Destroyed" />
 				</triggers>
 				The departing pilots have been eliminated, good work.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="PSI" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="5" condition="Attacked" />
 				</triggers>
 				Make sure those containers remain intact for us to capture!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ASHANTI" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Arrived" />
 				</triggers>
 				This is the Ashanti, we're moving into position for docking.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ASHANTI" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Docked" />
 				</triggers>
 				We got what we came for!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ASHANTI" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Attacked" />
 				</triggers>
 				Ashanti to Red group, we're under fire!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="CHI" condition="Destroyed" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="4" condition="Destroyed" />
 				</triggers>
 				The Ashanti will arrive shortly.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="DRONE SHED" condition="Destroyed" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="2" condition="Destroyed" />
 				</triggers>
 				Your thoroughness is to be admired!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="EAGLE" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="12" condition="Arrived" />
 				</triggers>
 				Two corvettes just jumped in and are heading straight for us!
 			</message>

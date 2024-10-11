@@ -8,75 +8,75 @@
 			
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="XI" condition="Inspected" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="5" condition="Inspected" />
 				</triggers>
 				Excellent, you’ve verified the cargo in both containers.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RENHOEK" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="Arrived" />
 				</triggers>
 				This is transport Renhoek, heading for the cargo now.
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RENHOEK" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="Attacked" />
 				</triggers>
 				This is Renhoek, we're taking fire!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RHO" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="15" condition="Arrived" />
 				</triggers>
 				A gunboat patrol just hypered into the system, stop them!
 			</message>			
 
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RAPIER" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="Arrived" />
 				</triggers>
 				New contact emerging from hyperspace... it's an Imperial frigate!
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="Arrived" />
 				</triggers>
 				B-Wing Blue is launching to assault the frigate.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BETA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="8" condition="Arrived" />
 				</triggers>
 				Bombers inbound, they're going for the cruiser!
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="FIRESTORM" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="9" condition="Arrived" />
 				</triggers>
 				Another frigate has arrived!
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="FIRESTORM" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="9" condition="Destroyed" />
 				</triggers>
 				The Firestorm is now blazing in space!
 			</message>
 
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="RENHOEK" condition="CompletedMission" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="3" condition="CompletedMission" />
 				</triggers>
 				The transports are aboard, the cruiser is preparing its hyper jump.
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="STIMSENJ'KAT" condition="ZeroShields" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="ZeroShields" />
 				</triggers>
 				The cruiser's shields are down!
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="STIMSENJ'KAT" condition="FiftyHull" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="FiftyHull" />
 				</triggers>
 				The Stimsenj'kat can't take much more damage!
 			</message>

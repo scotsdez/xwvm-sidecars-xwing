@@ -11,105 +11,105 @@
 			
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="XROI" condition="Destroyed" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="4" condition="Destroyed" />
 				</triggers>
 				We've lost the freighters!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="QILUIY" condition="ZeroShields" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="ZeroShields" />
 				</triggers>
 				One of the corvettes has lost its shields!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="QILUIY" condition="FiftyHull" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="FiftyHull" />
 				</triggers>
 				One of the corvettes is reporting heavy damage to its hull!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="YW" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="Destroyed" />
 				</triggers>
 				That's it for the pirate Y-Wings!
 			</message>
 				
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="XW" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="7" condition="Arrived" />
 				</triggers>
 				Those X-Wings may be carrying torpedoes, stop them!
 			</message>			
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="TRANSPO" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="9" condition="Arrived" />
 				</triggers>
 				Two transports just launched from the pirate frigate.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="TRANSPO" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="9" condition="Arrived" />
 				</triggers>
 				Take them out before they can attack the convoy!
 			</message>
 
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MU" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="14" condition="Arrived" />
 				</triggers>
 				An Imperial scout patrol just entered the area!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MU" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="14" condition="Arrived" />
 				</triggers>
 				Intercept them before they can transmit our location!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="DARKSTAR" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="10" condition="Arrived" />
 				</triggers>
 				New contact emerging from hyperspace!
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="DARKSTAR" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="10" condition="Arrived" />
 				</triggers>
 				It's a Star Destroyer, our location must have been relayed!
 			</message>
 			<message delay="3" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="DARKSTAR" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="10" condition="Arrived" />
 				</triggers>
 				Hold them off while the convoy escapes into hyperspace.
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="DARKSTAR" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="10" condition="Destroyed" />
 				</triggers>
 				The Darkstar has been destroyed, superlative job!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="DARKSTAR" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="10" condition="Destroyed" />
 				</triggers>
 				Red squadron's outstanding reputation remains intact!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="QILUIY" condition="CompletedMission" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="3" condition="CompletedMission" />
 				</triggers>
 				Making the jump to hyperspace now, thanks for the assistance!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="SCORPION" condition="ZeroShields" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="5" condition="ZeroShields" />
 				</triggers>
 				The pirate frigate has lost its shields.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="SCORPION" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="5" condition="Destroyed" />
 				</triggers>
 				The pirate frigate has been eliminated!
 			</message>

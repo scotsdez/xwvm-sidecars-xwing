@@ -14,7 +14,7 @@
 			
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="ZeroShields" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="ZeroShields" />
 				</triggers>
 				We're taking a lot of fire, Red group!
 			</message>
@@ -29,20 +29,20 @@
 			
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="SWEEPER" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="Arrived" />
 				</triggers>
 				That looks like a standard supply drop, we can ignore it.
 			</message>
 			<message delay="3" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="SWEEPER" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="Arrived" />
 				</triggers>
 				We have more important tasks on hand!
 			</message>
 			
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="GHOST" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="10" condition="Arrived" />
 				</triggers>
 				Some Imperial reinforcements have entered the area!
 			</message>

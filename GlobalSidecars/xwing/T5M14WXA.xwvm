@@ -7,104 +7,104 @@
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MAYHEM" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="7" condition="Arrived" />
 				</triggers>
 				Here we go! Stay sharp, everyone.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BETA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="10" condition="Arrived" />
 				</triggers>
 				Those bombers are going for the corvettes!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ALPHA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="8" condition="Arrived" />
 				</triggers>
 				Take out those Interceptors!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Arrived" />
 				</triggers>
 				This is Blue Leader, we’re setting up for our attack run.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="ZeroShields" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="ZeroShields" />
 				</triggers>
 				We’re taking heavy damage!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE_2" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="Arrived" />
 				</triggers>
 				Preparing to disable the Mayhem’s systems for capture.
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE_2" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="Attacked" />
 				</triggers>
 				We’re taking fire!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE_2" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="Attacked" />
 				</triggers>
 				Try to draw fire away from the B-Wings!
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MAYHEM" condition="ZeroShields" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="7" condition="ZeroShields" />
 				</triggers>
 				The Mayhem’s shields are down!
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MAYHEM" condition="Disabled" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="7" condition="Disabled" />
 				</triggers>
 				Great, the Mayhem has been disabled!
 			</message>			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="STORM 1" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="Arrived" />
 				</triggers>
 				This is Storm unit, start the clock on the capture operation.
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="STORM 2" condition="CompletedMission" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="CompletedMission" />
 				</triggers>
 				This is Storm 2, we’ve entered the hangar.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="STORM 2" condition="CompletedMission" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="CompletedMission" />
 				</triggers>
 				Capture team is en route to the bridge.
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BILBRINGI" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="Docked" />
 				</triggers>
 				The corvettes have finished docking and will depart to safe locations.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="PHANTOM" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="14" condition="Arrived" />
 				</triggers>
 				Imperial corvettes have entered the area!
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MU" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="12" condition="Arrived" />
 				</triggers>
 				Gunboats Mu are going after Storm unit!
 			</message>
 			<message color="Rebel">
 				<triggers operator="or">
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="STORM 1" condition="Attacked" />
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="STORM 2" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="Attacked" />
 				</triggers>
 				This is Storm unit, we need cover!
 			</message>

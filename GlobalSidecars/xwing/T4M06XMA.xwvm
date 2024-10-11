@@ -8,85 +8,85 @@
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="JAAMN" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="Arrived" />
 				</triggers>
 				This is Jaamn to Op Mus, we're here to get you going again.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MU" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="Arrived" />
 				</triggers>
 				We've got uninvited guests - they're on an intercept course!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="NU" condition="Arrived" />
-					<trigger amount="HundredPercent" type="FlightGroup" variable="RED" condition="Survived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="Arrived" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="0" condition="Survived" />
 				</triggers>
 				More contacts coming in from hyperspace.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="TAU" condition="Arrived" />
-					<trigger amount="HundredPercent" type="FlightGroup" variable="RED" condition="Survived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="5" condition="Arrived" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="0" condition="Survived" />
 				</triggers>
 				Oh, look who it is. More gunboats.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MU_2" condition="Arrived" />
-					<trigger amount="HundredPercent" type="FlightGroup" variable="RED" condition="Survived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="Arrived" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="0" condition="Survived" />
 				</triggers>
 				Surely they must be running out of fighters by now.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="NU_2" condition="Arrived" />
-					<trigger amount="HundredPercent" type="FlightGroup" variable="RED" condition="Survived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="7" condition="Arrived" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="0" condition="Survived" />
 				</triggers>
 				Another two fighters dropped in.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ZZIB" condition="Arrived" />
-					<trigger amount="HundredPercent" type="FlightGroup" variable="RED" condition="Survived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="11" condition="Arrived" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="0" condition="Survived" />
 				</triggers>
 				Two freighters just arrived, looks like local traders.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="OP MUS" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Attacked" />
 				</triggers>
 				This is the Op Mus, we're taking fire!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="OP MUS" condition="ZeroShields" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="ZeroShields" />
 				</triggers>
 				Our shields are down!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="OP MUS" condition="FiftyHull" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="FiftyHull" />
 				</triggers>
 				We can't take much more of this!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="JAAMN" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="Attacked" />
 				</triggers>
 				Jaamn here, we need some cover.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RED DRAGON" condition="Arrived" />
-					<trigger amount="HundredPercent" type="FlightGroup" variable="RED" condition="Survived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="15" condition="Arrived" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="0" condition="Survived" />
 				</triggers>
 				That is not a sight I wanted to see!
 			</message>
 			<message delay="2" color="Imperial">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RED DRAGON" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="15" condition="Arrived" />
 				</triggers>
 				Rebel craft, stand down and prepare to be boarded.
 			</message>

@@ -11,73 +11,73 @@
 			
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="WARSPITE" condition="Inspected" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Inspected" />
 				</triggers>
 				Be careful, that's the Warspite.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="WARSPITE" condition="Inspected" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Inspected" />
 				</triggers>
 				Intelligence suggests it's been modified to carry extra fighters.
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="327" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="5" condition="Arrived" />
 				</triggers>
 				Sensors are reading two new contacts entering the system.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RUGGERT" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="7" condition="Arrived" />
 				</triggers>
 				One cargo vessel has arrived, make sure to inspect it.
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="758" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="Arrived" />
 				</triggers>
 				Another three vessels registering on scanners.
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="427" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="Arrived" />
 				</triggers>
 				Look sharp, there are more ships arriving.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="EICHLER" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="8" condition="Arrived" />
 				</triggers>
 				There's another cargo ship dropping in.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="524" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="Arrived" />
 				</triggers>
 				The reports from the Bixby captain were certainly accurate...
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="524" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="Arrived" />
 				</triggers>
 				...another two ships just dropped out of hyperspace.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="HARASSER" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="Arrived" />
 				</triggers>
 				Two capital ships just jumped in - they must be the convoy escorts.
 			</message>
 			<message delay="1" color="Imperial">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="INVINCIBLE" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="9" condition="Arrived" />
 				</triggers>
 				This is the Invincible. Rebel craft, surrender now, or be obliterated.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="INVINCIBLE" condition="Inspected" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="9" condition="Inspected" />
 				</triggers>
 				Don't get too close to that Star Destroyer!
 			</message>

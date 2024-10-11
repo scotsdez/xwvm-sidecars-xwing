@@ -14,20 +14,20 @@
 			
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="TANTIVE IV" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="Attacked" />
 				</triggers>
 				Tantive IV here, we're under attack!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="TANTIVE IV" condition="ZeroShields" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="ZeroShields" />
 				</triggers>
 				This is the Tantive IV, our shields are gone!
 			</message>
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="TAU" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="8" condition="Arrived" />
 				</triggers>
 				Some gunboats just dropped in, stay focussed on the TIEs!
 			</message>

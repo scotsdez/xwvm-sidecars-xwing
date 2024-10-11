@@ -11,44 +11,44 @@
 			
 			<message delay="1" color="Neutral">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="THRASHER" condition="Destroyed" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="12" condition="Destroyed" />
 				</triggers>
 				The corvettes have been destroyed now.
 			</message>
 
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="AVENGER" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="15" condition="Arrived" />
 				</triggers>
 				Red Leader, looks like we have company!
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="AVENGER" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="15" condition="Arrived" />
 				</triggers>
 				Gold Leader to Red group, we'll cover you.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ALPHA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="13" condition="Arrived" />
 				</triggers>
 				Alpha is going for the freighters!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ETA 1" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="14" condition="Arrived" />
 				</triggers>
 				This doesn't look good.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="Arrived" />
 				</triggers>
 				Blue Leader here, we heard you needed some heavy firepower!
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="Arrived" />
 				</triggers>
 				We'll get to work on these frigates!
 			</message>
@@ -56,38 +56,38 @@
 
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="STARLIFTER" condition="ZeroShields" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="10" condition="ZeroShields" />
 				</triggers>
 				The shields are down on one of the freighters!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="STARLIFTER" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="10" condition="Destroyed" />
 				</triggers>
 				We lost one of the freighters!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="TwentyFivePercent" type="FlightGroup" variable="STARLIFTER" condition="Destroyed" />
+					<trigger amount="TwentyFivePercent" type="FlightGroup" variable="10" condition="Destroyed" />
 				</triggers>
 				A second freighter has been destroyed!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="FiftyPercent" type="FlightGroup" variable="STARLIFTER" condition="Destroyed" />
+					<trigger amount="FiftyPercent" type="FlightGroup" variable="10" condition="Destroyed" />
 				</triggers>
 				Three freighters are gone, we can't afford to lose any more!
 			</message>
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="HUNTER" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="5" condition="Arrived" />
 				</triggers>
 				Another frigate just dropped in!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="GAMMA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="Arrived" />
 				</triggers>
 				Habassan reinforcements are engaging the frigates.
 			</message>

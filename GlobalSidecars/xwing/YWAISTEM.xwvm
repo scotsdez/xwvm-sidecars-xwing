@@ -26,19 +26,19 @@
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BOFOR" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="11" condition="Destroyed" />
 				</triggers>
 				You didn't need to destroy the freighter, but good work!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RED WIND" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="12" condition="Arrived" />
 				</triggers>
 				An Imperial frigate has just arrived.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RED WIND" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="12" condition="Arrived" />
 				</triggers>
 				Don't hang around, it will launch active fighters!
 			</message>
@@ -58,13 +58,13 @@
 				Abort mission and return to base immediately.
 			</message>
 		</messages>
-		<flightGroup target="ALPHA" globalGroup="1" />
-		<flightGroup target="BETA" globalGroup="1" />
-		<flightGroup target="GAMMA" globalGroup="1" />
-		<flightGroup target="DELTA" globalGroup="1" />
-		<flightGroup target="ZETA" globalGroup="1" />
-		<flightGroup target="ETA" globalGroup="1" />
-		<flightGroup target="THETA" globalGroup="1" />
-		<flightGroup target="IOTA" globalGroup="1" />
+		<flightGroup target="##1" globalGroup="1" />
+		<flightGroup target="##2" globalGroup="1" />
+		<flightGroup target="##3" globalGroup="1" />
+		<flightGroup target="##4" globalGroup="1" />
+		<flightGroup target="##5" globalGroup="1" />
+		<flightGroup target="##6" globalGroup="1" />
+		<flightGroup target="##7" globalGroup="1" />
+		<flightGroup target="##8" globalGroup="1" />
 	</mission>
 </sidecar>

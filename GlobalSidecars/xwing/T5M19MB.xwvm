@@ -11,26 +11,26 @@
 			
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="KAN" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="9" condition="Arrived" />
 				</triggers>
 				We're picking up hyperspace signals entering your sector.
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MU" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="Arrived" />
 				</triggers>
 				Remember, your primary target is that probe.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MU" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="Arrived" />
 				</triggers>
 				Everything else is secondary.
 			</message>
 			
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="TIE FIRE" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="5" condition="Arrived" />
 				</triggers>
 				Some Imperial corvettes just dropped into the system.
 			</message>
@@ -43,13 +43,13 @@
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ALPHA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="7" condition="Arrived" />
 				</triggers>
 				TIE bombers headed your way!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="STRIKER" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Arrived" />
 				</triggers>
 				More Imperial corvettes have just dropped out of hyperspace.
 			</message>

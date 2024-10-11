@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <sidecar>
-	<mission target="LARRY3">
+	<mission target="LARRY3" invalidGameVariants="xwing93">
 		<messages>
 			<message delay="0" color="Rebel">
 				This is Gold Leader, I have eyes on the Priam.
@@ -14,14 +14,14 @@
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="PRIAM" condition="Disabled" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="8" condition="Disabled" />
 				</triggers>
 				The Priam has been disabled, capture craft inbound.
 			</message>
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ASSAULT 1" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="Arrived" />
 				</triggers>
 				Assault 1 here, starting our approach to the Priam.
 			</message>
@@ -34,7 +34,7 @@
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="TAU" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="12" condition="Arrived" />
 				</triggers>
 				Keep those gunboats off our backs!
 			</message>
@@ -47,7 +47,7 @@
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="PRIAM" condition="Destroyed" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="8" condition="Destroyed" />
 				</triggers>
 				We were supposed to capture the Priam, not destroy it!
 			</message>	
@@ -71,11 +71,11 @@
 				Abort mission and return to base for debriefing.
 			</message>
 		</messages>
-		<flightGroup target="ASSAULT 1" globalGroup="1" />
-		<flightGroup target="ASSAULT 2" globalGroup="1" />
-		<flightGroup target="PANDA 1" globalGroup="1" />
-		<flightGroup target="PANDA 2" globalGroup="1" />
-		<flightGroup target="JORDI 1" globalGroup="1" />
-		<flightGroup target="JORDI 2" globalGroup="1" />
+		<flightGroup target="##6" globalGroup="1" />
+		<flightGroup target="##7" globalGroup="1" />
+		<flightGroup target="##4" globalGroup="1" />
+		<flightGroup target="##5" globalGroup="1" />
+		<flightGroup target="##2" globalGroup="1" />
+		<flightGroup target="##3" globalGroup="1" />
 	</mission>
 </sidecar>

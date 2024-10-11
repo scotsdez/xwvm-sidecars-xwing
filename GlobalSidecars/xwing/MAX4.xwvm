@@ -16,43 +16,43 @@
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="PlayerCraft" type="FlightGroup" variable="RED" condition="Attacked" />
+					<trigger amount="PlayerCraft" type="FlightGroup" variable="0" condition="Attacked" />
 				</triggers>
 				Don’t fly in a straight line for more than a couple of seconds.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="PlayerCraft" type="FlightGroup" variable="RED" condition="Attacked" />
+					<trigger amount="PlayerCraft" type="FlightGroup" variable="0" condition="Attacked" />
 				</triggers>
 				Keep jinking and weaving to make yourself harder to hit.
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="PlayerCraft" type="FlightGroup" variable="RED" condition="FiftyHull" />
+					<trigger amount="PlayerCraft" type="FlightGroup" variable="0" condition="FiftyHull" />
 				</triggers>
 				You’ve taken damage - increase power to your shields.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="PlayerCraft" type="FlightGroup" variable="RED" condition="FiftyHull" />
+					<trigger amount="PlayerCraft" type="FlightGroup" variable="0" condition="FiftyHull" />
 				</triggers>
 				Try cycling the settings between forward, rear and balanced.
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="ALPHA" condition="Destroyed" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="1" condition="Destroyed" />
 				</triggers>
 				TIE Fighter group Alpha has been destroyed.
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="BETA" condition="Destroyed" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="2" condition="Destroyed" />
 				</triggers>
 				Scratch TIE Fighter group Beta!
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="GAMMA" condition="Destroyed" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="3" condition="Destroyed" />
 				</triggers>
 				TIE Fighter group Gamma has been eliminated.
 			</message>

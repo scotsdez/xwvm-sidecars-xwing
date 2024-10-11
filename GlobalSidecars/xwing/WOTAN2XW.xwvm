@@ -20,25 +20,25 @@
 			
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="FiftyPercent" type="FlightGroup" variable="EPSILON" condition="Destroyed" />
+					<trigger amount="FiftyPercent" type="FlightGroup" variable="12" condition="Destroyed" />
 				</triggers>
 				Half of the transports from Epsilon have been eliminated.
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="FiftyPercent" type="FlightGroup" variable="M-S" condition="Destroyed" />
+					<trigger amount="FiftyPercent" type="FlightGroup" variable="3" condition="Destroyed" />
 				</triggers>
 				We’ve taken out half of the freighters carrying Walkers.
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="M-S" condition="Destroyed" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="3" condition="Destroyed" />
 				</triggers>
 				All of the walker-carrying freighters have been eradicated.
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="EPSILON" condition="Destroyed" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="12" condition="Destroyed" />
 				</triggers>
 				The entirety of group Epsilon has been destroyed.
 			</message>
@@ -46,20 +46,20 @@
 			
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESOLUTE" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="5" condition="Arrived" />
 				</triggers>
 				We're picking up a Star Destroyer entering the area!
 			</message>			
 
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="SEINAR" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="Arrived" />
 				</triggers>
 				Additional freighters arrived: engage as secondary targets.
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="OMICRON" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="13" condition="Arrived" />
 				</triggers>
 				New transports dropped in: consider as secondary targets.
 			</message>

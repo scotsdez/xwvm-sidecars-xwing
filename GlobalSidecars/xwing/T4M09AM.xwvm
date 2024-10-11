@@ -11,165 +11,165 @@
 			
 			<message delay="1" color="Neutral">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="TRANSMOR 3" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="Arrived" />
 				</triggers>
 				Transmor 3, calling Alliance vessels.
 			</message>
 			<message delay="2" color="Neutral">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="TRANSMOR 3" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="Arrived" />
 				</triggers>
 				We've got the grain shipment.
 			</message>
 			<message delay="3" color="Neutral">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="TRANSMOR 3" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="Arrived" />
 				</triggers>
 				Awaiting your craft to initiate transfer.
 			</message>
 			<message delay="1" color="Neutral">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="TRANSMOR 3" condition="Inspected" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="Inspected" />
 				</triggers>
 				I assure you that your shipment is here, as promised.
 			</message>
 			<message delay="2" color="Neutral">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="TRANSMOR 3" condition="Inspected" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="Inspected" />
 				</triggers>
 				Red Leader was only following standard protocol, Transmor.
 			</message>
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="KHAN 3" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="Arrived" />
 				</triggers>
 				This is Khan 3, hailing Transmor 3.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="KHAN 3" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="Arrived" />
 				</triggers>
 				Stand by for docking and cargo transfer.
 			</message>
 			<message delay="3" color="Neutral">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="KHAN 3" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="Arrived" />
 				</triggers>
 				Acknowledged, Khan 3.
 			</message>
 			
 			<message delay="1" color="Neutral">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MU" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="7" condition="Arrived" />
 				</triggers>
 				Imperial fighters just dropped out of hyperspace!
 			</message>
 			<message delay="2" color="Neutral">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MU" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="7" condition="Arrived" />
 				</triggers>
 				Damn you, rebels, you set us up!
 			</message>
 			<message delay="3" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MU" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="7" condition="Arrived" />
 				</triggers>
 				I can assure you that we didn't...
 			</message>
 			<message delay="4" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MU" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="7" condition="Arrived" />
 				</triggers>
 				... and in any case, we can discuss this later!
 			</message>
 			<message delay="5" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MU" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="7" condition="Arrived" />
 				</triggers>
 				Red group will intercept the Imperials as we make the transfer.
 			</message>
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="EPSILON" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="11" condition="Arrived" />
 				</triggers>
 				We've got trouble, boss. 
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="EPSILON" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="11" condition="Arrived" />
 				</triggers>
 				Looks like those transports are going for the freighters.
 			</message>
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="KHAN 3" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="Docked" />
 				</triggers>
 				The first shipment of grain is on board, heading for home.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="KHAN 2" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="Arrived" />
 				</triggers>
 				The second freighter has arrived to take the next shipment. 
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="KHAN 2" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="Docked" />
 				</triggers>
 				Food stocks loaded into the second freighter, just one to go.
 			</message>
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="LAMBDA" condition="Arrived" />
-					<trigger amount="FiftyPercent" type="FlightGroup" variable="RED" condition="Survived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="13" condition="Arrived" />
+					<trigger amount="FiftyPercent" type="FlightGroup" variable="0" condition="Survived" />
 				</triggers>
 				I was hoping they'd run out of transports by now!
 			</message>
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="KHAN 1" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Arrived" />
 				</triggers>
 				The last freighter will begin docking now.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="KHAN 1" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Docked" />
 				</triggers>
 				The last transfer is complete.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="KHAN 1" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Docked" />
 				</triggers>
 				Thanks Transmor, it's been a pleasure doing business with you.
 			</message>
 			<message delay="3" color="Neutral">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="KHAN 1" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Docked" />
 				</triggers>
 				[Indifferent grunt]
 			</message>
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="KHAN 3" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="Attacked" />
 				</triggers>
 				Khan 3 is under attack, you must protect it, Red Leader!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="KHAN 2" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="Attacked" />
 				</triggers>
 				Khan 2 is being attacked and needs assistance!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="KHAN 1" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Attacked" />
 				</triggers>
 				The last freighter is being attacked!
 			</message>

@@ -13,13 +13,13 @@
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BETA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="12" condition="Arrived" />
 				</triggers>
 				The Star Destroyer has launched TIE Interceptors.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BETA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="12" condition="Arrived" />
 				</triggers>
 				Ignore them for now and focus on the shuttles.
 			</message>
@@ -45,13 +45,13 @@
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="TIGER" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="14" condition="Destroyed" />
 				</triggers>
 				Wow, way to go!
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="TIGER" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="14" condition="Destroyed" />
 				</triggers>
 				I’ve never seen anyone take down a Star Destroyer like that!
 			</message>
@@ -71,10 +71,10 @@
 				Abort mission and return to base.
 			</message>
 		</messages>
-		<flightGroup target="ST 224" globalGroup="1" />
-		<flightGroup target="ST 227" globalGroup="1" />
-		<flightGroup target="ST 249" globalGroup="1" />
-		<flightGroup target="ST 247" globalGroup="1" />
-		<flightGroup target="ST 213" globalGroup="1" />
+		<flightGroup target="##1" globalGroup="1" />
+		<flightGroup target="##2" globalGroup="1" />
+		<flightGroup target="##3" globalGroup="1" />
+		<flightGroup target="##4" globalGroup="1" />
+		<flightGroup target="##5" globalGroup="1" />
 	</mission>
 </sidecar>

@@ -14,73 +14,73 @@
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MU" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="13" condition="Arrived" />
 				</triggers>
 				Looks like trouble just arrived.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MU" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="13" condition="Arrived" />
 				</triggers>
 				Just for once, I'd like a quiet mission...
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RHO" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="14" condition="Arrived" />
 				</triggers>
 				Another pair of gunboats just dropped in!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="PURPLE CLAW" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="11" condition="Arrived" />
 				</triggers>
 				We've got some corvettes going for the base!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RED TOOTH" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="12" condition="Arrived" />
 				</triggers>
 				Two more corvettes just joined the party!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="LAMBDA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="15" condition="Arrived" />
 				</triggers>
 				An unidentified shuttle just jumped in near the base.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="LAMBDA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="15" condition="Arrived" />
 				</triggers>
 				It doesn't appear to be hostile at this time.
 			</message>
 			<message delay="3" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="LAMBDA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="15" condition="Arrived" />
 				</triggers>
 				Red Leader, inspect the shuttle, if you can.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="LAMBDA" condition="Inspected" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="15" condition="Inspected" />
 				</triggers>
 				The shuttle doesn't seem to belong to any of our allies. 
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="LAMBDA" condition="Inspected" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="15" condition="Inspected" />
 				</triggers>
 				Rebel Intelligence will investigate further. 
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="Attacked" />
 				</triggers>
 				The B-Wings are being attacked, you need to save them!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="NIVEN" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="8" condition="Attacked" />
 				</triggers>
 				This is the Niven, we're under attack!
 			</message>
@@ -92,13 +92,13 @@
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="GOLD_2" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="10" condition="Arrived" />
 				</triggers>
 				This is Gold Leader, we're back.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="GOLD_2" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="10" condition="Arrived" />
 				</triggers>
 				What did we miss?
 			</message>
@@ -134,7 +134,7 @@
 			</message>
 
 		</messages>
-		<flightGroup target="PURPLE CLAW" globalGroup="1" />
-		<flightGroup target="RED TOOTH" globalGroup="1" />
+		<flightGroup target="##11" globalGroup="1" />
+		<flightGroup target="##12" globalGroup="1" />
 	</mission>
 </sidecar>

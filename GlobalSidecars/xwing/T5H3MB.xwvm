@@ -13,43 +13,43 @@
 			</message>
 			<message delay="25" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BETA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="10" condition="Arrived" />
 				</triggers>
 				The Priam just launched a TIE Bomber!
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="PRIAM" condition="Disabled" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="8" condition="Disabled" />
 				</triggers>
 				Great work, the Priam has been disabled.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="PRIAM" condition="Disabled" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="8" condition="Disabled" />
 				</triggers>
 				Our forces will now arrive to capture the vessel.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MU" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="11" condition="Arrived" />
 				</triggers>
 				Enemy reinforcements just arrived, protect the capture teams!
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="OMEGA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="13" condition="Arrived" />
 				</triggers>
 				Those transports are going for the Priam!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="OMEGA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="13" condition="Arrived" />
 				</triggers>
 				We successfully captured the Priam, cover it while it enters hyperspace.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="PRIAM" condition="FiftyHull" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="8" condition="FiftyHull" />
 				</triggers>
 				The Priam is taking major damage, make sure it isn't destroyed!
 			</message>

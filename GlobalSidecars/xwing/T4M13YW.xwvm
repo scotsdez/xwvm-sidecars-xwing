@@ -4,53 +4,53 @@
 		<messages>			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="GOLD" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Arrived" />
 				</triggers>
 				Gold Leader to Red Leader: we're glad you're here.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="GOLD" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Arrived" />
 				</triggers>
 				Red group; Gold group: Ghorin's convoy should arrive any moment.
 			</message>
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ALPHA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="Arrived" />
 				</triggers>
 				Here they come!
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ALPHA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="Arrived" />
 				</triggers>
 				Destroy the escorting Y-Wings, and disable everything else.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="ALPHA" condition="Destroyed" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="4" condition="Destroyed" />
 				</triggers>
 				Y-Wing Alpha won't be bothering us again!
 			</message>
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="HUGO" condition="Disabled" />
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="GROTIUS" condition="Disabled" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="10" condition="Disabled" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="11" condition="Disabled" />
 				</triggers>
 				Both of the freighters have been disabled.
 			</message>
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="LAMBDA" condition="Disabled" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="8" condition="Disabled" />
 				</triggers>
 				The shuttles carrying officers have been disabled.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="KAPPA" condition="Disabled" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="6" condition="Disabled" />
 				</triggers>
 				The transports have been disabled.
 			</message>
@@ -62,57 +62,57 @@
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="KAFFIR" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="7" condition="Arrived" />
 				</triggers>
 				This is transport Kaffir, we've got the replacement workers.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="KHIVAN" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="9" condition="Arrived" />
 				</triggers>
 				Khivan here, with the new staff.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers operator="or">
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RAND" condition="Arrived" />
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="TALLI" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="Arrived" />
 				</triggers>
 				Our freighters will swap the clean grain for the tainted stock.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BETA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="5" condition="Arrived" />
 				</triggers>
 				Ghorin sent some reinforcements, you'll need to destroy them.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BETA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="5" condition="Arrived" />
 				</triggers>
 				We can't risk them reporting back to Ghorin, or the Empire.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="ALPHA" condition="Destroyed" />
-					<trigger amount="HundredPercent" type="FlightGroup" variable="BETA" condition="Destroyed" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="4" condition="Destroyed" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="5" condition="Destroyed" />
 				</triggers>
 				All of Ghorin's escorting fighters have been eliminated.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BADI DEA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="12" condition="Arrived" />
 				</triggers>
 				A Star Destroyer just dropped out of hyperspace.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BADI DEA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="12" condition="Arrived" />
 				</triggers>
 				All units, finish the mission and get out of there now!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BETA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="13" condition="Arrived" />
 				</triggers>
 				They're launching Bombers!
 			</message>
@@ -140,9 +140,9 @@
 			</message>
 
 		</messages>
-		<flightGroup target="KAPPA" globalGroup="1" />
-		<flightGroup target="LAMBDA" globalGroup="1" />
-		<flightGroup target="HUGO" globalGroup="1" />
-		<flightGroup target="GROTIUS" globalGroup="1" />
+		<flightGroup target="##6" globalGroup="1" />
+		<flightGroup target="##8" globalGroup="1" />
+		<flightGroup target="##10" globalGroup="1" />
+		<flightGroup target="##11" globalGroup="1" />
 	</mission>
 </sidecar>

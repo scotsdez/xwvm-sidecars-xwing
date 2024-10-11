@@ -7,46 +7,46 @@
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="SIGMA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="Arrived" />
 				</triggers>
 				Red flight, two groups of transports just dropped in.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="SIGMA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="Arrived" />
 				</triggers>
 				Make sure you ID them all to check if they're carrying the grain.
 			</message>
 			<message delay="3" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="SIGMA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="Arrived" />
 				</triggers>
 				Do not engage under any circumstances.
 			</message>
 			<message delay="4" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="SIGMA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="Arrived" />
 				</triggers>
 				We want the cargo to arrive intact.
 			</message>
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="SIGMA" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="Destroyed" />
 				</triggers>
 				You were specifically instructed not to destroy the transports!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ZETA" condition="Arrived" />
-					<trigger amount="FiftyPercent" type="FlightGroup" variable="RED" condition="Survived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="Arrived" />
+					<trigger amount="FiftyPercent" type="FlightGroup" variable="0" condition="Survived" />
 				</triggers>
 				We've got Bombers inbound!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BETA" condition="Arrived" />
-					<trigger amount="FiftyPercent" type="FlightGroup" variable="RED" condition="Survived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="11" condition="Arrived" />
+					<trigger amount="FiftyPercent" type="FlightGroup" variable="0" condition="Survived" />
 				</triggers>
 				More fighters incoming... that hangar must be bigger on the inside!
 			</message>

@@ -10,37 +10,37 @@
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BANSHEE" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="7" condition="Arrived" />
 				</triggers>
 				Great... looks like the local Imperial patrol just arrived.
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="SHRIKE" condition="ZeroShields" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="ZeroShields" />
 				</triggers>
 				The Shrike’s shields have failed, press the attack!
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="SHRIKE" condition="Disabled" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="Disabled" />
 				</triggers>
 				Systems on the Shrike are down, it's vulnerable to attack!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="GAMMA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="5" condition="Arrived" />
 				</triggers>
 				The Shrike is deploying defensive bombers, watch out!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="BANSHEE" condition="Destroyed" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="7" condition="Destroyed" />
 				</triggers>
 				Fantastic work, those were two big kills!
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="BANSHEE" condition="Destroyed" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="7" condition="Destroyed" />
 				</triggers>
 				The Empire will have a hard time patrolling this system now!
 			</message>

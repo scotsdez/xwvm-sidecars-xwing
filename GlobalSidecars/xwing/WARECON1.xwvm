@@ -16,19 +16,19 @@
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MERCILESS" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="13" condition="Arrived" />
 				</triggers>
 				An Imperial ship has arrived!
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MERCILESS" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="13" condition="Arrived" />
 				</triggers>
 				Expect it to begin launching fighters.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MERCILESS" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="13" condition="Arrived" />
 				</triggers>
 				Recommend you focus on completing your mission.
 			</message>
@@ -61,7 +61,7 @@
 			</message>
 			
 		</messages>
-		<flightGroup target="ALPHA" globalGroup="1" />
-		<flightGroup target="BETA" globalGroup="1" />
+		<flightGroup target="##1" globalGroup="1" />
+		<flightGroup target="##2" globalGroup="1" />
 	</mission>
 </sidecar>

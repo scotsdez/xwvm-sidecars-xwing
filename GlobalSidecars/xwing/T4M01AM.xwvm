@@ -14,55 +14,55 @@
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RED WIND" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="5" condition="Arrived" />
 				</triggers>
 				Imperial craft inbound!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ALPHA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="Arrived" />
 				</triggers>
 				They're launching bombers, move to intercept, Red 1! 
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="TAU" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="Arrived" />
 				</triggers>
 				Some gunboats just dropped out of hyperspace.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="CRESCENT" condition="ZeroShields" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="ZeroShields" />
 				</triggers>
 				One of the corvettes just lost its shields!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="CRESCENT" condition="FiftyHull" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="FiftyHull" />
 				</triggers>
-				One of the corvettes just lost its shields!
+				There’s severe hull damage to one of the corvettes, Red 1!
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="CRESCENT" condition="FiftyHull" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="FiftyHull" />
 				</triggers>
 				They can’t take much more punishment!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="DOBLL" condition="Destroyed" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="15" condition="Destroyed" />
 				</triggers>
 				May the Force be with you, Dobll.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="DOBLL" condition="Destroyed" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="15" condition="Destroyed" />
 				</triggers>
 				All of the freighters have been lost.
 			</message>
 			<message delay="3" color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="DOBLL" condition="Destroyed" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="15" condition="Destroyed" />
 				</triggers>
 				Concentrate on defending the corvettes, Red 1.
 			</message>

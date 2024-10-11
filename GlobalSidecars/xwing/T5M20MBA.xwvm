@@ -11,45 +11,45 @@
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="FANG" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="15" condition="Arrived" />
 				</triggers>
 				A group of corvettes just jumped in behind us!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="CATHLEEN" condition="ZeroShields" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="ZeroShields" />
 				</triggers>
 				The Cathleen’s shields are down, you must protect it!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="CATHLEEN" condition="FiftyHull" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="FiftyHull" />
 				</triggers>
 				The Cathleen has taken significant damage!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="CATHLEEN" condition="FiftyHull" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="FiftyHull" />
 				</triggers>
 				We can’t take much more of this!
 			</message>
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="EPSILON" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="14" condition="Arrived" />
 				</triggers>
 				Transports carrying torpedoes are on an attack run!
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="EPSILON" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="14" condition="Arrived" />
 				</triggers>
 				All fighters, intercept immediately!
 			</message>
 			
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="CATHLEEN" condition="CompletedMission" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="CompletedMission" />
 				</triggers>
 				We're making our jump now, thanks for the assistance!
 			</message>
@@ -85,7 +85,7 @@
 				All fighters, abort immediately and head for the rendezvous.
 			</message>
 		</messages>
-		<flightGroup target="SIGMA" globalGroup="1" />
-		<flightGroup target="EPSILON" globalGroup="1" />
+		<flightGroup target="##13" globalGroup="1" />
+		<flightGroup target="##14" globalGroup="1" />
 	</mission>
 </sidecar>

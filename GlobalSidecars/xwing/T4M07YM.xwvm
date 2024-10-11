@@ -8,84 +8,84 @@
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="PROBE" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="19" condition="Destroyed" />
 				</triggers>
 				Be advised, we've lost telemetry from our probe in the sector.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="GORDOON" condition="Inspected" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="3" condition="Inspected" />
 				</triggers>
 				No food on the freighters, we can ignore them.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="KAPPA 6" condition="Inspected" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="8" condition="Inspected" />
 				</triggers>
 				Great, you've identified a ship carrying food.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="KAPPA 6" condition="Inspected" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="8" condition="Inspected" />
 				</triggers>
 				Don't let it get away, but don't destroy it!
 			</message>
 			<message delay="3" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="KAPPA 6" condition="Inspected" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="8" condition="Inspected" />
 				</triggers>
 				We badly need those supplies.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="GOLD" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Arrived" />
 				</triggers>
 				This is Gold Leader, we're here to help.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="GOLD" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Arrived" />
 				</triggers>
 				This is the Raider, preparing to board the target.
 			</message>
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RAIDER" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="Docked" />
 				</triggers>
 				We've got the grain, let's go!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RAIDER" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="Attacked" />
 				</triggers>
 				We're taking fire, can you cover us?
 			</message>
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MU" condition="Arrived" />
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="GOLD" condition="Survived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Survived" />
 				</triggers>
 				Those gunboats look like trouble!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ENFORCER" condition="Arrived" />
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="GOLD" condition="Survived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="9" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Survived" />
 				</triggers>
 				This day just keeps getting better...
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RAIDER" condition="FiftyHull" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="FiftyHull" />
 				</triggers>
 				Raider is in critical condition, you must protect it!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLACKEN" condition="Arrived" />
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="GOLD" condition="Survived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="11" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Survived" />
 				</triggers>
 				I think we're in a bit of trouble here...
 			</message>

@@ -8,97 +8,97 @@
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MEDEVAC" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="5" condition="Arrived" />
 				</triggers>
 				This is Medevac 1, requesting permission to dock.
 			</message>
 			<message delay="3" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MEDEVAC" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="5" condition="Arrived" />
 				</triggers>
 				Roger that, Medevac, permission granted.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="KOROLEV" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="Arrived" />
 				</triggers>
 				Redemption, this is the Korolev. We have wounded to transfer aboard.
 			</message>
 			<message delay="3" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="KOROLEV" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="Arrived" />
 				</triggers>
 				Acknowledged, Korolev. Please stand by until the shuttles have docked.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="MEDEVAC" condition="Docked" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="5" condition="Docked" />
 				</triggers>
 				Korolev, you are cleared to begin docking sequence.
 			</message>
 			<message delay="3" color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="MEDEVAC" condition="Docked" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="5" condition="Docked" />
 				</triggers>
 				Acknowledged, Redemption.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="WARSPITE" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="7" condition="Arrived" />
 				</triggers>
 				Alert! An Imperial frigate just dropped out of hyperspace!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ALPHA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="9" condition="Arrived" />
 				</triggers>
 				TIE Bombers inbound. Red group, let's go and meet the neighbours.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="WARSPITE_2" condition="Inspected" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="8" condition="Inspected" />
 				</triggers>
 				The Warspite. I'd hoped never to see it again.
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RED 2" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="0" condition="Attacked" />
 				</triggers>
 				Watch it Red 2, you've picked up some attention!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="KOROLEV" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="Docked" />
 				</triggers>
 				Korolev to Redemption: patient transfer complete.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="KOROLEV" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="Attacked" />
 				</triggers>
 				Korolev to Red group - we're under attack!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MEDEVAC" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="5" condition="Attacked" />
 				</triggers>
 				This is Medevac, we are under attack.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="REDEMPTION" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="Attacked" />
 				</triggers>
 				Redemption to all fighters: we're under attack.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="REDEMPTION" condition="ZeroShields" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="ZeroShields" />
 				</triggers>
 				Our shields are failing!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="REDEMPTION" condition="FiftyHull" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="FiftyHull" />
 				</triggers>
 				This is Redemption, we can't take much more of this!
 			</message>

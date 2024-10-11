@@ -11,87 +11,87 @@
 			
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="WALKER" condition="Inspected" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="Inspected" />
 				</triggers>
 				You've located the prisoners on that freighter, disable it.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="WALKER" condition="Inspected" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="Inspected" />
 				</triggers>
 				Watch that the other freighters don't run into it!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RANGER" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="Arrived" />
 				</triggers>
 				This is Ranger, moving into position.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MAYHEM" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="Arrived" />
 				</triggers>
 				We're reading a new contact coming out of hyperspace.
 			</message>
 			<message delay="2" color="Imperial">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MAYHEM" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="Arrived" />
 				</triggers>
 				Rebel scum, you are interfering with Imperial property.
 			</message>
 			<message delay="3" color="Imperial">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MAYHEM" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="Arrived" />
 				</triggers>
 				Surrender or die!
 			</message>
 
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RANGER" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="Attacked" />
 				</triggers>
 				We're taking fire, cover us!
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="GAMMA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="10" condition="Arrived" />
 				</triggers>
 				Gamma is going after the rescue team!
 			</message>
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="PIT BULL" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="15" condition="Arrived" />
 				</triggers>
 				That frigate has called for reinforcements!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RANGER" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="Docked" />
 				</triggers>
 				We've got the Habassans on board, bugging out.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RANGER" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="Destroyed" />
 				</triggers>
 				We've lost the rescue team!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MAYHEM" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="Destroyed" />
 				</triggers>
 				Magnificent work, Red Leader!
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MAYHEM" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="Destroyed" />
 				</triggers>
 				The Empire may have called their frigate Mayhem...
 			</message>
 			<message delay="3" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MAYHEM" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="Destroyed" />
 				</triggers>
 				... but clearly that name belongs to you!
 			</message>

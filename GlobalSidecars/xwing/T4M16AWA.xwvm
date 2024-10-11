@@ -11,7 +11,7 @@
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MU" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="15" condition="Arrived" />
 				</triggers>
 				I'm reading 4 fighters on an intercept vector!
 			</message>
@@ -23,19 +23,19 @@
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="FiftyPercent" type="FlightGroup" variable="MU" condition="Arrived" />
+					<trigger amount="FiftyPercent" type="FlightGroup" variable="15" condition="Arrived" />
 				</triggers>
 				These guys certainly are persistent.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RED WIND" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="10" condition="Arrived" />
 				</triggers>
 				That Imperial frigate looks familiar...
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ALPHA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="11" condition="Arrived" />
 				</triggers>
 				Those Bombers are going straight for the convoy!
 			</message>
@@ -75,11 +75,11 @@
 			</message>
 
 		</messages>
-		<flightGroup target="CIELO" globalGroup="1" />
-		<flightGroup target="WASP 1" globalGroup="1" />
-		<flightGroup target="WASP 2" globalGroup="1" />
-		<flightGroup target="NAMU" globalGroup="2" />
-		<flightGroup target="ORCA 1" globalGroup="2" />
-		<flightGroup target="ORCA 2" globalGroup="2" />
+		<flightGroup target="##1" globalGroup="1" />
+		<flightGroup target="##4" globalGroup="1" />
+		<flightGroup target="##5" globalGroup="1" />
+		<flightGroup target="##2" globalGroup="2" />
+		<flightGroup target="##6" globalGroup="2" />
+		<flightGroup target="##7" globalGroup="2" />
 	</mission>
 </sidecar>

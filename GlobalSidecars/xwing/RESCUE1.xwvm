@@ -20,74 +20,74 @@
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="TORAL" condition="Inspected" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="Inspected" />
 				</triggers>
 				We've found the wookies!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="GOLD" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="15" condition="Arrived" />
 				</triggers>
 				Gold leader to Red group, we're here to disable the freighter.
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="GOLD" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="15" condition="Attacked" />
 				</triggers>
 				This is Gold leader, we're taking fire!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="TORAL" condition="FiftyHull" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="FiftyHull" />
 				</triggers>
 				The Toral's hull is taking heavy damage.
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="TORAL" condition="Disabled" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="Disabled" />
 				</triggers>
 				The freighter's been disabled; calling in Rescue 1.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESCUE 1" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Arrived" />
 				</triggers>
 				Rescue 1 here, let's liberate the wookies!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESCUE 1" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Attacked" />
 				</triggers>
 				This is Rescue 1, we're under attack!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESCUE 1" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Docked" />
 				</triggers>
 				Rescue 1 here, we've got the wookies and are heading out!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESCUE 1" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Docked" />
 				</triggers>
 				[Happy wookie growling noises]
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESCUE 1" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Docked" />
 				</triggers>
 				I think that says it all!
 			</message>
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ZETA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="11" condition="Arrived" />
 				</triggers>
 				More TIEs inbound, don't let them interfere with the rescue!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="INTREPID" condition="Inspected" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="5" condition="Inspected" />
 				</triggers>
 				Don't get too close to that Star Destroyer!
 			</message>
@@ -114,8 +114,8 @@
 				Abort mission and return to base.
 			</message>
 		</messages>
-		<flightGroup target="MU" globalGroup="1" />
-		<flightGroup target="NU" globalGroup="1" />
-		<flightGroup target="TAU" globalGroup="1" />
+		<flightGroup target="##2" globalGroup="1" />
+		<flightGroup target="##3" globalGroup="1" />
+		<flightGroup target="##4" globalGroup="1" />
 	</mission>
 </sidecar>

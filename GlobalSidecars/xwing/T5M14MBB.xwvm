@@ -29,37 +29,37 @@
 			
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="SIGMA 6" condition="Inspected" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="12" condition="Inspected" />
 				</triggers>
 				Great, you’ve identified the officer transport.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="SIGMA 6" condition="Inspected" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="12" condition="Inspected" />
 				</triggers>
 				Disable it, but be careful not to destroy it!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="SIGMA 6" condition="Disabled" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="12" condition="Disabled" />
 				</triggers>
 				The officer transport has been disabled.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="SIGMA 6" condition="Disabled" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="12" condition="Disabled" />
 				</triggers>
 				TRN Shock will arrive momentarily to begin the capture operation.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="SIGMA 6" condition="Disabled" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="12" condition="Disabled" />
 				</triggers>
 				Make sure to give them cover.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MU" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="10" condition="Arrived" />
 				</triggers>
 				Detecting gunboats inbound, watch out!
 			</message>
@@ -83,37 +83,37 @@
 			</message>
 			<message delay="1" color="Imperial">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MAYHEM" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="5" condition="Arrived" />
 				</triggers>
 				This is Commander Pax of the Imperial frigate Mayhem.
 			</message>
 			<message delay="2" color="Imperial">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MAYHEM" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="5" condition="Arrived" />
 				</triggers>
 				Rebel ships, stand down immediately or be destroyed.
 			</message>
 			<message delay="6" color="Imperial">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MAYHEM" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="5" condition="Arrived" />
 				</triggers>
 				Very well. Prepare to meet your doom, Rebel scum.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BETA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="8" condition="Arrived" />
 				</triggers>
 				The frigate is launching bombers, take them out!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="SHOCK" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Docked" />
 				</triggers>
 				The officers are onboard TRN Shock, protect it as it jumps to hyperspace.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="GAMMA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="7" condition="Arrived" />
 				</triggers>
 				Some TIE Advanced just launched from the frigate's hangar.
 			</message>
@@ -139,8 +139,8 @@
 				Return to base, there isn’t anything more you can do here.
 			</message>
 		</messages>
-		<flightGroup target="KAPPA" globalGroup="1" />
-		<flightGroup target="SIGMA" globalGroup="1" />
-		<flightGroup target="LAMBDA" globalGroup="1" />
+		<flightGroup target="##2" globalGroup="1" />
+		<flightGroup target="##4" globalGroup="1" />
+		<flightGroup target="##3" globalGroup="1" />
 	</mission>
 </sidecar>

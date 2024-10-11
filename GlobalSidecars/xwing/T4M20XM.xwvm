@@ -14,124 +14,124 @@
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RAM'S HEAD" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="15" condition="Arrived" />
 				</triggers>
 				Ram's Head to Libra, good to see you.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RAM'S HEAD" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="15" condition="Arrived" />
 				</triggers>
 				You too, Ram's Head, let's get started.
 			</message>
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="DARKNESS" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Arrived" />
 				</triggers>
 				Look out, a frigate just dropped in!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ALPHA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="Arrived" />
 				</triggers>
 				It's launching fighters!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="ALPHA" condition="Destroyed" />
-					<trigger amount="FiftyPercent" type="FlightGroup" variable="RED" condition="Survived" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="2" condition="Destroyed" />
+					<trigger amount="FiftyPercent" type="FlightGroup" variable="0" condition="Survived" />
 				</triggers>
 				Not so advanced now, are you?
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="GAMMA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="8" condition="Arrived" />
 				</triggers>
 				TIE Bomber group Gamma is going for the Ram's Head!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ETA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="9" condition="Arrived" />
 				</triggers>
 				More bombers launching!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ASSASSIN 8" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="12" condition="Arrived" />
 				</triggers>
 				An Imperial corvette just dropped into the system...
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ASSASSIN 8" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="12" condition="Arrived" />
 				</triggers>
 				...it's making a run for the Libra!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RAM'S HEAD" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="15" condition="Docked" />
 				</triggers>
 				The transfer's done, heading for the rendezvous.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ASSASSIN 8" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="12" condition="Destroyed" />
 				</triggers>
 				Yes! That'll give the Empire a bloody nose!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="OMICRON" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="Arrived" />
 				</triggers>
 				What's that transport doing?
 			</message>
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="GOLD" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="11" condition="Arrived" />
 				</triggers>
 				Red Leader, this is Gold Leader.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="GOLD" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="11" condition="Arrived" />
 				</triggers>
 				We're here to help take down the Imperial ships.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="DARKNESS" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Destroyed" />
 				</triggers>
 				The Imperial frigate has been taken out, excellent!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RAM'S HEAD" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="15" condition="Attacked" />
 				</triggers>
 				The Ram's Head is under attack, you must protect it!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RAM'S HEAD" condition="ZeroShields" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="15" condition="ZeroShields" />
 				</triggers>
 				Shields on the Ram's Head are out, we can't afford to lose it!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="LIBRA" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="14" condition="Attacked" />
 				</triggers>
 				This is the Libra, we're taking damage!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="LIBRA" condition="FiftyHull" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="14" condition="FiftyHull" />
 				</triggers>
 				Libra to all fighters, we can't take much more of this!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="CHALLENGE" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="7" condition="Arrived" />
 				</triggers>
 				Just when I thought this couldn't get any worse...
 			</message>

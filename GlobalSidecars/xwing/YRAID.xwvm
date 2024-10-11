@@ -14,25 +14,25 @@
 			
 			<message delay="1" color="Imperial">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="VULTURE" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="11" condition="Arrived" />
 				</triggers>
 				Attention, Rebel craft!
 			</message>
 			<message delay="2" color="Imperial">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="VULTURE" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="11" condition="Arrived" />
 				</triggers>
 				Stand down your attack and surrender for interrogation!
 			</message>
 			<message delay="3" color="Imperial">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="VULTURE" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="11" condition="Arrived" />
 				</triggers>
 				This is your only warning.
 			</message>
 			<message delay="4" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="VULTURE" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="11" condition="Arrived" />
 				</triggers>
 				[Sarcastic] I don’t know, do you think we should do what they say?
 			</message>
@@ -52,7 +52,7 @@
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="VULTURE" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="11" condition="Destroyed" />
 				</triggers>
 				Excellent work taking down that frigate!
 			</message>
@@ -85,11 +85,11 @@
 				Abort mission and return to base immediately.
 			</message>
 		</messages>
-		<flightGroup target="OMEGA" globalGroup="1" />
-		<flightGroup target="LAMBDA" globalGroup="1" />
-		<flightGroup target="GAMMA" globalGroup="2" />
-		<flightGroup target="ZETA" globalGroup="2" />
-		<flightGroup target="DELTA" globalGroup="2" />
-		<flightGroup target="BETA" globalGroup="2" />
+		<flightGroup target="##2" globalGroup="1" />
+		<flightGroup target="##1" globalGroup="1" />
+		<flightGroup target="##6" globalGroup="2" />
+		<flightGroup target="##5" globalGroup="2" />
+		<flightGroup target="##8" globalGroup="2" />
+		<flightGroup target="##7" globalGroup="2" />
 	</mission>
 </sidecar>

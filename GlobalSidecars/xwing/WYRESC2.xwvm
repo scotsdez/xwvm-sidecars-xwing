@@ -16,59 +16,59 @@
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="OMICRON 1" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="Destroyed" />
 				</triggers>
 				Nice shooting, that's the transport destroyed!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="OMICRON 1" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="Docked" />
 				</triggers>
 				Too late - the transport has finished docking.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="OMICRON 1" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="Docked" />
 				</triggers>
 				Forget about the freighter, we need to disable that transport!
 			</message>
 			
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="OMICRON 1" condition="Disabled" />
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="OMICRON 1" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="Disabled" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="Docked" />
 				</triggers>
 				The transport has been disabled.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="OMICRON 1" condition="Disabled" />
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="OMICRON 1" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="Disabled" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="Docked" />
 				</triggers>
 				Our shuttle can board it instead to get the pilots back.
 			</message>
 			
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="FURIOUS" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="9" condition="Arrived" />
 				</triggers>
 				An Imperial frigate just dropped out of hyperspace...
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="FURIOUS" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="9" condition="Arrived" />
 				</triggers>
 				...that can't be good.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="DELTA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="8" condition="Arrived" />
 				</triggers>
 				They're launching fighters. They're going for the shuttle!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="OMICRON 2" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="Arrived" />
 				</triggers>
 				More transports have arrived, destroy them all.
 			</message>
@@ -80,19 +80,19 @@
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MERCY" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="10" condition="Attacked" />
 				</triggers>
 				This is shuttle Mercy, we're under attack!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MERCY" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="10" condition="Docked" />
 				</triggers>
 				Mercy to Red: we've got the pilots. Cover our hyperspace jump!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MERCY" condition="CompletedMission" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="10" condition="CompletedMission" />
 				</triggers>
 				The shuttle made it to hyperspace safely.
 			</message>

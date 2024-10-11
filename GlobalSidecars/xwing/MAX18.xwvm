@@ -37,37 +37,37 @@
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MU" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="Arrived" />
 				</triggers>
 				Karabast... looks like we have company!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE 1" condition="ZeroShields" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="0" condition="ZeroShields" />
 				</triggers>
 				I'm taking damage!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE 1" condition="FiftyHull" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="0" condition="FiftyHull" />
 				</triggers>
 				My ship can't take much more of this!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ATK 253" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="Arrived" />
 				</triggers>
 				That looks like an Imperial capture team, and they're getting very close!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ATK 592" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="7" condition="Arrived" />
 				</triggers>
 				Keep these guys off of me!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ATK 664" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="8" condition="Arrived" />
 				</triggers>
 				We can't let them get this intel!
 			</message>
@@ -81,37 +81,37 @@
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESCUE 1" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="13" condition="Arrived" />
 				</triggers>
 				Rescue 1 calling X-Wing Blue, we're here to get you going again.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESCUE 1" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="13" condition="Arrived" />
 				</triggers>
 				Happy to hear it, Rescue 1!
 			</message>
 			<message delay="3" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESCUE 1" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="13" condition="Arrived" />
 				</triggers>
 				I'm ready to go, I don't like the neighbourhood much!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESCUE 1" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="13" condition="Docked" />
 				</triggers>
 				I'm online and back in control!
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESCUE 1" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="13" condition="Docked" />
 				</triggers>
 				Setting hyperspace coordinates now. Thanks for the assist!
 			</message>
 			<message delay="2" color="Imperial">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="INTREPID" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="9" condition="Arrived" />
 				</triggers>
 				Rebels! Stand down or die.
 			</message>
@@ -135,8 +135,8 @@
 				Without that intel, we don’t know what the Empire has planned.
 			</message>
 		</messages>
-		<flightGroup target="ATK 253" globalGroup="1" />
-		<flightGroup target="ATK 592" globalGroup="1" />
-		<flightGroup target="ATK 664" globalGroup="1" />
+		<flightGroup target="##2" globalGroup="1" />
+		<flightGroup target="##7" globalGroup="1" />
+		<flightGroup target="##8" globalGroup="1" />
 	</mission>
 </sidecar>

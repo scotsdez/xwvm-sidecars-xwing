@@ -11,97 +11,97 @@
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="TANTIVE IV" condition="Inspected" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="Inspected" />
 				</triggers>
 				You've located the ship carrying the Princess.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MARIA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="8" condition="Arrived" />
 				</triggers>
 				This is the Maria, initiating docking manoeuvre.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="IMMORTAL_2" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="12" condition="Arrived" />
 				</triggers>
 				Vader's ship, the Immortal, just dropped into the system!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MU" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="10" condition="Arrived" />
 				</triggers>
 				Gunboats Mu are heading for the exchange!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MARIA" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="8" condition="Attacked" />
 				</triggers>
 				This is the Maria, we're under attack!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MARIA" condition="ZeroShields" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="8" condition="ZeroShields" />
 				</triggers>
 				Maria to all fighters, our shields are down!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MARIA" condition="Disabled" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="8" condition="Disabled" />
 				</triggers>
 				They've taken out our systems, we're not going anywhere!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MARIA" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="8" condition="Docked" />
 				</triggers>
 				This is the Tantive IV, we've got the data and are heading out!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="TANTIVE IV" condition="Attacked" />
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="TANTIVE IV" condition="Inspected" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="Inspected" />
 				</triggers>
 				This is the Tantive IV, we're under attack!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="TANTIVE IV" condition="ZeroShields" />
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="TANTIVE IV" condition="Inspected" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="ZeroShields" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="Inspected" />
 				</triggers>
 				Tantive IV to all rebel fighters, they've taken out our shields!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="TANTIVE IV" condition="Disabled" />
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="TANTIVE IV" condition="Inspected" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="Disabled" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="Inspected" />
 				</triggers>
 				Our systems have been disabled, we've got no engines or weapons!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="TANTIVE IV" condition="Disabled" />
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="EPSILON" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="Disabled" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="9" condition="Arrived" />
 				</triggers>
 				That Imperial shuttle looks like a boarding party!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="EPSILON" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="9" condition="Docked" />
 				</triggers>
 				We can't let the Princess' ship fall into Vader's hands!
 			</message>
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="14" condition="Arrived" />
 				</triggers>
 				This is Blue Leader, we're here to help recover the Tantive IV.
 			</message>
 			
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="FATE" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="15" condition="Docked" />
 				</triggers>
 				The corvette is back under our control!
 			</message>

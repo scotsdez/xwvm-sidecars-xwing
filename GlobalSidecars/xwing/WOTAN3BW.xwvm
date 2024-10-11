@@ -26,94 +26,94 @@
 			
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="SIGMA 1" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="Destroyed" />
 				</triggers>
 				The Imperial supply transport has been taken care of.
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="KOTIATE" condition="ZeroShields" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="5" condition="ZeroShields" />
 				</triggers>
 				The Star Destroyer's shields are down!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="KOTIATE" condition="Disabled" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="5" condition="Disabled" />
 				</triggers>
 				Well done, the Star Destroyer has been disabled.
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="KOTIATE" condition="FiftyHull" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="5" condition="FiftyHull" />
 				</triggers>
 				The Kotiate's hull is critical, keep up the attack!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="KOTIATE" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="5" condition="Destroyed" />
 				</triggers>
 				Scratch one Star Destroyer, great work!
 			</message>
 				
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="LAMBDA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="13" condition="Arrived" />
 				</triggers>
 				Two shuttles have launched from the Star Destroyer’s hangar.
 			</message>			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="LAMBDA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="13" condition="Arrived" />
 				</triggers>
 				Consider both as primary targets, and don't let them escape!
 			</message>
 
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="LAMBDA" condition="Identified" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="13" condition="Identified" />
 				</triggers>
 				Lambda is carrying the senior officers from the Kotiate.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="LAMBDA" condition="Identified" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="13" condition="Identified" />
 				</triggers>
 				Make sure you don't let them get away!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="LAMBDA" condition="Destroyed" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="13" condition="Destroyed" />
 				</triggers>
 				The escaping shuttles have been eliminated.
 			</message>
 			
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BIRD OF PREY" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="14" condition="Arrived" />
 				</triggers>
 				Picking up an Imperial frigate entering the area.
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BIRD OF PREY" condition="ZeroShields" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="14" condition="ZeroShields" />
 				</triggers>
 				Shields are down on that frigate!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BIRD OF PREY" condition="Disabled" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="14" condition="Disabled" />
 				</triggers>
 				The frigate has been disabled, excellent!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BIRD OF PREY" condition="FiftyHull" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="14" condition="FiftyHull" />
 				</triggers>
 				The frigate has sustained heavy hull damage.
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BIRD OF PREY" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="14" condition="Destroyed" />
 				</triggers>
 				Magnificent, the frigate has been destroyed!
 			</message>

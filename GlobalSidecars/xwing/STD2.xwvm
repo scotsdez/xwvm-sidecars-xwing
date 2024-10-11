@@ -17,19 +17,19 @@
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="INTREPID" condition="ZeroShields" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="8" condition="ZeroShields" />
 				</triggers>
 				The Intrepid's shields are down!
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="INTREPID" condition="ZeroShields" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="8" condition="ZeroShields" />
 				</triggers>
 				Target the hull, and cause as much damage as you can!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="INTREPID" condition="FiftyHull" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="8" condition="FiftyHull" />
 				</triggers>
 				Finish it off, keep up the attack!
 			</message>

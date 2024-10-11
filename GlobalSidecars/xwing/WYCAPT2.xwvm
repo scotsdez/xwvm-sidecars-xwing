@@ -17,25 +17,25 @@
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="WILSEY" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Arrived" />
 				</triggers>
 				This is the Wilsey, ready to deliver the capture team.
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="WILSEY" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Attacked" />
 				</triggers>
 				Wilsey to Red 1, we're under attack!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="PHOENIX" condition="Disabled" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="Disabled" />
 				</triggers>
 				The freighter's been disabled!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="PHOENIX" condition="FiftyHull" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="FiftyHull" />
 				</triggers>
 				The Phoenix has taken heavy damage!
 			</message>
@@ -48,28 +48,28 @@
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="EPSILON" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="Docked" />
 				</triggers>
 				An Imperial transport just captured the freighter, stop it!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="WILSEY" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Docked" />
 				</triggers>
 				Phoenix to Red 1, we've got control of the freighter.
 			</message>
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="INTREPID" condition="Arrived" />
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="WILSEY" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="7" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Docked" />
 				</triggers>
 				A Star Destroyer just dropped out of hyperspace.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="INTREPID" condition="Arrived" />
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="WILSEY" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="7" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Docked" />
 				</triggers>
 				Cover the freighter until it can make its hyperjump.
 			</message>
@@ -90,7 +90,7 @@
 				Our plan to learn about the Empire's secret project is a failure.
 			</message>
 		</messages>
-		<flightGroup target="LAMBDA" globalGroup="1" />
-		<flightGroup target="OMICRON" globalGroup="1" />
+		<flightGroup target="##5" globalGroup="1" />
+		<flightGroup target="##6" globalGroup="1" />
 	</mission>
 </sidecar>

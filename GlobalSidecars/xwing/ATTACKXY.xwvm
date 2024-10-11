@@ -11,25 +11,25 @@
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Arrived" />
 				</triggers>
 				This is Blue Leader, we're setting up for our attack run.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Arrived" />
 				</triggers>
 				Try and draw their fire while we take down the cargo ships.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ETA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="9" condition="Arrived" />
 				</triggers>
 				The Invincible just launched reinforcements...
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ETA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="9" condition="Arrived" />
 				</triggers>
 				... luckily, we should be long gone by then.
 			</message>
@@ -49,13 +49,13 @@
 			
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="INVINCIBLE" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="8" condition="Attacked" />
 				</triggers>
 				I admire your bravery, but is it wise to take on the Invincible?
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RANGER" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="12" condition="Destroyed" />
 				</triggers>
 				The Ranger has been eliminated!
 			</message>
@@ -78,8 +78,8 @@
 				Abort mission and report for debriefing.
 			</message>
 		</messages>
-		<flightGroup target="JUNO 1" globalGroup="1" />
-		<flightGroup target="JUNO 2" globalGroup="1" />
-		<flightGroup target="JUNO 3" globalGroup="1" />
+		<flightGroup target="##2" globalGroup="1" />
+		<flightGroup target="##3" globalGroup="1" />
+		<flightGroup target="##4" globalGroup="1" />
 	</mission>
 </sidecar>

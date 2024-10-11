@@ -8,83 +8,83 @@
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MAGNUS" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="Arrived" />
 				</triggers>
 				Magnus to Jeffrey, ready to deliver supplies.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="OJAI" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="Arrived" />
 				</triggers>
 				Ojai to Jeffrey, standing by to transfer cargo.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MU" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Arrived" />
 				</triggers>
 				Imperial fighters just entered the area!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MAGNUS" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="Docked" />
 				</triggers>
 				Supply transfer is complete, preparing for our jump.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MAGNUS" condition="Docked" />
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="OJAI" condition="Survived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="Survived" />
 				</triggers>
 				Ojai, you are cleared to begin docking.
 			</message>
 			<message delay="3" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MAGNUS" condition="Docked" />
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="OJAI" condition="Survived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="Survived" />
 				</triggers>
 				This is Ojai, starting our approach.
 			</message>
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MAGNUS" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="Docked" />
 				</triggers>
 				Acknowledged, Magnus.
 			</message>
 			
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="OJAI" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="Attacked" />
 				</triggers>
 				Ojai to all fighters, we're taking fire!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="OJAI" condition="ZeroShields" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="ZeroShields" />
 				</triggers>
 				Ojai: Our shields are down, we need immediate assistance!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="JEFFREY" condition="ZeroShields" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="ZeroShields" />
 				</triggers>
 				Jeffrey to Red group, we've lost our shields!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="JEFFREY" condition="FiftyHull" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="FiftyHull" />
 				</triggers>
 				Jeffrey: We've taken severe damage!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="OJAI" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="Docked" />
 				</triggers>
 				Cargo transfer complete, plotting hyperspace coordinates now.
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="JEFFREY" condition="CompletedMission" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="CompletedMission" />
 				</triggers>
 				We're making our jump now. Thanks for the protection, Red Group.
 			</message>

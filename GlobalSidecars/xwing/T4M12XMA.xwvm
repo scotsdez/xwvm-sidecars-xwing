@@ -11,27 +11,27 @@
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="11" condition="Arrived" />
 				</triggers>
 				Blue Leader to Red group, good to have you with us.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="11" condition="Arrived" />
 				</triggers>
 				Can you help us take out those freighters first?
 			</message>
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="FIGII" condition="Destroyed" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="2" condition="Destroyed" />
 				</triggers>
 				We stopped the freighters from escaping, nice job.
 			</message>
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="CATHLEEN" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="Arrived" />
 				</triggers>
 				This is the Cathleen, we’ll take on the Sentinel.
 			</message>
@@ -45,19 +45,19 @@
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MOTTI" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="9" condition="Arrived" />
 				</triggers>
 				Another freighter arrived, don't let it get away!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="IOTA" condition="Destroyed" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="13" condition="Destroyed" />
 				</triggers>
 				You took out the TIE Advanced, impressive!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="OMEGA" condition="Destroyed" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="10" condition="Destroyed" />
 				</triggers>
 				The Imperial shuttles have been eradicated.
 			</message>
@@ -69,13 +69,13 @@
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="COMM SAT" condition="Destroyed" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="15" condition="Destroyed" />
 				</triggers>
 				The satellite has been taken out.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="SENTINEL" condition="Destroyed" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="4" condition="Destroyed" />
 				</triggers>
 				The Sentinel is down, score one for the Alliance!
 			</message>
@@ -103,9 +103,9 @@
 			</message>
 
 		</messages>
-		<flightGroup target="PSI" globalGroup="1" />
-		<flightGroup target="PHI" globalGroup="1" />
-		<flightGroup target="PI" globalGroup="1" />
-		<flightGroup target="CHI" globalGroup="1" />
+		<flightGroup target="##5" globalGroup="1" />
+		<flightGroup target="##6" globalGroup="1" />
+		<flightGroup target="##7" globalGroup="1" />
+		<flightGroup target="##12" globalGroup="1" />
 	</mission>
 </sidecar>

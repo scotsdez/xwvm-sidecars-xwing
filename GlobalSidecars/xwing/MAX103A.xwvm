@@ -17,79 +17,79 @@
 			
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="EXCELSIOR" condition="ZeroShields" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="ZeroShields" />
 				</triggers>
 				This is Excelsior, our shields are out!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="EXCELSIOR" condition="FiftyHull" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="FiftyHull" />
 				</triggers>
 				We've taken heavy damage to our hull!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Arrived" />
 				</triggers>
 				This is Blue leader, we're setting up our attack run.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="GOLD" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="Arrived" />
 				</triggers>
 				Gold leader here, engaging enemy craft. 
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RAIDER" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="15" condition="Arrived" />
 				</triggers>
 				We're detecting enemy corvettes exiting hyperspace!
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RAIDER" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="15" condition="Arrived" />
 				</triggers>
 				They're going for the Excelsior!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="RAIDER" condition="Destroyed" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="15" condition="Destroyed" />
 				</triggers>
 				Yes! The corvettes have been eradicated.
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE FOX" condition="ZeroShields" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="ZeroShields" />
 				</triggers>
 				The Blue Fox has lost its shields!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE FOX" condition="FiftyHull" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="FiftyHull" />
 				</triggers>
 				Detecting significant damage to the Blue Fox.
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE FOX" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="Destroyed" />
 				</triggers>
 				Fantastic work, the Blue Fox has been annihilated!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE FOX" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="Destroyed" />
 				</triggers>
 				That'll teach them to mess with the Excelsior!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="LAMBDA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="13" condition="Arrived" />
 				</triggers>
 				Enemy transports have entered the area!
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="LAMBDA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="13" condition="Arrived" />
 				</triggers>
 				All fighters, hold them off!
 			</message>

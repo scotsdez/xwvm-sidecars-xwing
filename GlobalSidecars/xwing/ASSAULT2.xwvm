@@ -29,19 +29,19 @@
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="GOLD" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="10" condition="Arrived" />
 				</triggers>
 				This is Gold Leader, we're starting our run on the corvettes.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="GOLD" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="10" condition="Arrived" />
 				</triggers>
 				Copy that, Gold Leader. This is Blue Leader.
 			</message>
 			<message delay="3" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="GOLD" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="10" condition="Arrived" />
 				</triggers>
 				We'll focus on Ethar II, if you can take out the other one.
 			</message>
@@ -55,7 +55,7 @@
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ROGUE 1" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="9" condition="Arrived" />
 				</triggers>
 				This is Rogue 1, we’re here to recapture the corvettes.
 			</message>
@@ -80,7 +80,7 @@
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="NU" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="12" condition="Arrived" />
 				</triggers>
 				Gunboat group Nu looks like they're going for Rogue group!
 			</message>
@@ -107,11 +107,11 @@
 				All fighters, abort mission and return to base immediately.
 			</message>
 		</messages>
-		<flightGroup target="CEPTOR 1" globalGroup="1" />
-		<flightGroup target="CEPTOR 2" globalGroup="1" />
-		<flightGroup target="ETHAR I" globalGroup="2" />
-		<flightGroup target="ETHAR II" globalGroup="2" />
-		<flightGroup target="ROGUE 1" globalGroup="3" />
-		<flightGroup target="ROGUE 2" globalGroup="3" />
+		<flightGroup target="##3" globalGroup="1" />
+		<flightGroup target="##4" globalGroup="1" />
+		<flightGroup target="##1" globalGroup="2" />
+		<flightGroup target="##2" globalGroup="2" />
+		<flightGroup target="##9" globalGroup="3" />
+		<flightGroup target="##8" globalGroup="3" />
 	</mission>
 </sidecar>

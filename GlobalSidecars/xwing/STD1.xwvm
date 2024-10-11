@@ -4,26 +4,26 @@
 		<messages>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Arrived" />
 				</triggers>
 				Red group, this is Blue leader.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Arrived" />
 				</triggers>
 				I'll give you some cover as you take care of the corvettes.
 			</message>
 			<message delay="3" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Arrived" />
 				</triggers>
 				I expect stiff resistance from that fighter escort, though.
 			</message>
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="INTREPID" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="Attacked" />
 				</triggers>
 				Focus on the escorts - we'll deal with the Intrepid later!
 			</message>
@@ -77,11 +77,11 @@
 				Return to base immediately for debriefing.
 			</message>
 		</messages>
-		<flightGroup target="VIPER 1" globalGroup="1" />
-		<flightGroup target="VIPER 2" globalGroup="1" />
-		<flightGroup target="VIPER 3" globalGroup="1" />
-		<flightGroup target="MU" globalGroup="2" />
-		<flightGroup target="RHO" globalGroup="2" />
-		<flightGroup target="TAU" globalGroup="2" />
+		<flightGroup target="##3" globalGroup="1" />
+		<flightGroup target="##4" globalGroup="1" />
+		<flightGroup target="##5" globalGroup="1" />
+		<flightGroup target="##6" globalGroup="2" />
+		<flightGroup target="##7" globalGroup="2" />
+		<flightGroup target="##8" globalGroup="2" />
 	</mission>
 </sidecar>

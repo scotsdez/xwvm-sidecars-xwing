@@ -14,69 +14,69 @@
 			
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="LAMBDA" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="Destroyed" />
 				</triggers>
 				Scratch one Imperial boarding party!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="LAMBDA" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="Docked" />
 				</triggers>
 				The Imperials have seized the freighter!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="LAMBDA" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="Docked" />
 				</triggers>
 				We can't do anything for the pilots now, abort mission! 
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="GENUE" condition="Inspected" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Inspected" />
 				</triggers>
 				Confirmed: the pilots are aboard the freighter.
 			</message>
 
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ETA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="8" condition="Arrived" />
 				</triggers>
 				The Intrepid just launched some bombers!
 			</message>
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="DRAGO" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="7" condition="Arrived" />
 				</triggers>
 				This is the Drago, I have eyes on the freighter.
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="DRAGO" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="7" condition="Attacked" />
 				</triggers>
 				This is the Drago, we're taking fire, please assist!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="DRAGO" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="7" condition="Docked" />
 				</triggers>
 				Drago here, we're heading out.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="DRAGO" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="7" condition="Docked" />
 				</triggers>
 				This is the Genue, now under Alliance control.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="DRAGO" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="7" condition="Docked" />
 				</triggers>
 				We found the pilots, and they're in a stable condition.
 			</message>
 			<message delay="3" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="DRAGO" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="7" condition="Docked" />
 				</triggers>
 				Cover us while we make the jump to hyperspace.
 			</message>

@@ -7,25 +7,25 @@
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="ALPHA" condition="Destroyed" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="1" condition="Destroyed" />
 				</triggers>
 				We took out TIE Fighter group Alpha!
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="BETA" condition="Destroyed" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="2" condition="Destroyed" />
 				</triggers>
 				See you later, TIE Fighter Beta!
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="GAMMA" condition="Destroyed" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="3" condition="Destroyed" />
 				</triggers>
 				That's TIE group Gamma gone!
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AllNonPlayerCraft" type="FlightGroup" variable="RED" condition="Destroyed" />
+					<trigger amount="AllNonPlayerCraft" type="FlightGroup" variable="0" condition="Destroyed" />
 				</triggers>
 				Both of your wingmen are gone, it's up to you now!
 			</message>

@@ -11,140 +11,140 @@
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="FEAR" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="Arrived" />
 				</triggers>
 				Alert! An Imperial frigate just entered the system!
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="FEAR" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="Arrived" />
 				</triggers>
 				Red leader, we can't let them track our hyperspace jump.
 			</message>
 			<message delay="3" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="FEAR" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="Arrived" />
 				</triggers>
 				They’ll need to be destroyed.
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="FEAR" condition="Disabled" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="Disabled" />
 				</triggers>
 				The Fear has been disabled, good work.
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="FEAR" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="Destroyed" />
 				</triggers>
 				The frigate Fear has been destroyed.
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="FURY" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="8" condition="Arrived" />
 				</triggers>
 				Another enemy frigate just dropped out of hyperspace!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BETA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="9" condition="Arrived" />
 				</triggers>
 				A squadron of bombers just launched from its hangar!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="FURY" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="8" condition="Destroyed" />
 				</triggers>
 				The frigate Fury is finished!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="HATE" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="10" condition="Arrived" />
 				</triggers>
 				Sensors are reading another Imperial frigate arriving!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="HATE" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="10" condition="Destroyed" />
 				</triggers>
 				The Hate has been eliminated.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="SPITE" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="12" condition="Arrived" />
 				</triggers>
 				The Empire has kindly sent us another frigate to destroy!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="SPITE" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="12" condition="Destroyed" />
 				</triggers>
 				The frigate Spite has met its end, impressive work!
 			</message>
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MARIA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="Arrived" />
 				</triggers>
 				Maria to Alliance forces, we have arrived.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MARIA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="Arrived" />
 				</triggers>
 				Hope we didn’t miss the party.
 			</message>
 			<message delay="3" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MARIA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="Arrived" />
 				</triggers>
 				Yali, transmit the coordinates when you get them...
 			</message>
 			<message delay="4" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MARIA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="Arrived" />
 				</triggers>
 				... and we'll follow you to the rendezvous.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="IDUA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="15" condition="Arrived" />
 				</triggers>
 				Yali, this is shuttle Idua.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="IDUA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="15" condition="Arrived" />
 				</triggers>
 				We have the rendezvous coordinates, transmitting now.
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="IDUA" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="15" condition="Attacked" />
 				</triggers>
 				This is Idua, we’re taking fire and need assistance!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="YALI" condition="ZeroShields" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="ZeroShields" />
 				</triggers>
 				The cruiser Yali has lost its shields!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="YALI" condition="FiftyHull" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="FiftyHull" />
 				</triggers>
 				The Yali has taken severe damage!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MARIA" condition="ZeroShields" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="ZeroShields" />
 				</triggers>
 				Maria to Alliance fighters, we've lost our shields!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MARIA" condition="FiftyHull" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="FiftyHull" />
 				</triggers>
 				This is the Maria, we can't take much more damage!
 			</message>

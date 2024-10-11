@@ -23,55 +23,55 @@
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="GAFRA" condition="Inspected" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="Inspected" />
 				</triggers>
 				Smart thinking, it's always wise to confirm cargo contents.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="GAFRA" condition="Disabled" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="Disabled" />
 				</triggers>
 				The freighter has been disabled.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="GAFRA" condition="Disabled" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="Disabled" />
 				</triggers>
 				Our boarding party will arrive shortly to secure the warheads.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="HERALD" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Arrived" />
 				</triggers>
 				This is Herald, we've got the commando team...
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="HERALD" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Arrived" />
 				</triggers>
 				...and are starting our approach. Carefully.
 			</message>
 			<message delay="9" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="HERALD" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Arrived" />
 				</triggers>
 				What I wouldn't give to be anywhere but here right now.
 			</message>
 			<message delay="10" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="HERALD" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Arrived" />
 				</triggers>
 				I don't like being this close. One wrong move, and...
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="HERALD" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Docked" />
 				</triggers>
 				This is Herald, boarding is complete! And not a moment too soon.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="LAMBDA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="Arrived" />
 				</triggers>
 				We've got company! Don't let them touch that freighter!
 			</message>
@@ -107,7 +107,7 @@
 				Return to base immediately.
 			</message>
 		</messages>
-		<flightGroup target="PSI" globalGroup="1" />
-		<flightGroup target="LAMBDA" globalGroup="1" />
+		<flightGroup target="##3" globalGroup="1" />
+		<flightGroup target="##4" globalGroup="1" />
 	</mission>
 </sidecar>

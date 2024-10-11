@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <sidecar>
-	<mission target="AWAISTEM">
+	<mission target="AWAISTEM" invalidGameVariants="xwing93">
 		<messages>
 			<message delay="1" color="Rebel">
 				You’re cleared to fire at will.
@@ -14,13 +14,13 @@
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="VIRULENCE" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="15" condition="Arrived" />
 				</triggers>
 				Imperial reinforcements have arrived!
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="VIRULENCE" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="15" condition="Arrived" />
 				</triggers>
 				Finish your mission and return to base as quickly as possible!
 			</message>
@@ -53,17 +53,17 @@
 			</message>
 			
 		</messages>
-		<flightGroup target="OMEGA" globalGroup="1" />
-		<flightGroup target="T-35" globalGroup="1" />
-		<flightGroup target="REPAIR DOCK" globalGroup="1" />
-		<flightGroup target="REPAIR DOCK_2" globalGroup="1" />
-		<flightGroup target="SIGMA" globalGroup="1" />
-		<flightGroup target="ALPHA" globalGroup="1" />
-		<flightGroup target="BETA" globalGroup="1" />
-		<flightGroup target="GAMMA" globalGroup="1" />
-		<flightGroup target="DELTA" globalGroup="1" />
-		<flightGroup target="ETA" globalGroup="1" />
-		<flightGroup target="ZETA" globalGroup="2" />
-		<flightGroup target="IOTA" globalGroup="2" />
+		<flightGroup target="##1" globalGroup="1" />
+		<flightGroup target="##4" globalGroup="1" />
+		<flightGroup target="##5" globalGroup="1" />
+		<flightGroup target="##6" globalGroup="1" />
+		<flightGroup target="##7" globalGroup="1" />
+		<flightGroup target="##8" globalGroup="1" />
+		<flightGroup target="##9" globalGroup="1" />
+		<flightGroup target="##10" globalGroup="1" />
+		<flightGroup target="##11" globalGroup="1" />
+		<flightGroup target="##12" globalGroup="1" />
+		<flightGroup target="##13" globalGroup="2" />
+		<flightGroup target="##14" globalGroup="2" />
 	</mission>
 </sidecar>

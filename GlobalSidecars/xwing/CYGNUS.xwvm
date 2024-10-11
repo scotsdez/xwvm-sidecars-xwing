@@ -11,32 +11,32 @@
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="LIGHTNING" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="11" condition="Arrived" />
 				</triggers>
 				This is the Lightning, starting our boarding run now.
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="LIGHTNING" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="11" condition="Attacked" />
 				</triggers>
 				Lightning to Red group, we're under attack!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="LIGHTNING" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="11" condition="Docked" />
 				</triggers>
 				This is Lightning, we've got the scientists. 
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="LIGHTNING" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="11" condition="Docked" />
 				</triggers>
 				Cover us while we make the jump to lightspeed.
 			</message>
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MU" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="8" condition="Destroyed" />
 				</triggers>
 				Well, at least we know those new fighters aren't indestructible!
 			</message>
@@ -67,7 +67,7 @@
 				Return to base for debriefing.
 			</message>
 		</messages>
-		<flightGroup target="DOCK 1" globalGroup="1" />
-		<flightGroup target="DOCK 2" globalGroup="1" />
+		<flightGroup target="##3" globalGroup="1" />
+		<flightGroup target="##4" globalGroup="1" />
 	</mission>
 </sidecar>

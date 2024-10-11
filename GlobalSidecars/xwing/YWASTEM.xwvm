@@ -11,31 +11,31 @@
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="DEDDITE" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="9" condition="Arrived" />
 				</triggers>
 				Another freighter just arrived, we’ll need to eliminate it too!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="KRAYT" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Arrived" />
 				</triggers>
 				An Imperial shuttle has just entered the area.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="KRAYT" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Arrived" />
 				</triggers>
 				Make sure to destroy it.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ENFORCER" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="11" condition="Arrived" />
 				</triggers>
 				An Imperial cruiser has just dropped out of hyperspace.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ALPHA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="12" condition="Arrived" />
 				</triggers>
 				It’s launching TIE Fighters - let’s not hang around!
 			</message>
@@ -53,13 +53,13 @@
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="KRAYT" condition="Inspected" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Inspected" />
 				</triggers>
 				The shuttle is carrying Imperial inspectors, destroy it!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="KRAYT" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Destroyed" />
 				</triggers>
 				The shuttle has been eradicated.
 			</message>
@@ -83,11 +83,11 @@
 				Report for immediate debriefing.
 			</message>
 		</messages>
-		<flightGroup target="CHI" globalGroup="1" />
-		<flightGroup target="CHI 3" globalGroup="1" />
-		<flightGroup target="PSI" globalGroup="1" />
-		<flightGroup target="PI" globalGroup="1" />
-		<flightGroup target="BANTHAR" globalGroup="2" />
-		<flightGroup target="DEDDITE" globalGroup="2" />
+		<flightGroup target="##4" globalGroup="1" />
+		<flightGroup target="##5" globalGroup="1" />
+		<flightGroup target="##6" globalGroup="1" />
+		<flightGroup target="##7" globalGroup="1" />
+		<flightGroup target="##8" globalGroup="2" />
+		<flightGroup target="##9" globalGroup="2" />
 	</mission>
 </sidecar>

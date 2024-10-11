@@ -10,37 +10,37 @@
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="GOLD" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Arrived" />
 				</triggers>
 				This is Gold leader, we’re going to disable the targets now.
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="GOLD" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Attacked" />
 				</triggers>
 				We’re under attack by TIE fighters, please assist!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="GOLD" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Attacked" />
 				</triggers>
 				Acknowledged, Gold. Let’s give them cover!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="CITADEL 1" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="12" condition="Arrived" />
 				</triggers>
 				Citadel 1, going to dock with Container Xi now.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="CITADEL 2" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="11" condition="Arrived" />
 				</triggers>
 				Citadel 2, will dock with freighter Wiggins.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="WARRIOR" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="13" condition="Arrived" />
 				</triggers>
 				A Star Destroyer just arrived: let’s hurry it up, people.
 			</message>
@@ -52,31 +52,31 @@
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="PSI" condition="Inspected" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="6" condition="Inspected" />
 				</triggers>
 				These equipment containers should be destroyed.
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BETAR" condition="Inspected" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="8" condition="Inspected" />
 				</triggers>
 				Betar is carrying weapons, take it down!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="THETA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="14" condition="Arrived" />
 				</triggers>
 				TIEs Delta and Theta are going for the slaves, take them out!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="CITADEL 1" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="12" condition="Docked" />
 				</triggers>
 				Citadel 1, we’ve rescued the slaves and are heading out.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="CITADEL 2" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="11" condition="Docked" />
 				</triggers>
 				Citadel 2, the Calamari are on board. Heading home.
 			</message>
@@ -106,10 +106,10 @@
 				Report back for immediate debriefing.
 			</message>
 		</messages>
-		<flightGroup target="ALPHA" globalGroup="1" />
-		<flightGroup target="BETA" globalGroup="1" />
-		<flightGroup target="GAMMA" globalGroup="1" />
-		<flightGroup target="CITADEL 1" globalGroup="2" />
-		<flightGroup target="CITADEL 2" globalGroup="2" />
+		<flightGroup target="##2" globalGroup="1" />
+		<flightGroup target="##3" globalGroup="1" />
+		<flightGroup target="##4" globalGroup="1" />
+		<flightGroup target="##12" globalGroup="2" />
+		<flightGroup target="##11" globalGroup="2" />
 	</mission>
 </sidecar>

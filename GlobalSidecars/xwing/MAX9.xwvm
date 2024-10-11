@@ -14,73 +14,73 @@
 			
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="PHOENIX" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="12" condition="Attacked" />
 				</triggers>
 				This is the Phoenix, we're under attack!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="PHOENIX" condition="ZeroShields" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="12" condition="ZeroShields" />
 				</triggers>
 				Phoenix to Red 1, we've lost our shields!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="PHOENIX" condition="FiftyHull" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="12" condition="FiftyHull" />
 				</triggers>
 				This is the Phoenix, we're badly damaged!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MAXIMUS" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="14" condition="Arrived" />
 				</triggers>
 				This is the Maximus, we have arrived.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MAXIMUS" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="14" condition="Arrived" />
 				</triggers>
 				Phoenix to Maximus, that's good to hear!
 			</message>
 			<message delay="3" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MAXIMUS" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="14" condition="Arrived" />
 				</triggers>
 				We're ready to transfer the cargo now.
 			</message>
 			<message delay="4" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MAXIMUS" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="14" condition="Arrived" />
 				</triggers>
 				Ojai to Phoenix, acknowledged.
 			</message>
 			<message delay="5" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MAXIMUS" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="14" condition="Arrived" />
 				</triggers>
 				Maintain your position while we begin docking manoeuvres.
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="15" condition="Arrived" />
 				</triggers>
 				We're launching fighters to provide extra cover.
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="OJAI" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="13" condition="Attacked" />
 				</triggers>
 				Ojai to all fighters, we're taking fire!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="OJAI" condition="ZeroShields" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="13" condition="ZeroShields" />
 				</triggers>
 				We've lost our shields and need immediate assistance!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="OJAI" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="13" condition="Docked" />
 				</triggers>
 				This is the Ojai, we've got the cargo and are heading out.
 			</message>
@@ -114,15 +114,15 @@
 				We may never learn the details of this secret Imperial project.
 			</message>
 		</messages>
-		<flightGroup target="ALPHA" globalGroup="1" />
-		<flightGroup target="ALPHA 3" globalGroup="1" />
-		<flightGroup target="ALPHA 4" globalGroup="1" />
-		<flightGroup target="BETA 1" globalGroup="1" />
-		<flightGroup target="GAMMA 1" globalGroup="1" />
-		<flightGroup target="GAMMA 2" globalGroup="1" />
-		<flightGroup target="BETA 2" globalGroup="1" />
-		<flightGroup target="BETA 3" globalGroup="1" />
-		<flightGroup target="ALPHA 5" globalGroup="1" />
-		<flightGroup target="GAMMA 3" globalGroup="1" />
+		<flightGroup target="##0" globalGroup="1" />
+		<flightGroup target="##3" globalGroup="1" />
+		<flightGroup target="##4" globalGroup="1" />
+		<flightGroup target="##1" globalGroup="1" />
+		<flightGroup target="##5" globalGroup="1" />
+		<flightGroup target="##6" globalGroup="1" />
+		<flightGroup target="##7" globalGroup="1" />
+		<flightGroup target="##8" globalGroup="1" />
+		<flightGroup target="##9" globalGroup="1" />
+		<flightGroup target="##10" globalGroup="1" />
 	</mission>
 </sidecar>

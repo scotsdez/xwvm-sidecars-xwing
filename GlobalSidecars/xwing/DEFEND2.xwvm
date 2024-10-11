@@ -11,44 +11,44 @@
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="FRAZIER" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="8" condition="Arrived" />
 				</triggers>
 				This is the Frazier: beginning rendezvous manoeuvres.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="FRAZIER" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="8" condition="Arrived" />
 				</triggers>
 				Roger Frazier, this is Sidral II, standing by.
 			</message>
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="FRAZIER" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="8" condition="Attacked" />
 				</triggers>
 				Frazier to Red group, we're under attack!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="SIDRAL II" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="7" condition="Attacked" />
 				</triggers>
 				Sidral II, we're taking fire!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="FRAZIER" condition="FiftyHull" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="8" condition="FiftyHull" />
 				</triggers>
 				Frazier here, we're in bad shape!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="SIDRAL II" condition="FiftyHull" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="7" condition="FiftyHull" />
 				</triggers>
 				Sidral II to Red Group: our hull is badly damaged!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="FRAZIER" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="8" condition="Docked" />
 				</triggers>
 				This is the Frazier, the transfer is complete.
 			</message>
@@ -79,7 +79,7 @@
 				Abort mission and return to base immediately.
 			</message>
 		</messages>
-		<flightGroup target="DARA 1" globalGroup="1" />
-		<flightGroup target="DARA 2" globalGroup="1" />
+		<flightGroup target="##6" globalGroup="1" />
+		<flightGroup target="##5" globalGroup="1" />
 	</mission>
 </sidecar>

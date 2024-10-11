@@ -8,45 +8,45 @@
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="KAPPA 5" condition="Inspected" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="Inspected" />
 				</triggers>
 				Confirmed: that shuttle is carrying the Sullustan leader!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="KAPPA 5" condition="Inspected" />
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="KAPPA 5" condition="Disabled" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="Inspected" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="Disabled" />
 				</triggers>
 				The shuttle carrying the Sullustan leader has been disabled.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESCUE 1" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="7" condition="Arrived" />
 				</triggers>
 				This is Rescue 1, moving to rendezvous with the target.
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESCUE 1" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="7" condition="Attacked" />
 				</triggers>
 				This is Rescue 1, we're taking fire!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="KAPPA 5" condition="FiftyHull" />
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="KAPPA 5" condition="Inspected" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="FiftyHull" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="Inspected" />
 				</triggers>
 				The shuttle with the Sullustan leader is in critical condition!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESCUE 1" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="7" condition="Docked" />
 				</triggers>
 				We've got the Sullustan leader, let's go!
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="DELTA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="9" condition="Arrived" />
 				</triggers>
 				Additional TIEs inbound, be on your guard.
 			</message>

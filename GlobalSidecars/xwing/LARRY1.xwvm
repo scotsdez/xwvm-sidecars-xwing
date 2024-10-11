@@ -17,13 +17,13 @@
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="DIPUTS" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="Arrived" />
 				</triggers>
 				Two resupply freighters just dropped into the system.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="DIPUTS" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="Arrived" />
 				</triggers>
 				Don't let them escape!
 			</message>
@@ -35,52 +35,52 @@
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="DIPUTS" condition="Destroyed" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="4" condition="Destroyed" />
 				</triggers>
 				The resupply freighters have been neutralised. 
 			</message>
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="PRIAM" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="5" condition="Arrived" />
 				</triggers>
 				An Imperial frigate just arrived, let's finish up quickly and go.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="PRIAM" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="5" condition="Arrived" />
 				</triggers>
 				Looks like the General's strategy worked, we've got them now!
 			</message>
 			<message delay="3" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="PRIAM" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="5" condition="Arrived" />
 				</triggers>
 				They have no idea what they just walked into!
 			</message>
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="PRIAM" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="5" condition="Attacked" />
 				</triggers>
 				Red Group, don't destroy that frigate.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="PRIAM" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="5" condition="Attacked" />
 				</triggers>
 				General Dodonna has something special planned for it.
 			</message>
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="PRIAM" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="5" condition="Destroyed" />
 				</triggers>
 				That frigate was key to General Dodonna's plans, Red Group! 
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="PRIAM" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="5" condition="Destroyed" />
 				</triggers>
 				This kind of insubordination will not be tolerated!
 			</message>
@@ -114,8 +114,8 @@
 				Abort mission and return to base.
 			</message>
 		</messages>
-		<flightGroup target="CHI" globalGroup="1" />
-		<flightGroup target="PI" globalGroup="1" />
-		<flightGroup target="PSI" globalGroup="1" />
+		<flightGroup target="##0" globalGroup="1" />
+		<flightGroup target="##1" globalGroup="1" />
+		<flightGroup target="##3" globalGroup="1" />
 	</mission>
 </sidecar>

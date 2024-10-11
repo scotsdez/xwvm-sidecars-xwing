@@ -8,7 +8,7 @@
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="KAPPA" condition="Inspected" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="13" condition="Inspected" />
 				</triggers>
 				What are those shuttles doing here?
 			</message>
@@ -21,61 +21,61 @@
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="PSI 1" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="7" condition="Arrived" />
 				</triggers>
 				What did that freighter just drop off?
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="PSI 1" condition="Inspected" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="7" condition="Inspected" />
 				</triggers>
 				You've located the grain, good work.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BADI DEA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="Arrived" />
 				</triggers>
 				A new contact is emerging from hyperspace!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="GlobalGroup" variable="1" condition="Inspected" />
+					<trigger amount="HundredPercent" type="GlobalGroup" variable="1" condition="Destroyed" />
 				</triggers>
 				The patrol fighters have been eliminated.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="SARSUMA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Arrived" />
 				</triggers>
 				Sarsuma to Red-- what the-?
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="SARSUMA" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Attacked" />
 				</triggers>
 				We're under attack! Full power to engines, we need to-- [static]
 			</message>
 			<message delay="0" color="Imperial">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="SARSUMA" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Destroyed" />
 				</triggers>
 				Attention, Rebel vessel. This is Admiral Harkov.
 			</message>
 			<message delay="1" color="Imperial">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="SARSUMA" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Destroyed" />
 				</triggers>
 				Power down your craft and surrender...
 			</message>
 			<message delay="2" color="Imperial">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="SARSUMA" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Destroyed" />
 				</triggers>
 				...or suffer the same fate as your comrades.
 			</message>
 			<message delay="3" color="Imperial">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="SARSUMA" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Destroyed" />
 				</triggers>
 				This is your only warning.
 			</message>
@@ -106,10 +106,10 @@
 			</message>
 
 		</messages>
-		<flightGroup target="ALPHA" globalGroup="1" />
-		<flightGroup target="ETA" globalGroup="1" />
-		<flightGroup target="CHI" globalGroup="2" />
-		<flightGroup target="XI" globalGroup="2" />
-		<flightGroup target="PI" globalGroup="2" />
+		<flightGroup target="##8" globalGroup="1" />
+		<flightGroup target="##9" globalGroup="1" />
+		<flightGroup target="##3" globalGroup="2" />
+		<flightGroup target="##4" globalGroup="2" />
+		<flightGroup target="##5" globalGroup="2" />
 	</mission>
 </sidecar>

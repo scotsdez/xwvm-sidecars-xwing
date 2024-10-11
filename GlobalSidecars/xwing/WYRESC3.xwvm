@@ -10,56 +10,56 @@
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="GODAR" condition="Disabled" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="Disabled" />
 				</triggers>
 				The corvette has been disabled.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="GODAR" condition="Disabled" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="Disabled" />
 				</triggers>
 				It will take a minute for the capture team to arrive.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="GODAR" condition="Inspected" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="Inspected" />
 				</triggers>
 				Confirmed, the corvette is carrying the Death Star designers.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESCUE 1" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Arrived" />
 				</triggers>
 				This is Rescue 1, starting our run now.
 			</message>
 			
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESCUE 1" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Attacked" />
 				</triggers>
 				This is Rescue 1, we're taking fire! 
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESCUE 1" condition="ZeroShields" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="ZeroShields" />
 				</triggers>
 				They've taken out our shields! 
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESCUE 1" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Destroyed" />
 				</triggers>
 				Rescue 1, mayd-- 
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESCUE 1" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Docked" />
 				</triggers>
 				Our commandos were able to extract the design team. 
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESCUE 1" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Docked" />
 				</triggers>
 				Cover us while we make the jump back to base. 
 			</message>

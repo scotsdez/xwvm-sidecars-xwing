@@ -73,9 +73,9 @@
 			</message>
 			
 		</messages>
-		<flightGroup target="HANGAR PORT" globalGroup="1" />
-		<flightGroup target="HANGAR PORT_2" globalGroup="1" />
-		<flightGroup target="HANGAR PORT_3" globalGroup="1" />
-		<flightGroup target="HANGAR PORT_4" globalGroup="1" />
+		<flightGroup target="##12" globalGroup="1" />
+		<flightGroup target="##13" globalGroup="1" />
+		<flightGroup target="##14" globalGroup="1" />
+		<flightGroup target="##15" globalGroup="1" />
 	</mission>
 </sidecar>

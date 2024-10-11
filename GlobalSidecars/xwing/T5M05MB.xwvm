@@ -11,7 +11,7 @@
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RED 2" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Arrived" />
 				</triggers>
 				This is Red Two, I've got your back.
 			</message>
@@ -23,7 +23,7 @@
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="TIGER" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="13" condition="Arrived" />
 				</triggers>
 				Reading reinforcements entering the area!
 			</message>
@@ -35,19 +35,19 @@
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="TIGER" condition="Destroyed" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="13" condition="Destroyed" />
 				</triggers>
 				Great work taking out those corvettes!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="CLAW" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="14" condition="Arrived" />
 				</triggers>
 				New contacts coming out of hyperspace!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="PROBE" condition="Destroyed" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="15" condition="Destroyed" />
 				</triggers>
 				We've lost telemetry from our probe in the area.
 			</message>
@@ -75,11 +75,11 @@
 			</message>
 
 		</messages>
-		<flightGroup target="PHI 1" globalGroup="1" />
-		<flightGroup target="PHI 2" globalGroup="1" />
-		<flightGroup target="XI" globalGroup="1" />
-		<flightGroup target="CHI" globalGroup="1" />
-		<flightGroup target="TRIGGER 3" globalGroup="2" />
-		<flightGroup target="TRIGGER 7" globalGroup="2" />
+		<flightGroup target="##4" globalGroup="1" />
+		<flightGroup target="##5" globalGroup="1" />
+		<flightGroup target="##6" globalGroup="1" />
+		<flightGroup target="##7" globalGroup="1" />
+		<flightGroup target="##8" globalGroup="2" />
+		<flightGroup target="##9" globalGroup="2" />
 	</mission>
 </sidecar>

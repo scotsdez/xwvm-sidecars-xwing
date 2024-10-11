@@ -20,29 +20,29 @@
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="DELTA" condition="Arrived" />
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Survived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="7" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="9" condition="Survived" />
 				</triggers>
 				There's something new on sensors.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="DELTA" condition="Arrived" />
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Survived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="7" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="9" condition="Survived" />
 				</triggers>
 				What are those!?
 			</message>
 			<message delay="3" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="DELTA" condition="Arrived" />
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Survived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="7" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="9" condition="Survived" />
 				</triggers>
 				Whatever they are, I'm betting they aren't friendly.
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="DELTA" condition="Destroyed" />
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Survived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="7" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="9" condition="Survived" />
 				</triggers>
 				Well, they're not invincible, at least.
 			</message>

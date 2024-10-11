@@ -37,13 +37,13 @@
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="EPSILON" condition="Destroyed" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="2" condition="Destroyed" />
 				</triggers>
 				Both transports have been eliminated.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="SENTINEL" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Arrived" />
 				</triggers>
 				Imperial reinforcements have arrived - be quick!
 			</message>

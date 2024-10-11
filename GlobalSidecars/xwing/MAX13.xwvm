@@ -17,81 +17,81 @@
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ALPHA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="Arrived" />
 				</triggers>
 				Red Leader, those ships don't look very friendly!
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ALPHA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="Arrived" />
 				</triggers>
 				I'd say we have some pirates on our hands.
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ARS OPUS" condition="Captured" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Captured" />
 				</triggers>
 				Capture team to Red group, we've secured the freighter.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ARS OPUS" condition="Captured" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Captured" />
 				</triggers>
 				The essentials have been repaired, but it's not much.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ARS OPUS" condition="Captured" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Captured" />
 				</triggers>
 				Keep those pirates busy until we can hyperjump!
 			</message>
 			<message delay="3" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ARS OPUS" condition="Captured" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Captured" />
 				</triggers>
 				Roger that, capture team, we've got your back.
 			</message>
 			<message delay="3" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="8" condition="Arrived" />
 				</triggers>
 				This is Blue Leader, we'll escort the freighter from here...
 			</message>
 			<message delay="4" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="8" condition="Arrived" />
 				</triggers>
 				...if you can take care of our guests.
 			</message>
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="EPSILON" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="Arrived" />
 				</triggers>
 				Watch those transports, I think they're going for the freighter.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="KAPPA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="7" condition="Arrived" />
 				</triggers>
 				Looks like another raiding party!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ARS OPUS" condition="FiftyHull" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="FiftyHull" />
 				</triggers>
 				The freighter is taking heavy damage!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ARS OPUS" condition="Disabled" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Disabled" />
 				</triggers>
 				Damn, they managed to knock out the freighter's systems!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ARS OPUS" condition="Disabled" />
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESCUE RIKER" condition="Reinforced" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Disabled" />
+					<trigger amount="AtLeastOneOfFirstWave" type="FlightGroup" variable="9" condition="CompletedMission" />
 				</triggers>
 				We'll try and get the freighter going again, if we can.
 			</message>

@@ -4,27 +4,27 @@
 		<messages>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="7" condition="Arrived" />
 				</triggers>
 				This is Blue Leader, the satellite and mines are all yours.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="7" condition="Arrived" />
 				</triggers>
 				We'll take on the minelayers.
 			</message>
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MU" condition="Arrived" />
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BLUE" condition="Survived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="5" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="7" condition="Survived" />
 				</triggers>
 				They've sent some reinforcements!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="BLUE" condition="Destroyed" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="7" condition="Destroyed" />
 				</triggers>
 				Blue Squadron has been destroyed, you're on your own now!
 			</message>
@@ -37,7 +37,7 @@
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="NAV BUOY" condition="Destroyed" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="9" condition="Destroyed" />
 				</triggers>
 				The communications satellite has been destroyed.
 			</message>
@@ -50,7 +50,7 @@
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="IMAC" condition="Destroyed" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="8" condition="Destroyed" />
 				</triggers>
 				Scratch one Imperial freighter!
 			</message>
@@ -75,8 +75,8 @@
 			</message>
 
 		</messages>
-		<flightGroup target="223 4" globalGroup="1" />
-		<flightGroup target="223 5" globalGroup="1" />
-		<flightGroup target="223 6" globalGroup="1" />
+		<flightGroup target="##1" globalGroup="1" />
+		<flightGroup target="##2" globalGroup="1" />
+		<flightGroup target="##3" globalGroup="1" />
 	</mission>
 </sidecar>

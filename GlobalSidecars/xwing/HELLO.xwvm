@@ -39,25 +39,25 @@
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="KARINNE" condition="CompletedMission" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="CompletedMission" />
 				</triggers>
 				The Karinne has successfully entered hyperspace - the Twi'lek delegation is safe.
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="AVENGER" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="5" condition="Attacked" />
 				</triggers>
 				Be careful around that Star Destroyer!
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="KARINNE" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="Attacked" />
 				</triggers>
 				We're under fire, please assist us!
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="KARINNE" condition="FiftyHull" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="FiftyHull" />
 				</triggers>
 				We've taken hull damage!
 			</message>

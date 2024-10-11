@@ -14,70 +14,70 @@
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="SpecialCraft" type="FlightGroup" variable="LAMBDA" condition="Inspected" />
+					<trigger amount="SpecialCraft" type="FlightGroup" variable="1" condition="Inspected" />
 				</triggers>
 				That transport has Sullustans aboard, make sure to disable it!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="SpecialCraft" type="FlightGroup" variable="OMICRON" condition="Inspected" />
+					<trigger amount="SpecialCraft" type="FlightGroup" variable="2" condition="Inspected" />
 				</triggers>
 				You've located a group of Sullustan prisoners, disable that ship.
 			</message>
 			
 			<message delay="1" color="Rebel">
 				<triggers operator="OR">
-					<trigger amount="SpecialCraft" type="FlightGroup" variable="OMICRON" condition="FiftyHull" />
-					<trigger amount="SpecialCraft" type="FlightGroup" variable="LAMBDA" condition="FiftyHull" />
+					<trigger amount="SpecialCraft" type="FlightGroup" variable="2" condition="FiftyHull" />
+					<trigger amount="SpecialCraft" type="FlightGroup" variable="1" condition="FiftyHull" />
 				</triggers>
 				One of the prisoner transports is heavily damaged - protect that ship!
 			</message>
 			
 			<message delay="1" color="Rebel">
 				<triggers operator="OR">
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESCUE 1" condition="Arrived" />
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESCUE 2" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="5" condition="Arrived" />
 				</triggers>
 				Rescue team here, we're moving into position.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers operator="OR">
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESCUE 1" condition="Attacked" />
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESCUE 2" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="5" condition="Attacked" />
 				</triggers>
 				This is the Rescue team, we're under attack!
 			</message>
 			
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="LAMBDA" condition="Inspected" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="1" condition="Inspected" />
 				</triggers>
 				Transport group Lambda has been fully inspected.
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="OMICRON" condition="Inspected" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="2" condition="Inspected" />
 				</triggers>
 				All of flight group Omicron has been scanned.
 			</message>
 			
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BETA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="8" condition="Arrived" />
 				</triggers>
 				TIEs are going after Rescue 2!
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ALPHA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="7" condition="Arrived" />
 				</triggers>
 				More TIEs have launched - it looks like they're going straight for Rescue 1!
 			</message>
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESCUE 1" condition="Docked" />
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RESCUE 2" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="5" condition="Docked" />
 				</triggers>
 				Okay, that's everyone accounted for - let's get out of here!
 			</message>

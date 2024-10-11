@@ -10,98 +10,98 @@
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="JESS 6" condition="Disabled" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="Disabled" />
 				</triggers>
 				One of the freighters has been disabled!
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="SLICK" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="10" condition="Arrived" />
 				</triggers>
 				An Imperial freighter just arrived...
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="SLICK" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="10" condition="Arrived" />
 				</triggers>
 				...and it's heading for that Habassan freighter.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="SLICK" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="10" condition="Arrived" />
 				</triggers>
 				We can’t let them land a boarding party!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="SLICK" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="10" condition="Destroyed" />
 				</triggers>
 				The Imperial freighter has been eliminated.
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="JESS 9" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="15" condition="Arrived" />
 				</triggers>
 				The Habassa have sent a new freighter to retrieve the cargo.
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="SIGMA" condition="Destroyed" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="4" condition="Destroyed" />
 				</triggers>
 				The Habassan shuttles have been destroyed.
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="JESS 6" condition="Destroyed" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="3" condition="Destroyed" />
 				</triggers>
 				The disabled Habassan freighter has been destroyed.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="JESS 6" condition="Destroyed" />
-					<trigger amount="HundredPercent" type="FlightGroup" variable="JESS 9" condition="Arrived" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="3" condition="Destroyed" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="15" condition="Arrived" />
 				</triggers>
 				Protect the freighter carrying the repair crew.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MAXIMUM" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="12" condition="Arrived" />
 				</triggers>
 				Attention, a Star Destroyer has entered the area!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="JESS 9" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="15" condition="Docked" />
 				</triggers>
 				The Habassan repair crew has finished loading the cargo.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="JESS 9" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="15" condition="Docked" />
 				</triggers>
 				Protect it while it makes the jump to hyperspace.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="JESS 9" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="15" condition="Docked" />
 				</triggers>
 				Meanwhile, the repair crew will work on the damaged freighter.
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="JESS 9" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="15" condition="Attacked" />
 				</triggers>
 				The freighter carrying the repair crew is under attack!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="JESS 9" condition="ZeroShields" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="15" condition="ZeroShields" />
 				</triggers>
 				Protect the Habassan repair crew, their shields are down!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="KAPPA_2" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="11" condition="Arrived" />
 				</triggers>
 				Imperial reinforcements are targeting a freighter!
 			</message>

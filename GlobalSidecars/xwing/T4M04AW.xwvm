@@ -8,99 +8,99 @@
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="LAUHU" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="Arrived" />
 				</triggers>
 				This is the Lauhu: starting our docking operation now.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RHO" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="14" condition="Arrived" />
 				</triggers>
 				Look alive - Imperial fighters on an intercept vector!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="FIRELANCE" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="5" condition="Arrived" />
 				</triggers>
 				We've got trouble... what's that ship doing?
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ALPHA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="8" condition="Arrived" />
 				</triggers>
 				It's launching Bombers...
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="GAMMA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="10" condition="Arrived" />
 				</triggers>
 				And some Interceptors too, just wonderful.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="FIRELANCE_2" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="Arrived" />
 				</triggers>
 				Look who rejoined the party.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="FIRELANCE_3" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="7" condition="Arrived" />
 				</triggers>
 				They should've named that ship the Boomerang...
 			</message>
 			
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="LAUHU" condition="ZeroShields" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="ZeroShields" />
 				</triggers>
 				This is the Lauhu, we've lost our shields!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="LAUHU" condition="FiftyHull" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="FiftyHull" />
 				</triggers>
 				We can't take much more of this!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="LAUHU" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="Docked" />
 				</triggers>
 				Okay, the transfer is done, we're getting out of here.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="LAUHU" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="Docked" />
 				</triggers>
 				It will take a few moments for the Anvil to make its jump.
 			</message>
 			<message delay="3" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="LAUHU" condition="Docked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="Docked" />
 				</triggers>
 				Copy that.
 			</message>
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="LAUHU" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="Destroyed" />
 				</triggers>
 				The Lauhu has been destroyed.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="LAUHU" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="Destroyed" />
 				</triggers>
 				Without it, there is no hope of repairing the Anvil.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ANVIL" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="Destroyed" />
 				</triggers>
 				We lost the Anvil.
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ANVIL" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="Destroyed" />
 				</triggers>
 				This is a crushing blow to our forces in this sector.
 			</message>

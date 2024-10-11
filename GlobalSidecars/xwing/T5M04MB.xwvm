@@ -14,7 +14,7 @@
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MU" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="9" condition="Arrived" />
 				</triggers>
 				A new group of gunboats just dropped into the system.
 			</message>
@@ -27,19 +27,19 @@
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ZETA" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="5" condition="Destroyed" />
 				</triggers>
 				The parked TIEs have been eliminated.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="TA-305" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="15" condition="Arrived" />
 				</triggers>
 				We're reading a flight group of corvettes arriving, be careful!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="HundredPercent" type="FlightGroup" variable="TA-305" condition="Destroyed" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="15" condition="Destroyed" />
 				</triggers>
 				Superb work, you're clearly at home in the new B-Wing!
 			</message>
@@ -62,10 +62,10 @@
 			</message>
 
 		</messages>
-		<flightGroup target="CHI 1" globalGroup="1" />
-		<flightGroup target="CHI 2" globalGroup="1" />
-		<flightGroup target="CHI 3" globalGroup="1" />
-		<flightGroup target="CHI 4" globalGroup="1" />
-		<flightGroup target="CHI 5" globalGroup="1" />
+		<flightGroup target="##10" globalGroup="1" />
+		<flightGroup target="##11" globalGroup="1" />
+		<flightGroup target="##12" globalGroup="1" />
+		<flightGroup target="##13" globalGroup="1" />
+		<flightGroup target="##14" globalGroup="1" />
 	</mission>
 </sidecar>

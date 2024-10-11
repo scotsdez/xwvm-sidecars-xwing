@@ -16,25 +16,25 @@
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="INVINCIBLE" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="7" condition="Arrived" />
 				</triggers>
 				Reading a new contact coming out of hyperspace!
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MAHAN" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="Destroyed" />
 				</triggers>
 				This is the Mahan, we're -- [static]
 			</message>
 			<message delay="1" color="Imperial">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MAHAN" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="Destroyed" />
 				</triggers>
 				Attention, Rebel ships.
 			</message>
 			<message delay="2" color="Imperial">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MAHAN" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="Destroyed" />
 				</triggers>
 				This is the Invincible, Admiral Claxton in command.
 			</message>
@@ -46,67 +46,67 @@
 			</message>
 			<message delay="4" color="Imperial">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MAHAN" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="Destroyed" />
 				</triggers>
 				Stand down and prepare to be boarded.
 			</message>
 			<message delay="5" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="MAHAN" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="Destroyed" />
 				</triggers>
 				That'll be the day! Red 2, let's engage those fighters.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="GAMMA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="12" condition="Arrived" />
 				</triggers>
 				Red group, the Invincible has launched bombers!
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="GAMMA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="12" condition="Arrived" />
 				</triggers>
 				Copy that, Admiral, I see them. Red 2, you know what to do.
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ARROYO" condition="Attacked" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="Attacked" />
 				</triggers>
 				This is Arroyo, we're under attack!
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ARROYO" condition="ZeroShields" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="ZeroShields" />
 				</triggers>
 				One of the shuttles has lost its shields!
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ARROYO" condition="FiftyHull" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="FiftyHull" />
 				</triggers>
 				You need to protect those shuttles!
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="GOLD 3" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="1" condition="Destroyed" />
 				</triggers>
 				This is Gold 3, I'm going down!
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="SONNEL" condition="Destroyed" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="5" condition="Destroyed" />
 				</triggers>
 				The Sonnel has been lost with all hands.
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="RHOON" condition="CompletedMission" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="CompletedMission" />
 				</triggers>
 				This is Rhoon, we're making our jump now. Thanks for the assist, Red group.
 			</message>
 			<message color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="SONNEL" condition="CompletedMission" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="5" condition="CompletedMission" />
 				</triggers>
 				Sonnel to X-Wing Red, we're away.
 			</message>

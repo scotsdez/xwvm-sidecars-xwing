@@ -20,44 +20,44 @@
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="IMMORTAL_2" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="Arrived" />
 				</triggers>
 				The Immortal has just jumped back into the system...
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="IMMORTAL_2" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="Arrived" />
 				</triggers>
 				...that can't be good for us.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="BETA_2" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="10" condition="Arrived" />
 				</triggers>
 				Reading additional bombers inbound!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="ZETA" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="9" condition="Arrived" />
 				</triggers>
 				An Interceptor squadron just launched!
 			</message>
 			
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="DEFIANCE" condition="ZeroShields" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="8" condition="ZeroShields" />
 				</triggers>
 				This is the Defiance, we've lost our shields!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="DEFIANCE" condition="FiftyHull" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="8" condition="FiftyHull" />
 				</triggers>
 				Our hull is heavily damaged!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="DEFIANCE" condition="FiftyHull" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="8" condition="FiftyHull" />
 				</triggers>
 				We need more time to make the jump to hyperspace!
 			</message>

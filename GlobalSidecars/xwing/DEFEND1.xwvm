@@ -17,33 +17,33 @@
 			
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="INDEPENDENCE" condition="ZeroShields" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="ZeroShields" />
 				</triggers>
 				This is the Independence, our shields are down!
 			</message>
 			<message delay="0" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="INDEPENDENCE" condition="FiftyHull" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="FiftyHull" />
 				</triggers>
 				We're taking heavy damage!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="IMMORTAL" condition="Attacked" />
-					<trigger amount="HundredPercent" type="FlightGroup" variable="RED" condition="Survived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="9" condition="Attacked" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="0" condition="Survived" />
 				</triggers>
 				Is attacking the Star Destroyer head-on wise, Red Leader?
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="IMMORTAL" condition="Destroyed" />
-					<trigger amount="HundredPercent" type="FlightGroup" variable="RED" condition="Survived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="9" condition="Destroyed" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="0" condition="Survived" />
 				</triggers>
 				I take it back, that was amazing!
 			</message>
 			<message delay="108" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="INDEPENDENCE" condition="Survived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="2" condition="Survived" />
 				</triggers>
 				We're making our final preparations to jump now - we just need a bit more cover.
 			</message>

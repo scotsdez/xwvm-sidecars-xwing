@@ -44,7 +44,7 @@
 			</message>
 			<message delay="1" color="#1890ff">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="HYKO" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="5" condition="Arrived" />
 				</triggers>
 				There's the convoy, right on time!
 				<text>That's the convoy - the Empire is as punctual as ever!</text>
@@ -52,14 +52,14 @@
 			</message>
 			<message delay="2" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="HYKO" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="5" condition="Arrived" />
 				</triggers>
 				I see it. All wings, fire at will.
 				<text>Acknowleged. All wings, engage and destroy.</text>
 			</message>
 			<message delay="2" color="#1890ff">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="TAU" condition="Arrived" />
+					<trigger amount="AtLeastOne" type="FlightGroup" variable="10" condition="Arrived" />
 				</triggers>
 				Watch out for those escorts!
 				<text>Keep an eye on those escorts!</text>
@@ -98,10 +98,10 @@
 				All fighters, abort mission and return to base.
 			</message>
 		</messages>
-		<flightGroup target="HYKO" globalGroup="1" />
-		<flightGroup target="KAPPA" globalGroup="1" />
-		<flightGroup target="EPSILON" globalGroup="1" />
-		<flightGroup target="THE TONE" globalGroup="1" />
-		<flightGroup target="UHURU" globalGroup="1" />
+		<flightGroup target="##5" globalGroup="1" />
+		<flightGroup target="##4" globalGroup="1" />
+		<flightGroup target="##6" globalGroup="1" />
+		<flightGroup target="##9" globalGroup="1" />
+		<flightGroup target="##8" globalGroup="1" />
 	</mission>
 </sidecar>
