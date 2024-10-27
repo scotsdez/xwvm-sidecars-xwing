@@ -27,7 +27,7 @@
 			
 			<message delay="1" color="Rebel">
 				<triggers>
-					<trigger amount="AtLeastOne" type="FlightGroup" variable="5" condition="Destroyed" />
+					<trigger amount="HundredPercent" type="FlightGroup" variable="5" condition="Destroyed" />
 				</triggers>
 				The parked TIEs have been eliminated.
 			</message>

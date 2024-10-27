@@ -11,7 +11,7 @@
 				</triggers>
 				Great job taking out the mines!
 			</message>
-			<message delay="25" color="Rebel">
+			<message color="Rebel">
 				<triggers>
 					<trigger amount="AtLeastOne" type="FlightGroup" variable="10" condition="Arrived" />
 				</triggers>

@@ -101,6 +101,7 @@
 		<flightGroup target="##5" globalGroup="1" />
 		<flightGroup target="##4" globalGroup="1" />
 		<flightGroup target="##6" globalGroup="1" />
+                <flightGroup target="##7" globalGroup="1" />
 		<flightGroup target="##9" globalGroup="1" />
 		<flightGroup target="##8" globalGroup="1" />
 	</mission>
