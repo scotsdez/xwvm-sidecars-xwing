@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <sidecar>
-	<mission target="T5M08WA">
+	<mission target="T5M08WA2">
 		<messages>			
 			<message delay="1" color="Rebel">
 				You're right on time, Red group.

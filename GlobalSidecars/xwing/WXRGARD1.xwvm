@@ -114,7 +114,11 @@
 			<message color="#dfd" goal="primarySuccess">
 				Well done, the High Command has made it into hyperspace safely.
 			</message>
-			<message delay="1" color="#dfd" goal="primarySuccess">
+			<message delay="1" color="Rebel">
+				<triggers>
+					<trigger amount="HundredPercent" type="FlightGroup" variable="0" condition="CompletedPrimaryGoals" />
+					<trigger amount="AllNonPlayerCraft" type="FlightGroup" variable="0" condition="Survived" />
+				</triggers>
 				Should we bail, or mop up a few more fighters?
 			</message>
 			<?xwvm clearGoalMessages?>
