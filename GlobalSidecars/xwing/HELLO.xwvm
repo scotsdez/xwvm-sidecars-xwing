@@ -10,10 +10,10 @@
         </briefing>
 		<messages>
 			<message delay="0" color="Rebel">
-				Red group, you've arrived behind the Imperial forces.
+				Red Group, you've arrived behind the Imperial forces.
 			</message>
 			<message delay="1" color="Rebel">
-				Catch up with the TIE Bombers and destroy them as quickly as possible.
+				Catch up with the TIE Bombers and destroy them quickly.
 			</message>
 			<message delay="2" color="Rebel">
 				Don't let them destroy that corvette under any circumstances!

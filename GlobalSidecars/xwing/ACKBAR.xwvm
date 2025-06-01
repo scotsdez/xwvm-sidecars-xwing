@@ -3,7 +3,7 @@
 	<mission target="ACKBAR">
 		<messages>  
 			<message delay="1" color="Rebel">
-				Okay, Red flight, there’s our prize.
+				Okay, Red flight, there's our prize.
 			</message>
 			<message delay="2" color="Rebel">
 				Inspect the shuttles, and find the one carrying Tarkin!
@@ -15,83 +15,83 @@
 				<triggers>
 					<trigger amount="SpecialCraft" type="FlightGroup" variable="3" condition="Inspected" />
 				</triggers>
-				Tarkin isn’t here. He must have already left!
+				Tarkin isn't here. He must have already left!
 			</message>
 			<message color="Rebel" delay="1">
 				<triggers>
 					<trigger amount="SpecialCraft" type="FlightGroup" variable="3" condition="Inspected" />
 				</triggers>
-				Epsilon 5 is carrying intelligence officers... interesting.
+				That shuttle is carrying intelligence officers... interesting.
 			</message>
 			<message color="Rebel" delay="2">
 				<triggers>
 					<trigger amount="SpecialCraft" type="FlightGroup" variable="3" condition="Inspected" />
 				</triggers>
-				Disable that shuttle!
+				Use your ion cannons to disable that shuttle!
 			</message>
-			<message color="#df0">
+			<message color="Rebel">
 				<triggers>
 					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="Arrived" />
 				</triggers>
 				This is shuttle Hasti. Preparing capture operation now.
 			</message>
-			<message color="#df0">
+			<message color="Rebel">
 				<triggers>
 					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="Attacked" />
 				</triggers>
-				Hasti to Red group, we’re taking fire, please assist!
+				Hasti to Red group, we're taking fire, please assist!
 			</message>
-			<message color="#df0">
+			<message color="Rebel">
 				<triggers>
 					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="ZeroShields" />
 				</triggers>
 				This is Hasti, they've taken down our shields!
 			</message>
-			<message color="#df0">
+			<message color="Rebel">
 				<triggers>
 					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="FiftyHull" />
 				</triggers>
 				Hasti to Alliance fighters, we've taken heavy damage!
 			</message>
-			<message color="#df0">
+			<message color="Rebel">
 				<triggers>
 					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="Destroyed" />
 				</triggers>
 				This is Hasti! Mayday, M-- [static]
 			</message>
-			<message color="#df0">
+			<message color="Rebel">
 				<triggers>
 					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="Docked" />
 				</triggers>
-				Hasti to Red group, capture was successful.
+				Hasti to Red Group, capture was successful.
 			</message>		
-			<message color="#df0" delay="1">
+			<message color="Rebel" delay="1">
 				<triggers>
 					<trigger amount="AtLeastOne" type="FlightGroup" variable="6" condition="Docked" />
 				</triggers>
 				Cover our jump to hyperspace.
 			</message>
 			<?xwvm clearGoalMessages?>
-			<message color="#dfd" goal="primarySuccess">
-				Well done, we’ve rescued the intelligence officers.
+			<message color="Rebel" goal="primarySuccess">
+				Well done, we rescued the intelligence officers.
 			</message>
-			<message color="#dfd" goal="primarySuccess">
+			<message color="Rebel" goal="primarySuccess">
 				Their knowledge and experience will be valuable to the Alliance.
 			</message>
 			<message color="Rebel" goal="primarySuccess">
-				I’d love to see Tarkin’s face when he hears about this!
+				I’d love to see Tarkin's face when he hears about this!
 			</message>
 			<message color="Rebel" goal="primarySuccess">
 				All right, proceed to the hyperspace point.
 			</message>
 			<?xwvm clearGoalMessages?>
-			<message color="#dfd" goal="primaryFail">
-				We’ve failed to capture Moff Tarkin’s officers.
+			<message color="Rebel" goal="primaryFail">
+				We’ve failed to capture Moff Tarkin's officers.
 			</message>
-			<message color="#dfd" goal="primaryFail">
+			<message color="Rebel" goal="primaryFail">
 				This puts us at a serious disadvantage.
 			</message>
-			<message color="#dfd" goal="primaryFail"> 
+			<message color="Rebel" goal="primaryFail"> 
 				The mission is a failure, return to base immediately.
 			</message>
 		</messages>

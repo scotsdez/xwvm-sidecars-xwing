@@ -3,13 +3,13 @@
 	<mission target="MAX7">
 		<messages>
 			<message delay="1" color="Rebel">
-				Look alive Red group, we’ve got TIE Fighters closing in fast!
+				Look alive Red Group, we've got TIE Fighters closing in fast!
 			</message>
 			<message delay="2" color="Rebel">
 				Go ahead and disable the shuttles.
 			</message>
 			<message delay="3" color="Rebel">
-				We’ll assist once we’ve dealt with TIE Fighter group Alpha.
+				We'll assist once we've dealt with TIE Fighter group Alpha.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
@@ -53,7 +53,7 @@
 				<triggers>
 					<trigger amount="AtLeastOne" type="FlightGroup" variable="14" condition="Destroyed" />
 				</triggers>
-				I’ve never seen anyone take down a Star Destroyer like that!
+				I've never seen anyone take down a Star Destroyer like that!
 			</message>
 			
 			<?xwvm clearGoalMessages?>

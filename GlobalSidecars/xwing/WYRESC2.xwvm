@@ -64,7 +64,7 @@
 				<triggers>
 					<trigger amount="AtLeastOne" type="FlightGroup" variable="8" condition="Arrived" />
 				</triggers>
-				They're launching fighters. They're going for the shuttle!
+				They're launching fighters... they're targeting the shuttle!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>

@@ -6,14 +6,14 @@
 				The targets are up ahead.
 			</message>
 			<message delay="2" color="Rebel">
-				Follow my lead and you’ll be fine.
+				Follow my lead, and you'll be fine.
 			</message>
 			
 			<message delay="1" color="Rebel">
 				<triggers>
 					<trigger amount="AtLeastOne" type="FlightGroup" variable="9" condition="Arrived" />
 				</triggers>
-				Another freighter just arrived, we’ll need to eliminate it too!
+				Another freighter just arrived, we'll need to eliminate it too!
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
@@ -31,13 +31,13 @@
 				<triggers>
 					<trigger amount="AtLeastOne" type="FlightGroup" variable="11" condition="Arrived" />
 				</triggers>
-				An Imperial cruiser has just dropped out of hyperspace.
+				An Imperial frigate has just dropped out of hyperspace.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>
 					<trigger amount="AtLeastOne" type="FlightGroup" variable="12" condition="Arrived" />
 				</triggers>
-				It’s launching TIE Fighters - let’s not hang around!
+				It’s launching TIE Fighters - let's not hang around!
 			</message>
 			<message color="Rebel">
 				<triggers>
@@ -70,17 +70,17 @@
 				The cargo shipment has been destroyed.
 			</message>
 			<message delay="1" color="Rebel" goal="primarySuccess">
-				Good work, we’ve given the Imperials a bloody nose!
+				Good work, we've given the Imperials a bloody nose!
 			</message>
 			<message delay="2" color="Rebel" goal="primarySuccess">
 				This mission is complete, return for debriefing.
 			</message>
 			<?xwvm clearGoalMessages?>
 			<message color="Rebel" goal="primaryFail">
-				You didn’t destroy the convoy.
+				You didn't destroy the convoy.
 			</message>
 			<message delay="1" color="Rebel" goal="primaryFail">
-				Report for immediate debriefing.
+				Report for debriefing immediately.
 			</message>
 		</messages>
 		<flightGroup target="##4" globalGroup="1" />
