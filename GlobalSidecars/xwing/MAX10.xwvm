@@ -3,7 +3,7 @@
 	<mission target="MAX10">
 		<messages>
 			<message delay="0" color="Rebel">
-				This is Blue leader.
+				This is Blue Leader.
 			</message>
 			<message delay="1" color="Rebel">
 				These astromechs hijacked our ships and disabled the controls!
@@ -12,10 +12,10 @@
 				Please assist!
 			</message>
 			<message delay="3" color="Rebel">
-				Sit tight, Blue leader, we'll have you back with us in no time.
+				Sit tight, Blue Leader, we'll have you back with us in no time.
 			</message>
 			<message delay="4" color="Rebel">
-				Red group, switch to ion cannons and target the X-Wings.
+				Red Group, switch to ion cannons and target the X-Wings.
 			</message>
 			
 			<message color="Rebel">
@@ -28,7 +28,7 @@
 				<triggers>
 					<trigger amount="HundredPercent" type="GlobalGroup" variable="1" condition="Disabled" />
 				</triggers>
-				All X-Wings disabled. Good work, Red group.
+				All X-Wings disabled. Good work, Red Group.
 			</message>
 			
 			<message color="Rebel">
@@ -49,7 +49,7 @@
 				<triggers>
 					<trigger amount="AtLeastOne" type="FlightGroup" variable="3" condition="Captured" />
 				</triggers>
-				Blue leader to Red group...
+				Blue Leader to Red group...
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>

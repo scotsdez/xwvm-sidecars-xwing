@@ -109,7 +109,7 @@
 				<triggers>
 					<trigger amount="AtLeastOne" type="FlightGroup" variable="4" condition="Attacked" />
 				</triggers>
-				This is the Sar Ten. We require some assistance.
+				This is the Sar X. We require some assistance.
 			</message>
 			
 			<message delay="0" color="Rebel">

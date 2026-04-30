@@ -73,7 +73,7 @@
 				<triggers>
 					<trigger amount="AtLeastOne" type="FlightGroup" variable="9" condition="Arrived" />
 				</triggers>
-				This is the Invincible. Rebel craft, surrender now, or be obliterated.
+				This is the Invincible. Rebel craft: surrender now, or be obliterated.
 			</message>
 			<message delay="1" color="Rebel">
 				<triggers>

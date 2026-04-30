@@ -22,4 +22,4 @@ If the sidecars are not appearing when playing missions, check the following:
 Questions and feedback
 ----------------------
 
-If you have any questions, issues or feedback, please provide this in the #alpha-sidecars-feedback channel in the XWVM Discord.
+If you have any questions, issues or feedback, please provide this in the #bug-report-forum channel in the XWVM Discord.
